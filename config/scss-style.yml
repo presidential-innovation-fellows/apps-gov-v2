@@ -1,0 +1,10 @@
+linters:
+  NestingDepth:
+    enabled: true
+    max_depth: 6
+    severity: warning
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 3
+    severity: warning

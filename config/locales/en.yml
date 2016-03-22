@@ -6,6 +6,13 @@ en:
       with_weekday:
         "%a %m/%d/%y"
 
+  modules:
+    disclaimer:
+      alt_text:
+        US flag signifying that this is a United States Federal Government
+        website
+      learn_more: Learn More
+
   time:
     formats:
       default:

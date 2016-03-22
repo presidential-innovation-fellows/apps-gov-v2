@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: block;
+
+  li {
+    display: block;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}
