@@ -13,5 +13,5 @@ ruby:
   # config_file: .ruby-style.yml
   enabled: true
 scss:
-  # config_file: .scss-style.yml
+  config_file: config/scss-style.yml
   enabled: true

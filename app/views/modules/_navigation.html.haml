@@ -1,13 +1,13 @@
 %nav.app-nav
   .usa-grid
     %h1.logo
-      %a{:href => "/"}
+      = link_to root_path do
         = image_tag("logos/apps-logo-alt.svg")
     %ul
       %li.search-products
-        %form.usa-search{:action => "/products"}
-          %div{:role => "search"}
-            %label.usa-sr-only{:for => "search-field"} Search medium
-            %input#search-field{:name => "q", :placeholder => "Click or press / to ...", :type => "search"}
-              %button{:type => "submit"}
+        %form.usa-search{ action: "/products" }
+          %div{ role: "search"}
+            %label.usa-sr-only{ for: "search-field" } Search medium
+            %input#search-field{ name: "q", placeholder: "Click or press / to ...", type: "search" }
+              %button{ type: "submit" }
                 %span.usa-search-submit-text Search
