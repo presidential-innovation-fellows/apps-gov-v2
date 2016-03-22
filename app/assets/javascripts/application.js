@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require us-web-design-standards/uswds.min
 //= require_tree .
