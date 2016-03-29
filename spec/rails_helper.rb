@@ -5,6 +5,14 @@ require File.expand_path("../../config/environment", __FILE__)
 require "rspec/rails"
 require "shoulda/matchers"
 
+::Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :active_record
+    with.library :active_model
+  end
+end
+
 Dir[Rails.root.join("spec/support/**/*.rb")].sort.each { |file| require file }
 
 module Features

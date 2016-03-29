@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+
+# Run this script to deploy the app to Heroku.
+
+set -e
+
+if ! command -v open >/dev/null; then
+  open() {
+    $BROWSER "$@"
+  }
+fi
+
+branch="$(basename "$(git symbolic-ref HEAD)")"
+
+if [ -z "$1" ]; then
+  printf "You must provide an environment (staging|production).\n"
+  exit 1
+else
+  git push "$1" "$branch:master"
+  heroku run rake db:migrate --remote "$1"
+  heroku restart --remote "$1"
+
+  if [ "$1" = "production" ]; then
+    open https://apps.gov
+    heroku addons:open newrelic --remote "$1"
+
+    if command -v watch >/dev/null; then
+      watch heroku ps --remote "$1"
+    fi
+  else
+    open https://apps.pif.gov
+  fi
+fi
