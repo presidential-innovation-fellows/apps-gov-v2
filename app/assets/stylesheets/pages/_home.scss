@@ -1,0 +1,91 @@
+.hero-search {
+  background: rgba($black, 0.5);
+  padding: 2em 0;
+
+  form {
+    @include clearfix;
+    margin: 0 auto;
+    max-width: none;
+    width: 40em;
+  }
+
+  input {
+    border: 0;
+    margin: 0;
+
+    &[type="submit"] {
+      border-radius: 0 $base-border-radius $base-border-radius 0;
+      float: left;
+      vertical-align: top;
+      width: 10em;
+    }
+  }
+
+  label {
+    clip: rect(1px 1px 1px 1px); // IE6, IE7 //
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+  }
+
+  .input {
+    float: left;
+    vertical-align: top;
+    width: 30em;
+
+    input {
+      margin: 0;
+      max-width: none;
+      width: 100%;
+    }
+  }
+}
+
+.pages-home {
+
+  .app-header {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .app-logo {
+
+    a {
+      background: image-url("logos/apps-logo-alt-light.svg") no-repeat;
+    }
+  }
+
+  .search-products-nav {
+    display: none;
+  }
+
+  .usa-hero {
+    background-image: linear-gradient(rgba($black, 0.65), rgba($black, 0.5)), image-url("home/wh-hero.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 12em 0 0;
+    position: relative;
+
+    h1 {
+      font-size: 3.25em;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    header {
+      color: $white;
+      margin-bottom: 4em;
+      text-align: center;
+    }
+
+    .usa-button {
+      padding: 0.8em 1.2em;
+    }
+  }
+}

@@ -13,6 +13,14 @@ en:
         website
       learn_more: Learn More
 
+  pages:
+    home:
+      banner_button: Explore Products
+      banner_heading: Be More Productive
+      banner_tagline: Search and compare cloud technologies.
+      search: Search
+      search_placeholder: Search by Product Name or Type
+
   time:
     formats:
       default:
@@ -23,4 +31,4 @@ en:
         "%B %d"
 
   titles:
-    application: Apps-gov-v2
+    application: Apps.gov

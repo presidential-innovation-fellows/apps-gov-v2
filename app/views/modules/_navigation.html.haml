@@ -1,13 +1,14 @@
-%nav.app-nav
-  .usa-grid
-    %h1.logo
-      = link_to root_path do
-        = image_tag("logos/apps-logo-alt.svg")
-    %ul
-      %li.search-products
-        %form.usa-search{ action: "/products" }
-          %div{ role: "search"}
-            %label.usa-sr-only{ for: "search-field" } Search medium
-            %input#search-field{ name: "q", placeholder: "Click or press / to ...", type: "search" }
-              %button{ type: "submit" }
-                %span.usa-search-submit-text Search
+.app-header
+  = render "modules/disclaimer"
+  %nav.app-nav
+    .usa-grid
+      %h1.app-logo
+        = link_to t("titles.application"), root_path
+      %ul
+        %li.search-products-nav
+          %form.usa-search{ action: "/products" }
+            %div{ role: "search" }
+              %label.usa-sr-only{ for: "search-field" } Search medium
+              %input#search-field{ name: "q", placeholder: "Click or press / to ...", type: "search" }
+                %button{ type: "submit" }
+                  %span.usa-search-submit-text Search

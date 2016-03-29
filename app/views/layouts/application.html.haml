@@ -10,8 +10,7 @@
     = stylesheet_link_tag :application, media: "all"
     = favicon_link_tag "favicons/favicon.ico"
     = csrf_meta_tags
-  %body{class: body_class}
-    = render "modules/disclaimer"
+  %body{ class: "#{body_class} #{static_page_body_class}".strip }
     = render "modules/navigation"
     = render "flashes"
     .page-content

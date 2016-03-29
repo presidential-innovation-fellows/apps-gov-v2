@@ -1,3 +1,16 @@
+.app-logo {
+  float: left;
+  margin: 0;
+
+  a {
+    background: image-url("logos/apps-logo-alt.svg") no-repeat;
+    display: inline-block;
+    height: 38px;
+    text-indent: -999em;
+    width: 130px;
+  }
+}
+
 .app-nav {
   padding: 1em 0;
 
@@ -8,16 +21,5 @@
   ul {
     float: right;
     margin: 0;
-  }
-
-  .logo {
-    float: left;
-    margin: 0;
-    width: 130px;
-
-    a {
-      display: block;
-      height: 38px;
-    }
   }
 }

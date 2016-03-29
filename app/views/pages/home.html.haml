@@ -1,1 +1,18 @@
-%section
+%section.usa-hero
+  .usa-width-one-whole
+    .usa-grid
+      %header
+        %h1
+          = t('.banner_heading')
+        %h2
+          = t(".banner_tagline")
+        = link_to t(".banner_button"),
+          "#",
+          class: "usa-button usa-button-secondary"
+  .hero-search
+    .usa-grid
+      = simple_form_for :products, url: "/products" do |f|
+        = f.input :product_name, placeholder: t(".search_placeholder")
+        = f.submit t(".search")
+
+
