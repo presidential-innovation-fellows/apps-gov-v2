@@ -1,0 +1,20 @@
+{
+    "slug": "vazata",
+    "name": "COPT Connect Virtual Federal Image",
+    "url": "vazata.com",
+    "logo_url": "vazata.jpeg",
+    "top_keywords": [
+        "enterprise software",
+        "consulting",
+        "infrastructure as a service",
+        "managed hosting",
+        "disaster recovery"
+    ],
+    "short_description": "The COPT Connect, LLC powered by VAZATA’s VFI is delivered as an Infrastructure-as-a-Service (IaaS) offering using a multi-tenant community cloud computing environment.",
+    "long_description": "The COPT Connect, LLC powered by VAZATA’s VFI is delivered as an Infrastructure-as-a-Service (IaaS) offering using a multi-tenant community cloud computing environment. It is available to U.S. Federal, State, and Local government entities. <br/><br/> The VFI is a solution using an industry leading virtualization technology leveraged upon a compliant IaaS environment. COPT/VAZATA offers a simple, yet secure, IaaS environment with a robust IPS/IDS security border and best-in-class firewall, switching infrastructure, compute and storage devices. Using the secure access portal, the IaaS environment allows agencies at-will deployment of systems without any predetermined OS type or functionality of the image (“OS-agnostic”). This gives the Federal, State, and Local government customer the most flexible options possible in implementing their systems into COPT/VAZATA’s government-only community cloud. <br/><br/> COPT/VAZATA replicates the entire VFI infrastructure elements at the Manassas, Virginia data center to an alternative processing site (data center) located centrally within the continental United States. All security controls are identical for both the primary and alternative processing centers, and both are fully operational at all times. The two processing centers are connected at all times by a dedicated private, multi-path 10GB network.", "sales_poc":"skovac@vazata.com",
+    "twitter_handle": "VAZATA",
+    "linkedin_id": 2337758,
+    "contracts":[
+        "sewp"
+    ],
+    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/copt-connect-llc-powered-by-vazata-virtual-federal-image/"}

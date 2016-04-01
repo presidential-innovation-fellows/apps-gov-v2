@@ -1,0 +1,21 @@
+{
+    "slug": "trello",
+    "name": "Trello",
+    "url": "trello.com",
+    "logo_url": "trello.png",
+    "top_keywords": [
+        "project management",
+        "applications",
+        "software",
+        "organization",
+        "collaboration"
+    ],
+    "short_description": "Trello is a visual project management system.",
+    "long_description": "Trello is a free app that makes working on group projects as easy as using sticky notes on your whiteboard. Available on your phone, tablet, and desktop, Trello's drag-and-drop interface and visual way of organizing your tasks makes sure you always know what needs to get done and who's working on it. Whether it's your sales pipeline, new employee training program, a home renovation project, or even your wedding, Trello is flexible enough to make sure you're on top of all your important projects. Trello was built by Fog Creek Software and subsequently spun off as an independent company.",
+    "twitter_handle": "trello",
+    "linkedin_id": 3833064,
+    "contracts":[
+        "micro",
+        "sewp"
+    ],
+    "gov_tos":"https://trello.com/amendment-to-trello-terms-of-service-applicable-to-government-users"}

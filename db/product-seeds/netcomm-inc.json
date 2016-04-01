@@ -1,0 +1,12 @@
+{
+    "slug": "netcomm-inc",
+    "name": "Netcomm Beacon",
+    "url": "netcomm.net",
+    "logo_url": null,
+    "short_description": "NetComm is the government’s expert for unifying the user experience at the agency IT edge, delivering custom information management software solutions to a wide range of government clients.",
+    "long_description": "NetComm is the government’s expert for unifying the user experience at the agency IT edge, delivering custom information management software solutions to a wide range of government clients. A Women-Owned Small Business (WOSB) with 30 years of Federal experience, NetComm offers a variety of cloud-based services through Beacon, NetComm’s data analytics toolset that allows users to create customized dashboards tailored to an organization’s or agency’s particular needs, including: <ul> <li>Automated HR, finance, property management, digital signatures, e-workflows, online collaboration and dashboard tools, specifically tailored to help clients meet their organizational goals</li> <li>Improved access to and analysis of complex data</li> <li>Standards & best practices for security & privacy management in the cloud</li> <li>Mobile Capabilities</li> <li>Data Visualization and Dashboarding</li> </ul> Beacon leverages the Amazon Web Services GovCloud region FedRAMP moderate cloud Infrastructure as a Service (IaaS).", "sales_poc":"laurel.fielding@netcomm.net",
+    "contracts":[
+        "sewp"
+    ],
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/netcomm-beacon/"
+}

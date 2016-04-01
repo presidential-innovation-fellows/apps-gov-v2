@@ -1,0 +1,20 @@
+{
+    "slug": "bmc-software",
+    "name": "BMC Ready Fed-SaaS",
+    "url": "bmc.com",
+    "logo_url": "bmc.png",
+    "top_keywords": [
+        "information technology",
+        "cloud computing",
+        "software",
+        "it management",
+        "itsm"
+    ],
+    "short_description": "They transform digital enterprises for the ultimate competitive business\nadvantage.",
+    "long_description": "From mainframe to cloud to mobile, BMC Software helps businesses around the\nworld manage complex technology to deliver extraordinary business performance.",
+    "twitter_handle": "bmcsoftware",
+    "linkedin_id": 1597,
+    "contracts":[
+        "sewp"
+    ],
+    "fedramp_inprocess_agency":"ace/in-process-systems/bmc-software-bmc-remedy-fed-saas-bmc-remedy-ondemand-for-public-sector/"}

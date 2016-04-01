@@ -1,0 +1,22 @@
+{
+    "slug": "zeemaps",
+    "name": "ZeeMaps",
+    "url": "www.zeemaps.com",
+    "logo_url": "zeemaps.png",
+    "top_keywords": [
+        "zip code",
+        "maps",
+        "google maps",
+        "map pdf",
+        "create map"
+    ],
+    "short_description": "We Map Your Lists",
+    "long_description": "ZeeMaps allows you to create, analyze and publish customized interactive maps. Make maps with multiple markers and highlighted areas, e.g., counties, states, zip codes, and radius circles. The location data can come from spreadsheets, crowd source, or Google search. In addition, ZeeMaps can periodically update maps from attached Google Drive spreadsheets. Some highlights of ZeeMaps are: (1) scale from a few markers to tens of thousands of markers, (2) searchable custom fields, (3) static custom map images in high resolution suitable for publications, (4) custom marker icons, and (5) powerful analysis and search capabilities based on highlighted areas and distance buffers. Federal agencies like CDC, DHS, SBA, and USDA, and several state fire departments, libraries and other groups, routinely use ZeeMaps for their mapping requirements.",
+    "twitter_handle": "zeemaps",
+    "linkedin_id": null,
+	"facebook_url": "https://www.facebook.com/zeemaps",
+    "contracts":[
+        "micro",
+        "sewp"
+    ],
+    "gov_tos":"http://www.digitalgov.gov/files/2014/01/zeemaps-tos-amendment.pdf"}

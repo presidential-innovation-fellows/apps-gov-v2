@@ -1,0 +1,26 @@
+{
+    "slug": "box",
+    "name": "Box Enterprise",
+    "url": "box.com",
+    "logo_url": "box.png",
+    "top_keywords": [
+        "enterprise software",
+        "content management",
+        "productivity",
+        "mobile",
+        "saas"
+    ],
+    "short_description": "Founded in 2005, Box (NYSE:BOX) is transforming the way people and organizations work so they can achieve their greatest ambitions. As a leading enterprise content management platform, Box helps businesses of all sizes in every industry securely access and manage their critical information in the cloud. Box is headquartered in Redwood City, CA, with offices across the United States, Europe and Asia. To learn more about Box, visit www.box.com.",
+    "long_description": "Founded in 2005, Box (NYSE:BOX) is transforming the way people and organizations work so they can achieve their greatest ambitions. As a leading enterprise content management platform, Box helps businesses of all sizes in every industry securely access and manage their critical information in the cloud. Box is headquartered in Redwood City, CA, with offices across the United States, Europe and Asia. To learn more about Box, visit www.box.com.",
+    "sales_poc":"tcowles@box.com",
+    "twitter_handle": "BoxHQ",
+    "linkedin_id": 54178,
+    "contracts":[
+        "sewp", "s70"
+    ],
+    "gov_customers":[
+        "DOJ"
+    ],
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/box-inc-box-enterprise-cloud-content-collaboration-platform/",
+    "ato_agency":true
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "crowdkeep-expense",
+  "name": "Crowdkeep Expense",
+  "url": "crowdkeep.com/expense",
+  "logo_url": "crowdkeep.png",
+  "top_keywords": [
+    "expenses",
+    "expense reports",
+    "per diem",
+    "reimbursement",
+    "business travel"
+  ],
+  "short_description": "Crowdkeep Expense is a DCAA Compliant expense report app for employees, subcontrators, business travel, and more.",
+  "long_description": "Crowdkeep Expense is a fully featured employee and subcontract expense report platform. It fully integrates with payroll, accounting, invoicing, and many of your favorite apps. Crowdkeep Expense is DCAA compliant. Manage business travel, per diem, employee and subcontractor expense tracking with our easy to use platform, available on the web, iOS, and Android.",
+  "twitter_handle": "crowdkeep",
+  "facebook_url": "https://www.facebook.com/crowdkeep/",
+  "linkedin_id": "crowdkeep",
+  "angellist_name": "crowdkeep",
+  "sales_poc": "apps.gov@crowdkeep.com",
+  "contracts":[
+    "micro",
+    "s70",
+    "sewp"
+  ]
+}

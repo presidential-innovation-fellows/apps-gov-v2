@@ -1,0 +1,20 @@
+{
+    "slug": "cisco",
+    "name": "Cisco WebEx Conference Service",
+    "url": "cisco.com",
+    "logo_url": "cisco.png",
+    "top_keywords": [
+        "internet",
+        "internet of things",
+        "hardware",
+        "software",
+        "communications infrastructure"
+    ],
+    "short_description": "Cisco WebEx industry-leading web and video conferencing helps people to easily meet, collaborate, and stay productive anywhere, anytime, on any device.",
+    "long_description": "Cisco WebEx industry-leading web and video conferencing helps people to easily meet, collaborate, and stay productive anywhere, anytime, on any device. <br/><br/> Cisco WebEx Meeting Center is a cost-effective alternative to face-to-face meetings. <br/><br/> Use it to: <ul> <li>Collaborate with customers, partners, and employees worldwide in an online meeting</li> <li>Share information and ideas with integrated audio, HD video, and content sharing</li> <li>Enhance productivity</li> <li>Accelerate business processes</li> <li>Keep connected on the go from every major mobile platform</li> </ul> Cisco WebEx Meeting Center helps you: <ul> <li>Facilitate project reviews and team meetings, and keep deadlines on track</li> <li>Deepen prospect and customer relationships and speed up the sales process</li> <li>Accelerate product development and problem resolution</li> <li>Make faster, better-informed decisions</li> <li>Manage national or global teams more efficiently, and save time and money on travel</li></ul>", "sales_poc":"sanjkhan@cisco.com",
+    "twitter_handle": "cisco",
+    "linkedin_id": 1063,
+    "contracts":[
+        "sewp"
+    ],
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/cisco-cisco-webex-conferencing-service/"}

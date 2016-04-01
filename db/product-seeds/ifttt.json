@@ -1,0 +1,21 @@
+{
+    "slug": "ifttt",
+    "name": "IFTTT",
+    "url": "ifttt.com",
+    "logo_url": "ifttt.png",
+    "top_keywords": [
+        "internet",
+        "curated web",
+        "mobile",
+        "consumer internet",
+        "business productivity"
+    ],
+    "short_description": "Put the internet to work for you",
+    "long_description": "IFTTT lets you create powerful connections \u0003with one simple statement — if this\nthen that.",
+    "twitter_handle": "IFTTT",
+    "linkedin_id": 1785718,
+    "contracts":[
+        "micro",
+        "sewp"
+    ],
+    "gov_tos":"https://ifttt.com/terms_for_government_agencies"}

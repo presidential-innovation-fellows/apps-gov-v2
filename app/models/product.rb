@@ -1,9 +1,8 @@
 class Product < ActiveRecord::Base
   validates \
-    :long_description,
-    :name, :slug,
-    :sales_poc,
+    :name,
     :short_description,
+    :slug,
     :url,
     presence: true
 

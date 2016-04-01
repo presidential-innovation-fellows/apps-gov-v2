@@ -1,0 +1,21 @@
+{
+    "slug": "eventbrite",
+    "name": "Eventbrite",
+    "url": "eventbrite.com",
+    "logo_url": "eventbrite.png",
+    "top_keywords": [
+        "events",
+        "ticketing",
+        "online reservations",
+        "event management",
+        "curated web"
+    ],
+    "short_description": "Eventbrite is for anyone planning or attending an event.",
+    "long_description": "Eventbrite is for anyone planning or attending an event. We empower event\norganizers to become more efficient and effective when bringing people together,\nand people everywhere are searching Eventbrite to discover great events that\nmatter to them.",
+    "twitter_handle": "Eventbrite",
+    "linkedin_id": 167280,
+    "contracts":[
+        "micro",
+        "sewp"
+    ],
+    "gov_tos":"https://www.eventbrite.com/l/federal-government/"}

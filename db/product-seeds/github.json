@@ -1,0 +1,27 @@
+{
+    "slug": "github",
+    "name": "GitHub",
+    "url": "government.github.com",
+    "logo_url": "github.png",
+    "top_keywords": [
+        "software",
+        "internet",
+        "developer tools",
+        "computer software",
+        "software development and collaboration tools"
+    ],
+    "short_description": "GitHub is how people build software. Millions of individuals and organizations around the world use GitHub to discover, share, and contribute to software—from games and experiments to popular frameworks and leading applications. Together, we're defining how software is built today.",
+    "long_description": "GitHub is how people build software. Millions of individuals and organizations around the world use GitHub to discover, share, and collaborate on software—from games and experiments to popular frameworks and leading applications. Together, we're defining how software is built today. Whether you use GitHub.com or GitHub Enterprise on your own servers, you can access one of the world's largest developer communities to build software in the way that works best for you. Choose your deployment option and integrate your favorite third party tools into a powerful, collaborative workflow.",
+    "twitter_handle": "github",
+    "linkedin_id": 1418841,
+    "contracts":[
+        "micro",
+        "sewp",
+        "s70"
+    ],
+    "gov_tos":"https://help.github.com/articles/amendment-to-github-terms-of-service-applicable-to-u-s-federal-government-users/",
+    "sales_poc": "government@github.com",
+    "gov_customers": [
+      "DOC", "DOE", "DOI", "DOL", "FDA", "GSA", "HHS", "IRS", "MCC", "NARA", "NASA", "NIH", "NIST", "NOAA", "OSTP", "Smithsonian", "State", "USAID", "USDA", "USCB", "USCIO", "USPTO", "VA"
+    ]
+}

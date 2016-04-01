@@ -1,0 +1,20 @@
+{
+    "slug": "oracle-fed-cloud",
+    "name": "Oracle Federal Managed Cloud Services",
+    "url": "oracle.com",
+    "logo_url": "oracle.png",
+    "top_keywords": [
+        "enterprise software",
+        "hardware",
+        "software",
+        "information technology",
+        "information services"
+    ],
+    "short_description": "Oracle Federal Managed Cloud Services provides hosting, applications management, infrastructure support, and operation and maintenance (O&M) services to U.S. federal government agencies.",
+    "long_description": "Oracle Federal Managed Cloud Services provides hosting, applications management, infrastructure support, and operation and maintenance (O&M) services to U.S. federal government agencies. Primary services include hardware and facilities setup/configuration, application management, testing, monitoring, patching, incident management, problem resolution, technical and functional service desk, point upgrades, security, and disaster recovery. <br/><br/> The FMCS Infrastructure information system resides in a physically and logically isolated Federal Government Zone within the general security perimeter of Oracle’s U.S. Data Centers. The environment has been architected following FISMA and NIST guidance to help Federal customers achieve and maintain Authority To Operate (accreditation) for their relevant information systems or data hosted at Oracle.", "sales_poc":"lindsey.orrick@oracle.com",
+    "twitter_handle": "Oracle",
+    "linkedin_id": 1028,
+    "contracts":[
+        "sewp"
+    ],
+    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/oracle-corporation-federal-managed-cloud-services/"}

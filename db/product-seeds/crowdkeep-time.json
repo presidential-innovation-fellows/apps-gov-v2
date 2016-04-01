@@ -1,0 +1,25 @@
+{
+  "slug": "crowdkeep-time",
+  "name": "Crowdkeep Time",
+  "url": "crowdkeep.com/time",
+  "logo_url": "crowdkeep.png",
+  "top_keywords": [
+    "timesheets",
+    "time sheets",
+    "time tracking",
+    "pay roll",
+    "invoicing"
+  ],
+  "short_description": "Crowdkeep Time tracking is a DCAA Compliant employee timesheet application for task orders, contracts, and more.",
+  "long_description": "Crowdkeep Time is a fully featured timesheet and employee time tracking platform. It fully integrates with payroll, accounting, invoicing, and many of your favorite apps. Crowdkeep Time tracking is DCAA compliant. Manage task orders, contracts, and subcontrators with our easy to use platform, available on the web, iOS, and Android.",
+  "twitter_handle": "crowdkeep",
+  "facebook_url": "https://www.facebook.com/crowdkeep/",
+  "linkedin_id": "crowdkeep",
+  "angellist_name": "crowdkeep",
+  "sales_poc": "apps.gov@crowdkeep.com",
+  "contracts":[
+    "micro",
+    "s70",
+    "sewp"
+  ]
+}

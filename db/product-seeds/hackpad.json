@@ -1,0 +1,19 @@
+{
+    "slug": "hackpad",
+    "name": "HackPad",
+    "url": "hackpad.com",
+    "logo_url": "hackpad.png",
+    "top_keywords": [
+        "productivity software",
+        "business productivity",
+        "document management",
+        "real time"
+    ],
+    "short_description": "Smart collaborative documents. Company wiki. Personal notes. Event planning.\nClassroom collaboration.",
+    "long_description": "Smart collaborative documents. Company wiki. Personal notes. Event planning.\nClassroom collaboration.",
+    "twitter_handle": "hackpad",
+    "linkedin_id": null,
+    "contracts":[
+        "sewp"
+    ],
+    "gov_tos":"https://hackpad.com/AMENDMENT-TO-HACKPAD-TERMS-OF-SERVICE-MwTzlQre2hE"}

@@ -1,0 +1,20 @@
+{
+    "slug": "virtustream",
+    "name": "Virtustream Federal Cloud",
+    "url": "virtustream.com",
+    "logo_url": "virtustream.png",
+    "top_keywords": [
+        "enterprise software",
+        "cloud software and services",
+        "cloud computing",
+        "enterprise it",
+        "enterprise class cloud"
+    ],
+    "short_description": "xStream, our secure, high-performance cloud software, is available as software, as an appliance, and as a managed service, enabling robust hybrid cloud deployments, tailored to the needs of enterprise users.",
+    "long_description": "xStream, our secure, high-performance cloud software, is available as software, as an appliance, and as a managed service, enabling robust hybrid cloud deployments, tailored to the needs of enterprise users. xStream uses innovative and patented Virtustream µVMTM technology, which supports multiple hypervisors, enables granular billing and chargeback, and is up to 30% more efficient than traditional virtualization. xStream works with existing hardware and virtualization software. <br/><br/> xStream enables enterprises to run private clouds, manage hybrid clouds and use managed services. xStream enables service providers to offer enterprise cloud services and governments to run secure public clouds – all backed by workload performance SLAs, consumption pricing and cloud efficiency.", "sales_poc":"kevin.bookman@virtustream.com",
+    "twitter_handle": "virtustream",
+    "linkedin_id": 472943,
+    "contracts":[
+        "sewp"
+    ],
+    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/virtustream-inc-federal-cloud-services-vfc/"}

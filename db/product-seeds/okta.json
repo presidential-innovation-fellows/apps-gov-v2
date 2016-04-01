@@ -1,0 +1,20 @@
+{
+   "slug": "okta",
+    "name": "Okta",
+    "url": "okta.com",
+    "logo_url": "okta.svg",
+    "top_keywords": [
+        "identity management",
+        "single sign on",
+        "saas",
+        "multi-factor authentication",
+        "universal directory"
+    ],
+    "short_description": "Okta is the foundation for secure connections between people and technology. Okta’s products manage identity and access for millions of people on millions of devices.",
+    "long_description": "Okta is the foundation for secure connections between people and technology. Okta’s products manage identity and access for millions of people on millions of devices.<br/> By harnessing the power of the cloud, Okta allows people to access applications on any device at any time, while still enforcing strong security policies. It integrates directly with an organization’s existing directories and identity systems, as well as 4,000+ applications.<br/> Okta offers products in two lines: for IT and developers. Okta’s IT products are geared toward IT and security leaders and are designed to simplify the way people connect to enterprise technology, while increasing efficiency and keeping IT environments secure. Okta’s IT products include Universal Directory, Single Sign-On, Provisioning, Adaptive Multi-factor Authentication and Mobility Management. Okta’s developer and platform products allow product teams to layer Okta’s powerful identity services into their applications and portals. Okta’s Platform makes it easy for customers to authentication, manage and secure their users. Okta’s Platform products include Universal Directory, Single Sign-On, Provisioning, Adaptive Multi-factor Authentication, Social Authentication, Inbound Federation, and AD and LDAP Integration.", "sales_poc":"chris.niggel@okta.com",
+    "twitter_handle": "okta",
+    "linkedin_id": 926041,
+    "contracts":[
+        "sewp"
+    ],
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/okta-idaas/"}
