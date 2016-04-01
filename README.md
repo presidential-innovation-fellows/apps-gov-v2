@@ -1,4 +1,5 @@
 # Apps-gov-v2
+[![Test Coverage](https://codeclimate.com/repos/56fedfb4c45607195d0008b8/badges/3e61dcdacc78bf33e91c/coverage.svg)](https://codeclimate.com/repos/56fedfb4c45607195d0008b8/coverage)
 
 ## Getting Started
 
