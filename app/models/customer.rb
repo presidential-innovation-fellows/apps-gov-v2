@@ -1,5 +1,5 @@
 class Customer < ActiveRecord::Base
-  validates :customer, :product, presence: true
+  validates :agency, :product, presence: true
 
   belongs_to :agency
   belongs_to :product

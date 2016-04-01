@@ -9,4 +9,7 @@ class Product < ActiveRecord::Base
 
   has_many :agencies, through: :customers
   has_many :customers
+
+  has_many :keywords, through: :product_keywords
+  has_many :product_keywords
 end
