@@ -16,6 +16,7 @@
     &[type="submit"] {
       border-radius: 0 $base-border-radius $base-border-radius 0;
       float: left;
+      margin: 0;
       vertical-align: top;
       width: 10em;
     }
@@ -60,6 +61,12 @@
   .search-products-nav {
     display: none;
   }
+
+  .usa-disclaimer {
+    background-color: $light-gray;
+    color: $dark-gray;
+  }
+
 
   .usa-hero {
     background-image: linear-gradient(rgba($black, 0.65), rgba($black, 0.5)), image-url("home/wh-hero.jpg");

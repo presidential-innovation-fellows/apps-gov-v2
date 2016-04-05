@@ -21,6 +21,11 @@ en:
       search: Search
       search_placeholder: Search by Product Name or Type
 
+  products:
+    index:
+      header: Products
+      subtitle: Discover products that will help your team be more productive.
+
   time:
     formats:
       default:

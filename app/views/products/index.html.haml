@@ -1,0 +1,10 @@
+.usa-grid
+  %header.page-header
+    %h1
+      = t(".header")
+    %p.subtitle
+      = t(".subtitle")
+
+  %section.products
+    %ul.products-list
+      = render partial: "product", collection: @products
