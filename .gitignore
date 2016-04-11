@@ -3,6 +3,7 @@
 *.swo
 *.swp
 cf-ssh.yml
+mainfest.yml
 /.bundle
 /.env
 /.foreman
