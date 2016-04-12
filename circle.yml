@@ -4,5 +4,3 @@ test:
 deployment:
   staging:
     branch: master
-    commands:
-      - bin/deploy staging
