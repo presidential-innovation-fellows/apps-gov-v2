@@ -316,7 +316,7 @@ DEPENDENCIES
   puma
   rack-canonical-host
   rack-timeout
-  rails (~> 4.2.0)
+  rails (~> 4.2.5)
   rails_12factor
   recipient_interceptor
   refills

@@ -2,8 +2,8 @@
 *.DS_Store
 *.swo
 *.swp
-cf-ssh.yml
-mainfest.yml
+/cf-ssh.yml
+/manifest.yml
 /.bundle
 /.env
 /.foreman
