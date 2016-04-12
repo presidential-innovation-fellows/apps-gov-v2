@@ -2,7 +2,7 @@
 [![Code Climate](https://codeclimate.com/repos/56fedfb4c45607195d0008b8/badges/3e61dcdacc78bf33e91c/gpa.svg)](https://codeclimate.com/repos/56fedfb4c45607195d0008b8/feed)
 [![Dependency Status](https://gemnasium.com/badges/github.com/presidential-innovation-fellows/apps-gov-v2.svg)](https://gemnasium.com/github.com/presidential-innovation-fellows/apps-gov-v2)
 [![security](https://hakiri.io/github/presidential-innovation-fellows/apps-gov-v2/master.svg)](https://hakiri.io/github/presidential-innovation-fellows/apps-gov-v2/master)
-[![Circle CI](https://circleci.com/gh/presidential-innovation-fellows/apps-gov-v2.svg?style=svg)](https://circleci.com/gh/presidential-innovation-fellows/apps-gov-v2)
+[![Build Status](https://travis-ci.org/presidential-innovation-fellows/apps-gov-v2.svg?branch=master)](https://travis-ci.org/presidential-innovation-fellows/apps-gov-v2)
 
 ## Getting Started
 
