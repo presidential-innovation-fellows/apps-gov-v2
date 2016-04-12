@@ -1,0 +1,16 @@
+language: ruby
+cache:
+  bundler: true
+sudo: false
+services:
+  - postgres
+before_install:
+  - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc' # skip installing docs for gems
+bundler_args: --without production development staging deploy
+before_script:
+  - RAILS_ENV=test bundle exec rake db:setup
+addons:
+  code_climate:
+    repo_token: 493531efac1eebe851d814aae2c5d6df645a5fe522ce2449eedae4d5f7fea9de
+notifications:
+  email: false
