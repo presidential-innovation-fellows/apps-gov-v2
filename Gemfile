@@ -5,6 +5,7 @@ ruby "2.2.4"
 gem "airbrake",'~> 4.3'
 gem "autoprefixer-rails"
 gem "bourbon", "~> 4.2.0"
+gem "cancancan", "~> 1.10"
 gem "coffee-rails", "~> 4.1.0"
 gem "delayed_job_active_record"
 gem "devise", "~> 3.5.4"

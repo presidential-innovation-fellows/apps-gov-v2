@@ -4,6 +4,7 @@ require File.expand_path("../../config/environment", __FILE__)
 
 require "rspec/rails"
 require "shoulda/matchers"
+require "cancan/matchers"
 
 ::Shoulda::Matchers.configure do |config|
   config.integrate do |with|
