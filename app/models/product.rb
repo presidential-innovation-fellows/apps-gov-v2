@@ -1,10 +1,13 @@
 class Product < ActiveRecord::Base
+  extend FriendlyId
+
   validates \
     :name,
     :short_description,
-    :slug,
     :url,
     presence: true
+
+  validates :slug, presence: true, uniqueness: true
 
   has_many :agencies, through: :customers
   has_many :customers
@@ -14,4 +17,6 @@ class Product < ActiveRecord::Base
 
   has_many :keywords, through: :product_keywords
   has_many :product_keywords
+
+  friendly_id :name, use: [:slugged, :finders]
 end

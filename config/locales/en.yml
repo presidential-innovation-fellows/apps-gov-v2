@@ -1,4 +1,11 @@
 en:
+  admin:
+    products:
+        create:
+          error_message: There was an error creating this product. Please try agian.
+          success_message: Product created!
+        new:
+          header: Create a Product
   date:
     formats:
       default:

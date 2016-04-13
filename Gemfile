@@ -11,6 +11,7 @@ gem "delayed_job_active_record"
 gem "devise", "~> 3.5.4"
 gem "email_validator"
 gem "flutie"
+gem 'friendly_id', '~> 5.1.0'
 gem "haml"
 gem "high_voltage"
 gem "i18n-tasks"
