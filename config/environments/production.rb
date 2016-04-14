@@ -1,4 +1,6 @@
 require Rails.root.join("config/smtp")
+require "cf-app-utils"
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -88,5 +90,20 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = { host: ENV.fetch("HOST") }
+
+  s3_credentials = CF::App::Credentials.find_by_service_name("apps-production-s3")
+
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_credentials: {
+      bucket: s3_credentials["bucket"],
+      access_key_id: s3_credentials["access_key_id"],
+      secret_access_key: s3_credentials["secret_access_key"],
+    },
+    s3_headers: { "Cache-Control" => "max-age=#{1.year.to_i}" },
+    s3_protocol: :https,
+    path: "uploads/:class/:attachment/:id_partition/:style/:basename-:fingerprint.:extension",
+    use_timestamp: false
+  }
 end
 Rack::Timeout.timeout = (ENV["RACK_TIMEOUT"] || 10).to_i

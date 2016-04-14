@@ -19,9 +19,10 @@ gem "jquery-rails"
 gem "neat", "~> 1.7.0"
 gem "newrelic_rpm", ">= 3.9.8"
 gem "normalize-rails", "~> 3.0.0"
+gem "paperclip", "~> 5.0.0.beta1"
 gem "pg"
-gem "rack-canonical-host"
 gem "puma"
+gem "rack-canonical-host"
 gem "rails", "~> 4.2.5"
 gem "recipient_interceptor"
 gem "refills"
@@ -59,6 +60,7 @@ group :test do
 end
 
 group :staging, :production do
+  gem "cf-app-utils"
   gem "rack-timeout"
   gem "rails_12factor"
 end

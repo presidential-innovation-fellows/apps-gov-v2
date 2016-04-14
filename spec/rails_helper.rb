@@ -5,6 +5,7 @@ require File.expand_path("../../config/environment", __FILE__)
 require "rspec/rails"
 require "shoulda/matchers"
 require "cancan/matchers"
+require "paperclip/matchers"
 
 ::Shoulda::Matchers.configure do |config|
   config.integrate do |with|
@@ -24,6 +25,7 @@ end
 RSpec.configure do |config|
   config.include Features, type: :feature
   config.include Devise::TestHelpers, type: :controller
+  config.include Paperclip::Shoulda::Matchers, type: :model
   config.include Warden::Test::Helpers, type: :feature
 
   config.infer_base_class_for_anonymous_controllers = false

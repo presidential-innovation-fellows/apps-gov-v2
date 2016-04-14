@@ -65,6 +65,11 @@ GEM
     capybara-webkit (1.8.0)
       capybara (>= 2.3.0, < 2.7.0)
       json
+    cf-app-utils (0.6)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     codeclimate-test-reporter (0.5.0)
       simplecov (>= 0.7.1, < 1.0.0)
     coderay (1.1.1)
@@ -149,6 +154,7 @@ GEM
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
     mime-types (2.99.1)
+    mimemagic (0.3.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
@@ -160,6 +166,12 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     normalize-rails (3.0.3)
     orm_adapter (0.5.0)
+    paperclip (5.0.0.beta1)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (~> 0.3.0)
     parser (2.3.0.6)
       ast (~> 2.2)
     pg (0.18.4)
@@ -300,6 +312,7 @@ DEPENDENCIES
   byebug
   cancancan (~> 1.10)
   capybara-webkit (>= 1.2.0)
+  cf-app-utils
   codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
   database_cleaner
@@ -319,6 +332,7 @@ DEPENDENCIES
   neat (~> 1.7.0)
   newrelic_rpm (>= 3.9.8)
   normalize-rails (~> 3.0.0)
+  paperclip (~> 5.0.0.beta1)
   pg
   pry-rails
   puma

@@ -7,6 +7,7 @@ feature "Product Creation" do
 
     fill_in "Name", with: "Product Name"
     fill_in "Url", with: "https://pif.gov"
+    attach_file "Logo", image_file
     fill_in "Short description", with: short_description
     fill_in "Long description", with: long_description
 
@@ -17,6 +18,10 @@ feature "Product Creation" do
 
   def admin
     @admin ||= create(:user, admin: true)
+  end
+
+  def image_file
+    Rails.root.join("spec", "fixtures", "sample-logo.png")
   end
 
   def long_description

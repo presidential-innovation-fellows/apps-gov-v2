@@ -22,10 +22,9 @@ module Admin
       params.require(:product).permit(
         :fedramp_inprocess_agency,
         :founded_year,
-        :icon_url,
         :linkedin_id,
         :location,
-        :logo_url,
+        :logo,
         :long_description,
         :name,
         :number_of_employees,

@@ -41,4 +41,10 @@ Rails.application.configure do
   config.action_view.raise_on_missing_translations = true
 
   config.action_mailer.default_url_options = { host: "localhost", port: 5000 }
+
+  config.paperclip_defaults = {
+    storage: :filesystem,
+    path: ":rails_root/public/system/:class/:attachment/:id_partition/:style/:filename",
+    url: "/system/:class/:attachment/:id_partition/:style/:filename",
+  }
 end

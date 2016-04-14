@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160413145419) do
+ActiveRecord::Schema.define(version: 20160414211655) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -75,21 +75,23 @@ ActiveRecord::Schema.define(version: 20160413145419) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.text   "long_description",         null: false
-    t.string "fedramp_inprocess_agency"
-    t.string "founded_year"
-    t.string "icon_url"
-    t.string "linkedin_id"
-    t.string "location"
-    t.string "logo_url"
-    t.string "name",                     null: false
-    t.string "number_of_employees"
-    t.string "slug",                     null: false
-    t.string "sales_poc"
-    t.string "short_description",        null: false
-    t.string "status"
-    t.string "url",                      null: false
-    t.string "twitter_handle"
+    t.text     "long_description",         null: false
+    t.string   "fedramp_inprocess_agency"
+    t.string   "founded_year"
+    t.string   "linkedin_id"
+    t.string   "location"
+    t.string   "name",                     null: false
+    t.string   "number_of_employees"
+    t.string   "slug",                     null: false
+    t.string   "sales_poc"
+    t.string   "short_description",        null: false
+    t.string   "status"
+    t.string   "url",                      null: false
+    t.string   "twitter_handle"
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.datetime "logo_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

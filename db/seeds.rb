@@ -6,7 +6,11 @@ Dir["db/product-seeds/*.json"].each do |product_json_file|
 
   product = Product.new
   product.attributes = product_hash.reject { |k, _v| !product.attributes.keys.member?(k.to_s) }
-  puts product_hash["slug"]
+
+  if product_hash["logo_url"]
+    product.logo = File.new("#{Rails.root}/db/product-seeds/logos/#{product_hash['logo_url']}")
+  end
+
   product.save!
 
   if product_hash["contracts"]
