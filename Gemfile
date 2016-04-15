@@ -60,6 +60,7 @@ group :test do
 end
 
 group :staging, :production do
+  gem "aws-sdk"
   gem "cf-app-utils"
   gem "rack-timeout"
   gem "rails_12factor"

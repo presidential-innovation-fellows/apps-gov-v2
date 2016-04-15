@@ -102,6 +102,7 @@ Rails.application.configure do
     },
     s3_headers: { "Cache-Control" => "max-age=#{1.year.to_i}" },
     s3_protocol: :https,
+    s3_region: "us-east-1",
     path: "uploads/:class/:attachment/:id_partition/:style/:basename-:fingerprint.:extension",
     use_timestamp: false
   }
