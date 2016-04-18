@@ -16,6 +16,7 @@ gem "haml"
 gem "high_voltage"
 gem "i18n-tasks"
 gem "jquery-rails"
+gem "mandrill-api"
 gem "neat", "~> 1.7.0"
 gem "newrelic_rpm", ">= 3.9.8"
 gem "normalize-rails", "~> 3.0.0"
@@ -56,6 +57,7 @@ group :test do
   gem "shoulda-matchers", require: false
   gem "simplecov", require: false
   gem "timecop"
+  gem "vcr"
   gem "webmock"
 end
 

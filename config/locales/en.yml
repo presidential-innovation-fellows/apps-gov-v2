@@ -44,3 +44,7 @@ en:
 
   titles:
     application: Apps.gov
+
+  welcome_mailer:
+    send_email:
+      subject: Welcome to Apps.gov
