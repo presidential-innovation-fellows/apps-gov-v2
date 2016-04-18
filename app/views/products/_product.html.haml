@@ -1,4 +1,12 @@
 = content_tag_for :li, product do
   = link_to product_path(product) do
-    %h2
-      = product.name
+    .logo
+      - if product.logo.present?
+        = image_tag(product.logo.url)
+      - else
+        = image_tag("logos/apps-logo-alt.svg")
+    .product-content
+      %h3
+        = product.name
+      %p
+        = truncate(product.short_description, length: 100)
