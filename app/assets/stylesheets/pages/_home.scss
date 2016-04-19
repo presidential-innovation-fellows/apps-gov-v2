@@ -1,3 +1,17 @@
+.aa-suggestion {
+  &:first-child {
+    .hit-auto-complete {
+      border-radius: 0.2em 0.2em 0 0;
+    }
+  }
+
+  &:last-child {
+    .hit-auto-complete {
+      border-radius: 0 0 0.2em 0.2em;
+    }
+  }
+}
+
 .hero-search {
   background: rgba($black, 0.5);
   padding: 2em 0;
@@ -28,16 +42,67 @@
     position: absolute;
   }
 
+  .aa-dropdown-menu {
+    background-color: $white;
+    border-radius: 0.2em;
+    box-shadow: 0 3px 4px rgba($black, 0.2);
+    margin-top: 0.5em;
+    width: 100%;
+  }
+
+  .algolia-autocomplete {
+    width: 100%;
+  }
+
   .input {
     float: left;
     vertical-align: top;
     width: 30em;
 
     input {
+      border-radius: 0.2em 0 0 0.2em;
       margin: 0;
       max-width: none;
       width: 100%;
     }
+  }
+}
+
+.hit-auto-complete {
+  @include clearfix;
+  border-bottom: 1px solid $light-gray;
+  display: block;
+  padding: 0.25em 0.7em;
+  width: 100%;
+
+  &:hover {
+    background-color: lighten($color-primary, 40);
+  }
+
+  a {
+    color: $color-gray-dark;
+    display: block;
+  }
+
+  img {
+    border-radius: 0.2em;
+  }
+
+  h4 {
+    display: inline-block;
+    font-weight: normal;
+
+    em {
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
+
+  .logo {
+    float: left;
+    height: 45px;
+    margin-right: 0.5em;
+    max-width: 45px;
   }
 }
 

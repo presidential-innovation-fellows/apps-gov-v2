@@ -1,0 +1,29 @@
+<% if ENV["ALGOLIA_APP_ID"] %>
+  <script type="text/javascript">
+    var client = algoliasearch("<%= ENV["ALGOLIA_APP_ID"] %>", "<%= ENV["ALGOLIA_SEARCH_API_KEY"] %>"),
+        template = Hogan.compile(
+          "<div class='hit-auto-complete' id='result-{{{slug}}}'>" +
+            "<a href='/products/{{{slug}}}'>" +
+              "<div class='logo'>" +
+                "<img src='{{{logo_url}}}'>" +
+              "</div>" +
+              "<h4 class='name'>" +
+                "{{{_highlightResult.name.value}}}" +
+              "</h4>" +
+            "</a>" +
+          "</div>"
+        );
+
+    var ac = autocomplete("#products_product_name", { hint: true }, {
+      source: autocomplete.sources.hits(client.initIndex("<%= Product.index_name %>"), { hitsPerPage: 4 }),
+      displayKey: "name",
+      templates: {
+        suggestion: function(hit) {
+          return template.render(hit);
+        }
+      }
+    }).on("autocomplete:selected", function(event, suggestion) {
+      console.log("onselected", suggestion);
+    });
+  </script>
+<% end %>

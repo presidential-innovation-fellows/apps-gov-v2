@@ -6,7 +6,8 @@ services:
   - postgres
 before_install:
   - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc' # skip installing docs for gems
-bundler_args: --without production development staging deploy
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
 before_script:
   - RAILS_ENV=test bundle exec rake db:setup
 addons:
@@ -14,3 +15,4 @@ addons:
     repo_token: 493531efac1eebe851d814aae2c5d6df645a5fe522ce2449eedae4d5f7fea9de
 notifications:
   email: false
+script: bundle exec rspec

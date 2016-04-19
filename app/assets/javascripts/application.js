@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require algolia/v3/algoliasearch.min
+//= require autocomplete/autocomplete.min
 //= require us-web-design-standards/uswds.min
+//= require hogan
 //= require_tree .
