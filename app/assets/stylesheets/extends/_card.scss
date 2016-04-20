@@ -1,0 +1,6 @@
+%card {
+  background-color: $white;
+  box-shadow: 0 -1px 0 lighten($light-gray, 25), 0 0 2px rgba($black, 0.05), 0 2px 4px rgba($black, 0.09);
+  box-sizing: border-box;
+  padding: 1em;
+}

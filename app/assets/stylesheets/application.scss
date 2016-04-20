@@ -5,9 +5,12 @@
 @import "base/grid-settings";
 @import "neat";
 @import "base/base";
+@import "font-awesome/css/font-awesome.min";
 @import "refills/flashes";
 @import "us-web-design-standards/uswds.min";
 
+@import "extends/*";
+@import "layouts/*";
 @import "modules/*";
 @import "pages/*";
 @import "products/*";

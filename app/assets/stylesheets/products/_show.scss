@@ -1,0 +1,82 @@
+.product-sidebar {
+  @include span-columns(3);
+
+  .usa-button {
+    border-radius: 0.25em;
+    margin-top: 1em;
+    width: 100%;
+
+    i {
+      font-size: 0.9em;
+      margin-left: 0.2em;
+    }
+  }
+}
+
+.products-show {
+
+  .product-content {
+    @include span-columns(9);
+    @include omega;
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  .product-header {
+    margin-top: 1em;
+
+    a {
+      color: $color-gray-dark;
+
+      &:hover {
+        color: darken($color-primary, 10);
+        text-decoration: none;
+      }
+    }
+
+    h1 {
+      margin-bottom: 0.25em;
+    }
+
+    i {
+      font-size: 0.4em;
+    }
+  }
+
+  .product-logo {
+    @extend %card;
+    border-radius: 0.75em;
+    padding: 1.75em;
+  }
+
+  .product-nav {
+    font-size: 0.95em;
+    margin-bottom: 2em;
+
+    a {
+      border-bottom: 1px solid $medium-gray;
+      color: darken($medium-gray, 10);
+
+      &:hover {
+        border-bottom: 1px solid $color-primary;
+        color: $color-primary;
+        text-decoration: none;
+      }
+    }
+
+    i {
+      color: $medium-gray;
+      margin: 0 0.5em;
+    }
+  }
+
+  .usa-button {
+
+    &.disabled {
+      background-color: $medium-gray;
+      cursor: default;
+    }
+  }
+}

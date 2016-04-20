@@ -1,0 +1,10 @@
+%figure.product-logo
+  = image_tag(product.logo_url)
+- if product.sales_poc.present?
+  = link_to "mailto:#{product.sales_poc}", class: "usa-button" do
+    = t(".contact")
+    %i.fa.fa-envelope-o
+- else
+  .usa-button.disabled
+    = t(".contact")
+    %i.fa.fa-envelope-o

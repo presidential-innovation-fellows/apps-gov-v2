@@ -1,0 +1,11 @@
+.usa-grid
+  .product-nav
+    = link_to t(".products"), products_path
+    %i.fa.fa-caret-right
+    = @product.name
+
+  %aside.product-sidebar
+    = render "product_sidebar", product: @product
+  %section.product-content
+    = render "product_content", product: @product
+

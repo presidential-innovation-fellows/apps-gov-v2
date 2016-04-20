@@ -1,0 +1,8 @@
+%header.product-header
+  %h1
+    = link_to "//#{product.url}", target: "_blank" do
+      = product.name
+      %i.fa.fa-external-link
+.product-info
+  = product.long_description
+

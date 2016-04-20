@@ -32,6 +32,10 @@ en:
     index:
       header: Products
       subtitle: Discover products that will help your team be more productive.
+    product_sidebar:
+      contact: Contact
+    show:
+      products: Products
 
   time:
     formats:
