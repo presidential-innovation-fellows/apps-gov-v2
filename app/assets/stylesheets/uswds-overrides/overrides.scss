@@ -7,6 +7,19 @@ figure {
   margin: 0;
 }
 
+form {
+  max-width: none;
+}
+
+input {
+
+  &[type="email"],
+  &[type="password"],
+  &[type="text"] {
+    max-width: none;
+  }
+}
+
 ul {
   display: block;
 

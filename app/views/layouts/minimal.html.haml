@@ -1,0 +1,17 @@
+!!!
+%html.no-js
+  %head
+    = render "modules/eagle"
+    %meta{ "charset" => "utf-8" }
+    %meta{ "name" => "ROBOTS", :content => "NOODP" }
+    %meta{ "name" => "viewport", :content => "initial-scale=1" }
+    %title
+      = title
+    = stylesheet_link_tag :application, media: "all"
+    = favicon_link_tag "favicons/favicon.ico"
+    = csrf_meta_tags
+  %body{ class: "#{body_class} #{static_page_body_class} minimal-layout".strip }
+    = render "flashes"
+    .page-content
+      = yield
+    = render "javascript"

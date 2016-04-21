@@ -5,5 +5,12 @@ Rails.application.routes.draw do
     resources :products, only: [:new, :create]
   end
 
+  namespace :registration do
+    get \
+      "/government-employees",
+      to: "government_employees#new",
+      as: :government_employee
+  end
+
   resources :products, only: [:index, :show]
 end

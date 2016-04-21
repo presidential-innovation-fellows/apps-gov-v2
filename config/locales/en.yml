@@ -13,6 +13,11 @@ en:
       with_weekday:
         "%a %m/%d/%y"
 
+  devise:
+    registrations:
+      new:
+        heading: Sign up to start using the Apps.gov marketplace!
+
   modules:
     disclaimer:
       alt_text:
@@ -36,6 +41,11 @@ en:
       contact: Contact
     show:
       products: Products
+
+  registration:
+    government_employees:
+      new:
+        heading: Tell us a little about yourself
 
   time:
     formats:

@@ -1,0 +1,123 @@
+.registrations-new {
+  background-color: darken($color-primary, 5);
+
+  .devise-links {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .form-actions {
+
+    input {
+      margin: 0.5em 0 1em;
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  .input {
+
+    &:first-child {
+      label {
+        margin-top: 0;
+      }
+    }
+
+    label,
+    .hint {
+      font-size: 0.9em;
+      font-weight: normal;
+      margin-top: 0.5em;
+    }
+
+    input {
+      background-color: $white;
+      border: 1px solid $light-gray;
+      border-radius: 0.25em;
+      padding-left: 3em;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .usa-grid {
+    position: relative;
+
+    .sign-up-form {
+      box-shadow: 0 4px 5px rgba($black, 0.3);
+    }
+  }
+
+  .user_first_name,
+  .user_last_name,
+  .user_email,
+  .user_password {
+    position: relative;
+
+    &::before {
+      color: darken($light-gray, 5);
+      font-family: FontAwesome;
+      font-size: 1.2em;
+      height: 1em;
+      left: 0.75em;
+      position: absolute;
+      text-align: center;
+      top: 1.75em;
+      vertical-align: center;
+      width: 1em;
+    }
+
+    &.active {
+      &::before {
+        color: $color-primary;
+      }
+
+      input {
+        border: 1px solid $color-primary;
+      }
+    }
+  }
+
+  .user_email {
+    &::before {
+      content: "\f0e0";
+    }
+  }
+
+  .user_first_name,
+  .user_last_name {
+
+    &::before {
+      content: "\f007";
+    }
+  }
+
+  .user_password {
+    &::before {
+      content: "\f023";
+    }
+  }
+
+  .sign-up-form {
+    @extend %card;
+    border-radius: 0.3em;
+    left: 30em;
+    margin-left: -15em;
+    position: absolute;
+    top: 6em;
+    width: 30em;
+
+    .logo {
+      margin: 1em auto 0;
+      max-width: 10em;
+    }
+
+    h1 {
+      font-size: 1.25em;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+}
