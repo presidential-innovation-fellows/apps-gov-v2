@@ -6,5 +6,6 @@ class User < ActiveRecord::Base
 
   validates :first_name, :last_name, presence: true
 
+  has_one :contract_officer
   has_one :govt_employee
 end

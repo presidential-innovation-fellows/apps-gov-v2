@@ -1,4 +1,4 @@
-class GovtEmployee < ActiveRecord::Base
+class ContractOfficer < ActiveRecord::Base
   belongs_to :agency
   belongs_to :user
 
