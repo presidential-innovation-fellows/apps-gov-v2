@@ -11,13 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160415175058) do
+ActiveRecord::Schema.define(version: 20160421161158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "agencies", force: :cascade do |t|
     t.string "code", null: false
+    t.string "name", null: false
+  end
+
+  create_table "categories", force: :cascade do |t|
     t.string "name", null: false
   end
 
@@ -60,6 +64,14 @@ ActiveRecord::Schema.define(version: 20160415175058) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "product_categories", force: :cascade do |t|
+    t.integer "category_id", null: false
+    t.integer "product_id",  null: false
+  end
+
+  add_index "product_categories", ["category_id"], name: "index_product_categories_on_category_id", using: :btree
+  add_index "product_categories", ["product_id"], name: "index_product_categories_on_product_id", using: :btree
 
   create_table "product_contracts", force: :cascade do |t|
     t.integer "contract_id", null: false

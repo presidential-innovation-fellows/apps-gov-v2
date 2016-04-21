@@ -1,5 +1,6 @@
 # Apps-gov-v2
 [![Code Climate](https://codeclimate.com/repos/56fedfb4c45607195d0008b8/badges/3e61dcdacc78bf33e91c/gpa.svg)](https://codeclimate.com/repos/56fedfb4c45607195d0008b8/feed)
+[![Test Coverage](https://codeclimate.com/repos/56fedfb4c45607195d0008b8/badges/3e61dcdacc78bf33e91c/coverage.svg)](https://codeclimate.com/repos/56fedfb4c45607195d0008b8/coverage)
 [![Dependency Status](https://gemnasium.com/badges/github.com/presidential-innovation-fellows/apps-gov-v2.svg)](https://gemnasium.com/github.com/presidential-innovation-fellows/apps-gov-v2)
 [![security](https://hakiri.io/github/presidential-innovation-fellows/apps-gov-v2/master.svg)](https://hakiri.io/github/presidential-innovation-fellows/apps-gov-v2/master)
 [![Build Status](https://travis-ci.org/presidential-innovation-fellows/apps-gov-v2.svg?branch=master)](https://travis-ci.org/presidential-innovation-fellows/apps-gov-v2)

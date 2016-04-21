@@ -3,6 +3,7 @@ require "rails_helper"
 describe Product do
   context "presence" do
     it { should have_many(:agencies).through(:customers) }
+    it { should have_many(:categories).through(:product_categories) }
     it { should have_many(:contracts).through(:product_contracts) }
 
     it do
