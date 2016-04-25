@@ -1,2 +1,0 @@
-class GovtEmployee < User
-end

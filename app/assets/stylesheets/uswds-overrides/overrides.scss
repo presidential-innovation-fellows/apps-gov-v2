@@ -20,6 +20,10 @@ input {
   }
 }
 
+select {
+  max-width: none;
+}
+
 ul {
   display: block;
 

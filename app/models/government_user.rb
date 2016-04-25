@@ -1,0 +1,2 @@
+class GovernmentUser < User
+end

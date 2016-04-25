@@ -18,6 +18,13 @@ en:
       new:
         heading: Sign up to start using the Apps.gov marketplace!
 
+  government_users:
+    failures:
+      no_gov_email: You must have a .gov or .mil email address to sign up.
+    registrations:
+      new:
+        heading: Sign up to start using the Apps.gov marketplace!
+
   modules:
     disclaimer:
       alt_text:

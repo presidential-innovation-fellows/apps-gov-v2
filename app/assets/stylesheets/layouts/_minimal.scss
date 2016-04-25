@@ -1,5 +1,13 @@
-.registrations-new {
+.minimal-layout {
   background-color: darken($color-primary, 5);
+
+  .col {
+    @include span-columns(6);
+
+    form {
+      margin-top: 3em;
+    }
+  }
 
   .devise-links {
     font-size: 0.9em;
@@ -9,9 +17,7 @@
   .form-actions {
 
     input {
-      margin: 0.5em 0 1em;
-      max-width: none;
-      width: 100%;
+      margin: 1em 0;
     }
   }
 
@@ -42,6 +48,20 @@
     }
   }
 
+  .names {
+    @include clearfix;
+
+    label {
+      margin-top: 0;
+    }
+
+    .input {
+      @include span-columns(6);
+      display: block;
+      vertical-align: top;
+    }
+  }
+
   .usa-grid {
     position: relative;
 
@@ -50,6 +70,10 @@
     }
   }
 
+  .government_user_first_name,
+  .government_user_last_name,
+  .government_user_email,
+  .government_user_password,
   .user_first_name,
   .user_last_name,
   .user_email,
@@ -80,12 +104,15 @@
     }
   }
 
+  .government_user_email,
   .user_email {
     &::before {
       content: "\f0e0";
     }
   }
 
+  .government_user_first_name,
+  .government_user_last_name,
   .user_first_name,
   .user_last_name {
 
@@ -94,6 +121,7 @@
     }
   }
 
+  .government_user_password,
   .user_password {
     &::before {
       content: "\f023";
@@ -103,21 +131,21 @@
   .sign-up-form {
     @extend %card;
     border-radius: 0.3em;
-    left: 30em;
-    margin-left: -15em;
+    left: 50%;
+    margin-left: -30em;
+    max-width: none;
     position: absolute;
-    top: 6em;
-    width: 30em;
+    top: 3em;
+    width: 60em;
 
     .logo {
-      margin: 1em auto 0;
+      margin-top: 1em;
       max-width: 10em;
     }
 
     h1 {
       font-size: 1.25em;
       font-weight: normal;
-      text-align: center;
     }
   }
 }
