@@ -1,0 +1,23 @@
+@include keyframes(scaleIn) {
+  from {
+    @include transform(scale(0));
+    opacity: 0;
+  }
+
+  to {
+    @include transform(scale(1));
+    opacity: 1;
+  }
+}
+
+@include keyframes(scaleOut) {
+  from {
+    @include transform(scale(1));
+    opacity: 1;
+  }
+
+  to {
+    @include transform(scale(0));
+    opacity: 0;
+  }
+}

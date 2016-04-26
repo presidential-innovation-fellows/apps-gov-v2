@@ -1,0 +1,11 @@
+.modal#government-user-signup
+  .slide-1-heading
+    %h1
+      = t(".heading")
+  = render "government_users/registrations/form",
+    resource: :government_user,
+    resource_name: "government_user"
+  .success-message
+  .close.modal-close
+  .loading
+    = image_tag("loading-ring.svg")

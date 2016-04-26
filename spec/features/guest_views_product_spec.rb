@@ -1,21 +1,22 @@
 require "rails_helper"
 
 feature "Guest views a Product" do
-  context "that has no contact information" do
-    scenario "and sees a disabled Contact button" do
-      visit product_path(product)
+  scenario "and creates an account", js: true do
+    agency = create(:agency)
 
-      expect(page).to have_css(".usa-button.disabled")
-    end
-  end
+    visit product_path(product)
 
-  context "that has contact information" do
-    scenario "and sees a Contact button" do
-      visit product_path(product_with_sales_poc)
+    click_on t("products.product_sidebar.get_product")
 
-      expect(page).to have_css(".usa-button")
-      expect(page).to_not have_css(".disabled")
-    end
+    fill_in "First name", with: "John"
+    fill_in "Last name", with: "Doe"
+    fill_in "Email", with: "email@email.gov"
+    fill_in "Password", with: "12345sixsevenEight", match: :prefer_exact
+    select agency.name, from: "Agency"
+
+    click_on "Sign up"
+
+    expect(page).to have_text "You’re all set!"
   end
 
   def product

@@ -1,3 +1,21 @@
 .default-layout {
   background-color: $base-background-color;
 }
+
+.overlay {
+  @include transition(all 0.3s ease);
+  background-color: rgba(lighten($color-primary, 60), 0.98);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  z-index: 100;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -1,4 +1,5 @@
-class GovernmentUsers::RegistrationsController < Devise::RegistrationsController
+class GovernmentUsers::RegistrationsController < RegistrationsController
+  respond_to :html, :json
   layout "minimal"
 
   def create
@@ -23,13 +24,13 @@ class GovernmentUsers::RegistrationsController < Devise::RegistrationsController
         :current_password)
   end
 
-  def after_sign_up_path_for(_government_user)
+  def after_sign_up_path_for(_resource)
     root_path
   end
 
   def sign_up_params
     params.require(:government_user).
-      permit(:agency, :first_name, :last_name, :email, :password)
+      permit(:agency_id, :first_name, :last_name, :email, :password)
   end
 
   def user_has_gov_email?(email)

@@ -31,6 +31,8 @@ en:
         US flag signifying that this is a United States Federal Government
         website
       learn_more: Learn More
+    navigation:
+      sign_out: Sign Out
 
   pages:
     home:
@@ -41,11 +43,13 @@ en:
       search_placeholder: Search by Product Name or Type
 
   products:
+    government_user_modal:
+      heading: Sign up to start procuring the best software out there.
     index:
       header: Products
       subtitle: Discover products that will help your team be more productive.
     product_sidebar:
-      contact: Contact
+      get_product: Get this product
     show:
       products: Products
 

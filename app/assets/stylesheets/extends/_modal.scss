@@ -1,0 +1,52 @@
+%modal {
+  background-color: $white;
+  border: 1px solid $light-gray;
+  border-radius: 1em;
+  left: 50%;
+  margin-left: -15em;
+  opacity: 0;
+  padding: 2em;
+  position: fixed;
+  top: 4em;
+  width: 30em;
+  visibility: hidden;
+  z-index: 1000;
+
+  &.active {
+    @include animation(scaleIn 0.2s ease);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .close {
+    cursor: pointer;
+    height: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2em;
+
+    &::before {
+      content: "\f00d";
+      font-family: FontAwesome;
+      line-height: 2em;
+      padding-left: 0.75em;
+      vertical-align: center;
+      text-align: right;
+    }
+  }
+
+  .input {
+
+    input,
+    select {
+      background-color: $white;
+      border: 1px solid $medium-gray;
+      border-radius: 0.25em;
+    }
+  }
+
+  .modal-actions {
+    text-align: center;
+  }
+}

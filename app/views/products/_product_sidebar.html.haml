@@ -1,10 +1,8 @@
 %figure.product-logo
   = image_tag(product.logo_url)
-- if product.sales_poc.present?
-  = link_to "mailto:#{product.sales_poc}", class: "usa-button" do
-    = t(".contact")
-    %i.fa.fa-envelope-o
-- else
-  .usa-button.disabled
-    = t(".contact")
-    %i.fa.fa-envelope-o
+
+- if no_users_signed_in?
+  = link_to t(".get_product"),
+    new_government_user_registration_path,
+    class: "usa-button modal-trigger",
+    data: {modal_id: "government-user-signup"}

@@ -1,0 +1,41 @@
+@include keyframes(slideOutLeft) {
+  0% {
+    @include transform(translateX(0));
+  }
+
+  60% {
+    @include transform(translateX(10%));
+  }
+
+  99% {
+    @include transform(translateX(-150%));
+  }
+
+  100% {
+    @include transform(translateX(-150%));
+  }
+}
+
+@include keyframes(slideInLeft) {
+  0% {
+    @include transform(translateX(150%));
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  1% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  40% {
+    @include transform(translateX(-10%));
+  }
+
+  100% {
+    @include transform(translateX(0%));
+    opacity: 1;
+    visibility: visible;
+  }
+}
+

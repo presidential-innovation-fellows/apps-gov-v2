@@ -5,6 +5,11 @@
       %h1.app-logo
         = link_to t("titles.application"), root_path
       %ul
+        %li
+          - if government_user_signed_in?
+            = link_to t(".sign_out"),
+              destroy_government_user_session_path,
+              method: :delete
         %li.search-products-nav
           %form.usa-search{ action: "/products" }
             %div{ role: "search" }
@@ -12,3 +17,4 @@
               %input#search-field{ name: "q", placeholder: "Click or press / to ...", type: "search" }
                 %button{ type: "submit" }
                   %span.usa-search-submit-text Search
+
