@@ -17,12 +17,16 @@ appsGov.modal = {
 
       $(modal).addClass("active");
       appsGov.modal.openOverlay();
-    })
+    });
   },
 
   closeModal: function() {
     $(".modal").removeClass("active");
     appsGov.modal.closeOverlay();
+  },
+
+  closeOverlay: function() {
+    $(".overlay").removeClass("active");
   },
 
   openOverlay: function() {

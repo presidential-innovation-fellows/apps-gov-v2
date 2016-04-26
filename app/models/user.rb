@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
   validates :first_name, :last_name, presence: true
 
   belongs_to :agency
+  has_many :product_requests
 end

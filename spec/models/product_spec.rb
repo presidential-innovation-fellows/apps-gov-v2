@@ -5,6 +5,7 @@ describe Product do
     it { should have_many(:agencies).through(:customers) }
     it { should have_many(:categories).through(:product_categories) }
     it { should have_many(:contracts).through(:product_contracts) }
+    it { should have_many :product_requests }
 
     it do
       should validate_attachment_content_type(:logo).

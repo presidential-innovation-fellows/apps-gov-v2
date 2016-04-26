@@ -5,7 +5,9 @@
     = @product.name
 
   %aside.product-sidebar
-    = render "product_sidebar", product: @product
+    = render "product_sidebar",
+      product: @product,
+      product_request: @product_request
   %section.product-content
     = render "product_content", product: @product
 

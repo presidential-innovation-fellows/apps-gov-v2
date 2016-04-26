@@ -42,6 +42,11 @@ en:
       search: Search
       search_placeholder: Search by Product Name or Type
 
+  product_requests:
+    create:
+      failure: An error occured. Please try again.
+      success: Product Requested!
+
   products:
     government_user_modal:
       heading: Sign up to start procuring the best software out there.

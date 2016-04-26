@@ -3,7 +3,7 @@ var appsGov = appsGov || {};
 appsGov.productShow = {
 
   bindGovernmentUserModalSubmit: function() {
-    $("#government-user-signup").submit( function(e) {
+    $("#government-user-signup .government_user").submit( function(e) {
       e.preventDefault();
 
       appsGov.productShow.showLoadingIcon();
@@ -33,6 +33,7 @@ appsGov.productShow = {
   },
 
   insertSuccessMessage: function() {
+    var form = $(".new-product-form").html();
     $("#government-user-signup .success-message").append(
       "<div class='slide-2'>" +
         "<h1>You’re all set!</h1>" +
@@ -41,10 +42,11 @@ appsGov.productShow = {
           "incididunt sint eu." +
         "</p>" +
         "<div class='modal-actions'>"+
-          "<a class='usa-button' href='#'>Get this Product</a>" +
+          form +
         "</div>" +
       "</div>"
     );
+    $(".modal-actions .modal-trigger").unbind().removeClass("modal-trigger");
   },
 
   setModalHeight: function() {

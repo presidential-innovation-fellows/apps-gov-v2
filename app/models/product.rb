@@ -14,6 +14,8 @@ class Product < ActiveRecord::Base
   has_many :keywords, through: :product_keywords
   has_many :product_keywords
 
+  has_many :product_requests
+
   friendly_id :name, use: [:slugged, :finders]
 
   validates \
