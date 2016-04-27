@@ -18,6 +18,17 @@
     visibility: visible;
   }
 
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  label {
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 0.75em 0 0.25em;
+  }
+
   .close {
     cursor: pointer;
     height: 2em;
@@ -43,6 +54,14 @@
       background-color: $white;
       border: 1px solid $medium-gray;
       border-radius: 0.25em;
+    }
+  }
+
+  .form-actions {
+
+    input {
+      margin-bottom: 0;
+      width: 100%;
     }
   }
 

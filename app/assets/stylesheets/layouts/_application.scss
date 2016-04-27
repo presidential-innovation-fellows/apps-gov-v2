@@ -1,6 +1,10 @@
 .default-layout {
   background-color: $base-background-color;
 
+  .modal {
+    @extend %modal;
+  }
+
   .page-content {
     padding-top: 2em;
   }

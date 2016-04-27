@@ -16,13 +16,7 @@
 .products-show {
 
   .modal {
-    @extend %modal;
     overflow: hidden;
-
-    h1 {
-      font-size: 1.5em;
-      text-align: center;
-    }
 
     form {
       @include transition(all 02s ease);
@@ -31,20 +25,6 @@
         @include animation(slideOutLeft 0.4s ease);
         @include animation-fill-mode(forwards);
         @include animation-delay(0.1s);
-      }
-    }
-
-    label {
-      font-size: 0.9em;
-      font-weight: normal;
-      margin: 0.75em 0 0.25em;
-    }
-
-    .form-actions {
-
-      input {
-        margin-bottom: 0;
-        width: 100%;
       }
     }
 
