@@ -108,19 +108,8 @@
 
 .pages-home {
 
-  .app-header {
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  .app-logo {
-
-    a {
-      background: image-url("logos/apps-logo-alt-light.svg") no-repeat;
-    }
+  .page-content {
+    padding-top: 0;
   }
 
   .search-products-nav {

@@ -1,18 +1,22 @@
 .app-logo {
+  display: inline-block;
   float: left;
   margin: 0;
 
   a {
     background: image-url("logos/apps-logo-alt.svg") no-repeat;
-    display: inline-block;
+    display: block;
     height: 38px;
+    margin: 0;
+    padding: 0;
     text-indent: -999em;
     width: 130px;
   }
 }
 
 .app-nav {
-  padding: 1em 0;
+  background-color: $white;
+  padding: 0.9em 0;
 
   li {
     margin: 0;
@@ -21,5 +25,30 @@
   ul {
     float: right;
     margin: 0;
+  }
+}
+
+.app-auth-links {
+
+  a {
+    @include outline-button(darken($light-gray,5));
+    border-radius: 0.25em;
+    color: darken($medium-gray, 30);
+    display: inline-block;
+    font-size: 0.9em;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $white;
+    }
+  }
+
+  .primary {
+
+    a {
+      @include button();
+      margin-top: 0;
+    }
   }
 }

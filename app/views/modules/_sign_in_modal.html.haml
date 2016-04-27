@@ -1,0 +1,9 @@
+.modal#sign-in-modal
+  .slide-1-heading
+    %h1
+      = t("devise.sessions.new.heading")
+  = render "devise/sessions/form", resource: :user, resource_name: "user"
+  .success-message
+  .close.modal-close
+  .loading
+    = image_tag("loading-ring.svg")

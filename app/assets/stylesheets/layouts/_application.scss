@@ -1,5 +1,9 @@
 .default-layout {
   background-color: $base-background-color;
+
+  .page-content {
+    padding-top: 2em;
+  }
 }
 
 .overlay {

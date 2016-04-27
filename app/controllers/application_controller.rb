@@ -5,7 +5,21 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def after_sign_in_path_for(_resource_or_scope)
+    if request.referer && request.referer != new_user_session_url
+      URI.parse(request.referer).path
+    else
+      super
+    end
+  end
+
   def after_sign_out_path_for(_resource_or_scope)
-    URI.parse(request.referer).path if request.referer
+    if request.referer
+      URI.parse(request.referer).path
+    end
+  end
+
+  def after_sign_up_path_for(_resource)
+    root_path
   end
 end

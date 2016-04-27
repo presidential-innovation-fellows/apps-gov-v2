@@ -24,10 +24,6 @@ class GovernmentUsers::RegistrationsController < RegistrationsController
         :current_password)
   end
 
-  def after_sign_up_path_for(_resource)
-    root_path
-  end
-
   def sign_up_params
     params.require(:government_user).
       permit(:agency_id, :first_name, :last_name, :email, :password)

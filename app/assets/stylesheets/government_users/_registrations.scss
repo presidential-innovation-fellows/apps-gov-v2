@@ -1,0 +1,15 @@
+.government_users-registrations-new {
+
+  .col {
+    @include span-columns(6);
+
+    form {
+      margin-top: 3em;
+    }
+  }
+
+  .sign-up-form {
+    margin-left: -30em;
+    width: 60em;
+  }
+}

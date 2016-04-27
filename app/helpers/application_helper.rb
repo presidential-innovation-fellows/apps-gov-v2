@@ -3,6 +3,10 @@ module ApplicationHelper
     "#{static_page_body_class} #{sign_in_status}"
   end
 
+  def devise_mapping
+    Devise.mappings[:user]
+  end
+
   def no_users_signed_in?
     !user_signed_in? && !government_user_signed_in?
   end

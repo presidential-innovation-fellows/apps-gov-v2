@@ -17,6 +17,11 @@ en:
     registrations:
       new:
         heading: Sign up to start using the Apps.gov marketplace!
+    sessions:
+      form:
+        sign_in: Sign in
+      new:
+        heading: Welcome back
 
   government_users:
     failures:
@@ -32,6 +37,7 @@ en:
         website
       learn_more: Learn More
     navigation:
+      sign_in: Sign in
       sign_out: Sign Out
 
   pages:

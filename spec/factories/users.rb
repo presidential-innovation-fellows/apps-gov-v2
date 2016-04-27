@@ -5,8 +5,8 @@ FactoryGirl.define do
     last_name "Doe"
     password "12345sixSevenEight"
 
-    trait :with_gov_email do
-      email "email@apps.gov"
+    trait :as_gov_user do
+      type "GovernmentUser"
     end
   end
 end

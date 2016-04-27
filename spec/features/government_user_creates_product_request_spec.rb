@@ -14,9 +14,8 @@ feature "A Government User creates a Product Request" do
   end
 
   context "that is not unique" do
-    before { create(:product_request, product: product, user: user) }
-
     scenario "and sees an error" do
+      create(:product_request, product: product, user: user)
       visit product_path(product)
 
       click_button t("products.product_sidebar.get_product")
@@ -30,6 +29,6 @@ feature "A Government User creates a Product Request" do
   end
 
   def user
-    @user ||= create(:user, :with_gov_email)
+    @user ||= create(:user, :as_gov_user)
   end
 end
