@@ -12,5 +12,6 @@
               method: :delete
           - else
             = modal_link(t(".sign_in"), new_user_session_path, "sign-in-modal")
-= render "modules/sign_in_modal"
+- unless signed_in?
+  = render "modules/sign_in_modal"
 
