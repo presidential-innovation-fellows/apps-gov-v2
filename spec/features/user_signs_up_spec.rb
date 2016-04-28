@@ -13,5 +13,13 @@ feature "A User signs up" do
 
     expect(page).
       to have_text t("devise.registrations.signed_up")
+    expect(last_email.to).
+      to eq ["email@email.gov"]
+    expect(last_email.subject).
+      to eq t("devise.mailer.confirmation_instructions.subject")
+  end
+
+  def last_email
+    ActionMailer::Base.deliveries.last
   end
 end

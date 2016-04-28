@@ -1,0 +1,8 @@
+- if signed_in? && signed_in_user.confirmed_at.nil?
+  .confirm-account.active
+    %h3
+      = t(".heading")
+    %p
+      = t(".description", hours: pluralize(hours_since_sign_up, t(".hours")))
+    .close-confirm#close-confirm
+      %i.fa.fa-times-circle-o

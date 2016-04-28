@@ -12,6 +12,7 @@
     = csrf_meta_tags
   %body{ class: "#{body_class} #{custom_body_class} default-layout".strip }
     = render "modules/navigation"
+    = render "modules/confirm"
     = render "flashes"
     .page-content
       = yield

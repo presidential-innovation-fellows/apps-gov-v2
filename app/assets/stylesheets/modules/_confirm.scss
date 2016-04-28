@@ -1,0 +1,38 @@
+.confirm-account {
+  @include transition(all 0.15s ease);
+  @include transform(translateX(-20em));
+  background-color: $color-primary;
+  color: $white;
+  left: 0;
+  opacity: 0;
+  padding: 0.75em 1em;
+  position: fixed;
+  top: 5.65em;
+  visibility: hidden;
+  width: 15em;
+  z-index: 1000;
+
+  &.active {
+    @include transform(translateX(0));
+    opacity: 1;
+    visibility: visible;
+  }
+
+  h3 {
+    font-size: 0.9em;
+    margin: 0 0 0.1em;
+  }
+
+  p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+
+  .close-confirm {
+    cursor: pointer;
+    font-size: 1.1em;
+    position: absolute;
+    right: 0.25em;
+    top: 0.1em;
+  }
+}

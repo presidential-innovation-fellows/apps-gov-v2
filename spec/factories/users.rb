@@ -8,5 +8,11 @@ FactoryGirl.define do
     trait :as_gov_user do
       type "GovernmentUser"
     end
+
+    trait :verified do
+      after(:build) do |user|
+        user.confirm
+      end
+    end
   end
 end

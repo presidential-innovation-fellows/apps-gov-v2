@@ -31,6 +31,12 @@ en:
         heading: Sign up to start using the Apps.gov marketplace!
 
   modules:
+    confirm:
+      description:
+        You have %{hours} left to verify your account. Please check your inbox
+        now.
+      heading: Verify Your Account
+      hours: hours
     disclaimer:
       alt_text:
         US flag signifying that this is a United States Federal Government
