@@ -44,6 +44,10 @@ class Product < ActiveRecord::Base
     end
   end
 
+  def self.search(query)
+    where("name LIKE ?", "%#{query}%")
+  end
+
   def logo_url
     logo.url(:original)
   end

@@ -1,0 +1,15 @@
+.usa-grid
+  %section.results
+    %header
+      %h1
+        = t(".header")
+    .results-content
+      = @params
+      - if @products.any?
+        = render partial: "product",
+          collection: @products,
+          locals: { character_limit: 200 }
+      - else
+        = t(".no_products")
+
+

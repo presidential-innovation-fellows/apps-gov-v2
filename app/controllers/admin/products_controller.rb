@@ -9,7 +9,7 @@ module Admin
 
       if @product.save
         flash[:success] = I18n.t("admin.products.create.success_message")
-        redirect_to products_path
+        redirect_to root_path
       else
         flash[:error] = I18n.t("admin.products.create.error_message")
         render :new

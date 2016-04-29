@@ -14,7 +14,7 @@
           "</div>"
         );
 
-    var ac = autocomplete("#products_product_name", { hint: true, debug: true }, {
+    var ac = autocomplete("#products_name", { hint: true, debug: true }, {
       source: autocomplete.sources.hits(client.initIndex("<%= Product.index_name %>"), { hitsPerPage: 4 }),
       displayKey: "name",
       templates: {

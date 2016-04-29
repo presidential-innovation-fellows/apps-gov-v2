@@ -4,11 +4,11 @@ feature "User Signs Out" do
   before { login_as(user, scope: :government_user) }
 
   scenario "a User signs in" do
-    visit products_path
+    visit root_path
 
     click_on t("modules.navigation.sign_out")
 
-    expect(current_path).to eql(products_path)
+    expect(current_path).to eql(root_path)
   end
 
   def user

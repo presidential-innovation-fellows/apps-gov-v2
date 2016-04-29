@@ -10,7 +10,11 @@ Rails.application.routes.draw do
     resources :products, only: [:new, :create]
   end
 
-  resources :products, only: [:index, :show] do
+  get "products/search", to: "products#search", as: :products_search
+
+  resources :products, only: [:show] do
     resources :product_requests, only: [:create]
   end
+
+  root to: "products#index"
 end

@@ -3,7 +3,7 @@ require "rails_helper"
 feature "User Sign In" do
   context "without JavaScript"do
     scenario "a User signs in" do
-      visit products_path
+      visit root_path
 
       within("nav.app-nav") do
         click_on t("modules.navigation.sign_in")
@@ -20,7 +20,7 @@ feature "User Sign In" do
 
   context "with JavaScript" do
     scenario "a User signs in", js: true do
-      visit products_path
+      visit root_path
       within("nav.app-nav") do
         click_on t("modules.navigation.sign_in")
       end
@@ -38,7 +38,7 @@ feature "User Sign In" do
   context "when a User has not confirmed their account for more than 2 days" do
     scenario "they can no longer sign in" do
       Timecop.travel(two_days_after_signup) do
-        visit products_path
+        visit root_path
 
         within("nav.app-nav") do
           click_on t("modules.navigation.sign_in")

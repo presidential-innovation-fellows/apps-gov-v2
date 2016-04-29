@@ -1,10 +1,22 @@
-.usa-grid
+%section.banner
   %header.page-header
     %h1
       = t(".header")
     %p.subtitle
       = t(".subtitle")
+  .hero-search
+    = simple_form_for :products,
+      url: products_search_path,
+      method: :get,
+      html: { id: "product-search-form" } do |f|
+      = f.input :name,
+        placeholder: t(".search_placeholder"),
+        input_html: {value: ""}
+      = f.submit t(".search_products")
 
+.usa-grid
   %section.products
     %ul.products-list
-      = render partial: "product", collection: @products
+      = render partial: "product",
+        collection: @products,
+        locals: { character_limit: 100 }

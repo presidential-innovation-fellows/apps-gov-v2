@@ -46,14 +46,6 @@ en:
       sign_in: Sign in
       sign_out: Sign Out
 
-  pages:
-    home:
-      banner_button: Explore Products
-      banner_heading: Be More Productive
-      banner_tagline: Search and compare cloud technologies.
-      search: Search
-      search_placeholder: Search by Product Name or Type
-
   product_requests:
     create:
       failure: An error occured. Please try again.
@@ -63,12 +55,19 @@ en:
     government_user_modal:
       heading: Sign up to start procuring the best software out there.
     index:
-      header: Products
-      subtitle: Discover products that will help your team be more productive.
+      header: Discover Your Team’s Next Favorite App
+      search_placeholder: Find Products by Name or Type
+      search_products: Search
+      subtitle:
+        Find the products you need to build, communicate, and deliver faster.
     product_sidebar:
       get_product: Get this product
     show:
       products: Products
+    search:
+      failure: You must enter a Product name to search.
+      header: Results
+      no_products: No products found.
 
   registration:
     government_employees:
