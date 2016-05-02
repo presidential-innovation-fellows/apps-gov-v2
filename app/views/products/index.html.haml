@@ -14,9 +14,14 @@
         input_html: {value: ""}
       = f.submit t(".search_products")
 
-.usa-grid
-  %section.products
-    %ul.products-list
-      = render partial: "product",
-        collection: @products,
-        locals: { character_limit: 100 }
+.usa-grid.products-container
+  %aside.categories
+    %h2.bucket-heading
+      = t(".categories")
+  %section.product-buckets
+    = render "product_bucket",
+      products: @products.newest,
+      heading: t(".newest_heading")
+    = render "product_bucket",
+      products: @products.most_popular,
+      heading: t(".most_popular_heading")

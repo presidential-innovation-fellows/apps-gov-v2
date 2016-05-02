@@ -65,15 +65,24 @@
   }
 
   .banner {
-    @include background-image(linear-gradient(rgba($color-primary, 0) 70%, rgba($color-primary, 0.10) 100%), image-url("products/banner2.jpg"));
+    @include background-image(linear-gradient(rgba($color-primary, 0) 70%, rgba($color-primary, 0.10) 100%), image-url("products/banner3.jpg"));
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10em 0 7em;
+    background-size: cover, cover, cover;
+    padding: 9em 0 6em;
 
     h1 {
       font-size: 3.4em;
       line-height: 1.1em;
     }
+  }
+
+  .bucket-heading {
+    font-size: 1.4em;
+    margin-bottom: 0.25em;
+  }
+
+  .categories {
+    @include span-columns(3);
   }
 
   .page-content {
@@ -96,6 +105,7 @@
   }
 
   .product {
+    @include span-columns(4);
     @include transition(all 0.2s ease);
     background-color: $white;
     border: 1px solid $light-gray;
@@ -103,36 +113,8 @@
     display: block;
     margin-bottom: 1.5em;
 
-    @include media($small-screen) {
-      @include span-columns(6);
-
-      &:nth-child(2n) {
-        @include omega;
-      }
-
-      &:nth-child(2n+1) {
-        clear: left;
-      }
-    }
-
-    @include media($medium-screen) {
-      @include span-columns(4);
-
-      &:nth-child(2n) {
-        margin-right: flex-gutter();
-      }
-
-      &:nth-child(2n+1) {
-        clear: none;
-      }
-
-      &:nth-child(3n) {
-        @include omega;
-      }
-
-      &:nth-child(3n+1) {
-        clear: left;
-      }
+    &:nth-child(3) {
+      @include omega;
     }
 
     &:hover,
@@ -148,8 +130,8 @@
 
     h3 {
       color: lighten($dark-gray, 10);
-      font-size: 1.25em;
-      line-height: 1.1em;
+      font-size: 1em;
+      line-height: 1em;
       margin: 0 0 0.25em;
     }
 
@@ -161,7 +143,9 @@
     }
 
     .logo {
+      line-height: 0;
       margin: 0 auto;
+      min-height: 36px;
       width: 35%;
 
       @include media($medium-screen) {
@@ -179,6 +163,15 @@
     }
   }
 
+  .product-buckets {
+    @include span-columns(9);
+  }
+
+  .products-container {
+    @include clearfix;
+    padding-top: 2em;
+  }
+
   .usa-disclaimer {
     background-color: rgba($color-gray-dark, 0.95);
   }
@@ -190,8 +183,7 @@
   form {
     @include clearfix;
     margin: 0 auto;
-    max-width: none;
-    width: 40em;
+    max-width: 40em;
   }
 
   input {

@@ -5,5 +5,11 @@ FactoryGirl.define do
     short_description "Lorem ipsum Sed non est ut sed nisi fugiat eu qui dolor."
     url "https://pif.gov/pizza-tracker"
     logo { fixture_file_upload(Rails.root.join('spec', 'fixtures', 'sample-logo.png'), 'image/png') }
+
+    trait :with_product_request do
+      after(:create) do |product|
+        create(:product_request, product: product)
+      end
+    end
   end
 end

@@ -55,7 +55,10 @@ en:
     government_user_modal:
       heading: Sign up to start procuring the best software out there.
     index:
+      categories: Categories
       header: Discover Your Team’s Next Favorite App
+      most_popular_heading: Popular Products
+      newest_heading: Newest Products
       search_placeholder: Find Products by Name or Type
       search_products: Search
       subtitle:

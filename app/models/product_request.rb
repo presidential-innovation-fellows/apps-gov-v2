@@ -1,5 +1,5 @@
 class ProductRequest < ActiveRecord::Base
-  belongs_to :product
+  belongs_to :product, counter_cache: true
   belongs_to :user
 
   validates :product, :user, presence: true

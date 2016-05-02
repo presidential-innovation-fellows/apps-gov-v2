@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160427193154) do
+ActiveRecord::Schema.define(version: 20160429195814) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -95,24 +95,27 @@ ActiveRecord::Schema.define(version: 20160427193154) do
   add_index "product_requests", ["user_id"], name: "index_product_requests_on_user_id", using: :btree
 
   create_table "products", force: :cascade do |t|
-    t.text     "long_description",         null: false
+    t.text     "long_description",                     null: false
     t.string   "fedramp_inprocess_agency"
     t.string   "founded_year"
     t.string   "linkedin_id"
     t.string   "location"
-    t.string   "name",                     null: false
+    t.string   "name",                                 null: false
     t.string   "number_of_employees"
-    t.string   "slug",                     null: false
+    t.string   "slug",                                 null: false
     t.string   "sales_poc"
-    t.string   "short_description",        null: false
+    t.string   "short_description",                    null: false
     t.string   "status"
-    t.string   "url",                      null: false
+    t.string   "url",                                  null: false
     t.string   "twitter_handle"
     t.string   "logo_file_name"
     t.string   "logo_content_type"
     t.integer  "logo_file_size"
     t.datetime "logo_updated_at"
     t.string   "logo_fingerprint"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "product_requests_count",   default: 0
   end
 
   create_table "users", force: :cascade do |t|

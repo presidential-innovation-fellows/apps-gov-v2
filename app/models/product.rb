@@ -48,6 +48,10 @@ class Product < ActiveRecord::Base
     where("name LIKE ?", "%#{query}%")
   end
 
+  def self.most_popular
+    order("product_requests_count DESC").limit(3)
+  end
+
   def logo_url
     logo.url(:original)
   end
