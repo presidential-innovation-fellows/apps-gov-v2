@@ -1,6 +1,13 @@
 require "rails_helper"
 
 feature "Guest visits homepage" do
+  scenario "and sees a list of categories" do
+    category = create(:category)
+
+    visit root_path
+    expect(page).to have_text(category.name)
+  end
+
   scenario "and sees the latest Products" do
     create_list(:product, 3, created_at: Time.zone.now - 1.day)
     new_product = create(:product, created_at: Time.zone.now)

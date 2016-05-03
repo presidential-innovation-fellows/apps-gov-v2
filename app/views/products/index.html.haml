@@ -18,6 +18,8 @@
   %aside.categories
     %h2.bucket-heading
       = t(".categories")
+    %ul.categories-list
+      = render partial: "category", collection: @products.categories
   %section.product-buckets
     = render "product_bucket",
       products: @products.newest,

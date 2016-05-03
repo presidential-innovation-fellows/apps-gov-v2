@@ -1,4 +1,8 @@
 class ProductPresenter
+  def categories
+    Category.all.order(:name)
+  end
+
   def most_popular
     Product.most_popular
   end

@@ -83,6 +83,18 @@
 
   .categories {
     @include span-columns(3);
+
+    li {
+      margin: 0 0 0.5em;
+    }
+  }
+
+  .categories-list {
+    margin-top: 0.75em;
+
+    a {
+      color: $dark-gray;
+    }
   }
 
   .page-content {
@@ -165,6 +177,10 @@
 
   .product-buckets {
     @include span-columns(9);
+
+    ul {
+      @include clearfix;
+    }
   }
 
   .products-container {
