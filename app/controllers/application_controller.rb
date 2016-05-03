@@ -22,4 +22,8 @@ class ApplicationController < ActionController::Base
   def after_sign_up_path_for(_resource)
     root_path
   end
+
+  def signed_in_user
+    current_user || current_government_user
+  end
 end

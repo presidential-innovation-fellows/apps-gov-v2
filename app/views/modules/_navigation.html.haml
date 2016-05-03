@@ -5,13 +5,17 @@
       %h1.app-logo
         = link_to t("titles.application"), root_path
       %ul.app-auth-links
-        %li
-          - if signed_in?
+        - if signed_in?
+          %li
             = link_to t(".sign_out"),
               destroy_user_session_path,
               method: :delete
-          - else
+        - else
+          %li.secondary
             = modal_link(t(".sign_in"), new_user_session_path, "sign-in-modal")
+          %li.primary
+            = modal_link(t(".sign_up"), new_government_user_registration_path, "government-user-signup")
 - unless signed_in?
   = render "modules/sign_in_modal"
+  = render "modules/government_user_modal"
 

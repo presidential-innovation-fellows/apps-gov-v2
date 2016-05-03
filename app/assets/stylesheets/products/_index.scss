@@ -97,6 +97,18 @@
     }
   }
 
+  .names {
+    @include clearfix;
+
+    label {
+      margin-top: 0;
+    }
+
+    .input {
+      @include span-columns(6);
+    }
+  }
+
   .page-content {
     padding-top: 0;
   }

@@ -42,9 +42,12 @@ en:
         US flag signifying that this is a United States Federal Government
         website
       learn_more: Learn More
+    government_user_modal:
+      heading: Sign up to start procuring the best software out there.
     navigation:
       sign_in: Sign in
       sign_out: Sign Out
+      sign_up: Sign Up
 
   product_requests:
     create:
@@ -52,8 +55,6 @@ en:
       success: Product Requested!
 
   products:
-    government_user_modal:
-      heading: Sign up to start procuring the best software out there.
     index:
       categories: Categories
       header: Discover Your Team’s Next Favorite App

@@ -40,5 +40,6 @@ Capybara.javascript_driver = :webkit
 
 Capybara::Webkit.configure do |config|
   config.allow_url("#{ENV['ALGOLIA_APP_ID'].downcase}-dsn.algolia.net")
+  config.allow_url("#{ENV['ALGOLIA_APP_ID'].downcase}-1.algolianet.com")
   config.allow_url("#{ENV['ALGOLIA_APP_ID'].downcase}-2.algolianet.com")
 end

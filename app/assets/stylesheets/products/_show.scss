@@ -15,64 +15,6 @@
 
 .products-show {
 
-  .modal {
-    overflow: hidden;
-
-    form {
-      @include transition(all 02s ease);
-
-      &.hide {
-        @include animation(slideOutLeft 0.4s ease);
-        @include animation-fill-mode(forwards);
-        @include animation-delay(0.1s);
-      }
-    }
-
-    .loading {
-      background-color: rgba($white, 0.7);
-      border: 1px solid $light-gray;
-      border-radius: 1em;
-      bottom: 0;
-      left: 0;
-      opacity: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      visibility: hidden;
-
-      &.active {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      img {
-        display: block;
-        margin: 10em auto 0;
-        width: 5em;
-      }
-    }
-
-    .slide-1-heading {
-
-      &.hide {
-        @include animation(slideOutLeft 0.4s ease);
-        @include animation-fill-mode(forwards);
-      }
-    }
-  }
-
-  .names {
-    @include clearfix;
-
-    label {
-      margin-top: 0;
-    }
-
-    .input {
-      @include span-columns(6);
-    }
-  }
-
   .product-content {
     @include span-columns(9);
     @include omega;

@@ -72,6 +72,8 @@ appsGov.productShow = {
 };
 
 $(document).ready(function() {
-  appsGov.productShow.bindGovernmentUserModalSubmit();
+  if ($("body").hasClass("products-show")) {
+    appsGov.productShow.bindGovernmentUserModalSubmit();
+  }
 });
 

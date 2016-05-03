@@ -13,7 +13,7 @@ class SessionsController < Devise::SessionsController
   end
 
   def destroy
-    sign_out(current_user.type.underscore)
+    sign_out(signed_in_user.type.underscore)
     super
   end
 end

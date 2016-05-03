@@ -19,6 +19,7 @@
   padding: 0.9em 0;
 
   li {
+    display: inline-block;
     margin: 0;
   }
 
@@ -32,6 +33,7 @@
 
   a {
     @include outline-button(darken($light-gray,5));
+    background-color: rgba($white, 0.5);
     border-radius: 0.25em;
     color: darken($medium-gray, 30);
     display: inline-block;
@@ -39,16 +41,26 @@
     text-decoration: none;
 
     &:hover {
-      background-color: $color-primary;
+      background-color: darken($color-primary, 7);
       color: $white;
     }
+  }
+
+  li {
+    margin-left: 0.5em;
   }
 
   .primary {
 
     a {
-      @include button();
-      margin-top: 0;
+      background-color: $color-primary;
+      border: 1px solid $color-primary;
+      color: $white;
+      font-weight: bold;
+
+      &:hover {
+        background-color: darken($color-primary, 7);
+      }
     }
   }
 }
