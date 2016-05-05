@@ -1,0 +1,12 @@
+= simple_form_for(:product_owner, as: "product_owner", url: registration_path("product_owner")) do |f|
+  = f.error_notification
+  .form-inputs
+    .names
+      = f.input :first_name, required: true, autofocus: true
+      = f.input :last_name, required: true
+    = f.input :email, required: true
+    = f.input :password,
+      required: true,
+      hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)
+  .form-actions
+    = f.button :submit, "Sign up"

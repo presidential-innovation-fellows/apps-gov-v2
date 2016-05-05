@@ -1,2 +1,0 @@
-class ContractOfficer < User
-end

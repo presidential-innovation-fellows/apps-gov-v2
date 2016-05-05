@@ -1,5 +1,8 @@
 class ProductRequestsController < ApplicationController
-  before_filter :authenticate_government_user!
+  load_and_authorize_resource
+  rescue_from CanCan::AccessDenied do
+    redirect_to new_product_owner_registration_path
+  end
 
   def create
     @product_request = ProductRequest.new(product_request_params)
@@ -16,6 +19,6 @@ class ProductRequestsController < ApplicationController
 
   def product_request_params
     params.require(:product_request).
-      permit(:product_id).merge(user: current_government_user)
+      permit(:product_id).merge(user: signed_in_user)
   end
 end

@@ -24,8 +24,47 @@
     }
   }
 
+  .product-edit {
+    bottom: 0.95em;
+    font-size: 0.85em;
+    position: absolute;
+    right: 0;
+
+    button {
+      @include outline-button($medium-gray);
+      margin: 0;
+      padding: 0.5em 0.75em;
+
+      &[type="submit"] {
+        background-color: transparent;
+      }
+
+      &:hover {
+        background-color: $color-primary;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+    i {
+      margin-right: 0.25em;
+    }
+  }
+
   .product-header {
     margin-top: 1em;
+    position: relative;
+  }
+
+  .product-logo {
+    @extend %card;
+    border-radius: 0.75em;
+    padding: 1.75em;
+  }
+
+  .product-name {
+    margin-bottom: 0.25em;
+    width: 85%;
 
     a {
       color: $color-gray-dark;
@@ -36,19 +75,9 @@
       }
     }
 
-    h1 {
-      margin-bottom: 0.25em;
-    }
-
     i {
       font-size: 0.4em;
     }
-  }
-
-  .product-logo {
-    @extend %card;
-    border-radius: 0.75em;
-    padding: 1.75em;
   }
 
   .product-nav {

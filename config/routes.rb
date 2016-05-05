@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   devise_for \
     :government_user,
     controllers: { registrations: "government_users/registrations", sessions: "sessions" }
+  devise_for \
+    :product_owner,
+    controllers: { registrations: "product_owners/registrations", sessions: "sessions" }
 
   namespace :admin do
     resources :products, only: [:new, :create]

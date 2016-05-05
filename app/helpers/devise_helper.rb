@@ -8,6 +8,6 @@ module DeviseHelper
   end
 
   def signed_in_user
-    current_user || current_government_user
+    current_user || current_government_user || current_product_owner
   end
 end

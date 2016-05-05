@@ -1,0 +1,9 @@
+.sign-up-form
+  .col
+    %figure.logo
+      = link_to root_path do
+        = image_tag("logos/apps-logo-alt.svg")
+    %h1
+      = t(".heading")
+  .col
+    = render "form", resource: resource

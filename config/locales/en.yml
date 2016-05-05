@@ -49,6 +49,11 @@ en:
       sign_out: Sign Out
       sign_up: Sign Up
 
+  product_owners:
+    registrations:
+      new:
+        heading: Sign up to list your product Apps.gov marketplace!
+
   product_requests:
     create:
       failure: An error occured. Please try again.
@@ -64,6 +69,10 @@ en:
       search_products: Search
       subtitle:
         Find the products you need to build, communicate, and deliver faster.
+    product_content:
+      edit_product_html: <i class="fa fa-pencil"></i>Edit
+    product_owner_modal:
+      heading: Sign Up to Edit Products on Apps.gov
     product_sidebar:
       get_product: Get this product
     show:

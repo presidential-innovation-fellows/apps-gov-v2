@@ -1,8 +1,18 @@
 %header.product-header
-  %h1
+  %h1.product-name
     = link_to "//#{product.url}", target: "_blank" do
       = product.name
       %i.fa.fa-external-link
+  - if no_users_signed_in? || product_owner_signed_in?
+    .product-edit
+      = simple_form_for [product, product_request] do |f|
+        = f.input :product_id, value: product.id, as: :hidden
+        - if no_users_signed_in?
+          = button_tag(class: "modal-trigger", data: {modal_id: "product-owner-modal"}, id: "edit-product-button", type: "submit") do
+            = t(".edit_product_html")
+        - else
+          = button_tag(id: "edit-product-button", type: "submit") do
+            = t(".edit_product_html")
 .product-info
   = product.long_description
 

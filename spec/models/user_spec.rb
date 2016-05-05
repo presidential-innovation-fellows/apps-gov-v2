@@ -16,6 +16,11 @@ describe User do
       it { should_not be_able_to(:manage, Product.new) }
     end
 
+    context "when a GovernmentUser" do
+      let(:user) { create(:user, :as_gov_user) }
+      it { should be_able_to(:create, ProductRequest.new) }
+    end
+
     context "when an admin" do
       let(:user) { create(:user, admin: true) }
 

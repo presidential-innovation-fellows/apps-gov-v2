@@ -4,7 +4,7 @@ module ApplicationHelper
   end
 
   def no_users_signed_in?
-    !user_signed_in? && !government_user_signed_in?
+    !user_signed_in? && !government_user_signed_in? && !product_owner_signed_in?
   end
 
   private

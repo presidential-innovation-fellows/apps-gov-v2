@@ -9,6 +9,10 @@ FactoryGirl.define do
       type "GovernmentUser"
     end
 
+    trait :as_product_owner do
+      type "ProductOwner"
+    end
+
     trait :verified do
       after(:build) do |user|
         user.confirm

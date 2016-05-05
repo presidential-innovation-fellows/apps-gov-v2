@@ -9,5 +9,11 @@
       product: @product,
       product_request: @product_request
   %section.product-content
-    = render "product_content", product: @product
+    = render "product_content",
+      product: @product,
+      product_request: @product_request
+
+
+- unless signed_in?
+  = render "product_owner_modal"
 
