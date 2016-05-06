@@ -8,7 +8,8 @@ feature "Product Owner views Product page" do
 
       click_on "Edit"
 
-      expect(page).to have_text t("product_requests.create.success")
+      expect(page).
+        to have_text t("product_owners.product_requests.create.success")
     end
   end
 

@@ -1,6 +1,7 @@
 require "rails_helper"
 
 describe ProductRequest do
+  it { should be_draftable }
   it { should belong_to :product }
   it { should belong_to :user }
   it { should validate_presence_of :product }

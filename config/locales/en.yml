@@ -50,6 +50,10 @@ en:
       sign_up: Sign Up
 
   product_owners:
+    product_requests:
+      create:
+        failure: Something went wrong. Please try again.
+        success: Your request to edit this Product has been created.
     registrations:
       new:
         heading: Sign up to list your product Apps.gov marketplace!

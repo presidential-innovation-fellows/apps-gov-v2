@@ -6,6 +6,7 @@ require "rspec/rails"
 require "shoulda/matchers"
 require "cancan/matchers"
 require "paperclip/matchers"
+require "draftsman/frameworks/rspec"
 
 ::Shoulda::Matchers.configure do |config|
   config.integrate do |with|

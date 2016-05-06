@@ -13,6 +13,10 @@ Rails.application.routes.draw do
     resources :products, only: [:new, :create]
   end
 
+  namespace :product_owners do
+    resources :product_requests, only: [:new, :create]
+  end
+
   get "products/search", to: "products#search", as: :products_search
 
   resources :categories, only: [:show]
