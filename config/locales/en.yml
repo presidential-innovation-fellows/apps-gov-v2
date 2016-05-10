@@ -45,11 +45,20 @@ en:
     government_user_modal:
       heading: Sign up to start procuring the best software out there.
     navigation:
+      dashboard: Dashboard
       sign_in: Sign in
       sign_out: Sign Out
       sign_up: Sign Up
 
   product_owners:
+    dashboard:
+      index:
+        heading: Dashboard
+      product_requests:
+        heading: Requested Products
+        no_requests: You have no outstanding Product Requests.
+        product_name: Product Name
+        request_product: Find a Product
     product_requests:
       create:
         failure: Something went wrong. Please try again.
@@ -74,7 +83,7 @@ en:
       subtitle:
         Find the products you need to build, communicate, and deliver faster.
     product_content:
-      edit_product_html: <i class="fa fa-pencil"></i>Edit
+      edit_product_html: <i class="fa fa-pencil"></i>Request to Edit
     product_owner_modal:
       heading: Sign Up to Edit Products on Apps.gov
     product_sidebar:

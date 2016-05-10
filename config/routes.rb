@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     resources :product_requests, only: [:new, :create]
   end
 
+  get "dashboard", to: "product_owners/dashboard#index", as: :product_owner_dashboard
+
   get "products/search", to: "products#search", as: :products_search
 
   resources :categories, only: [:show]

@@ -80,27 +80,6 @@
     }
   }
 
-  .product-nav {
-    font-size: 0.95em;
-    margin-bottom: 2em;
-
-    a {
-      border-bottom: 1px solid $medium-gray;
-      color: darken($medium-gray, 10);
-
-      &:hover {
-        border-bottom: 1px solid $color-primary;
-        color: $color-primary;
-        text-decoration: none;
-      }
-    }
-
-    i {
-      color: $medium-gray;
-      margin: 0 0.5em;
-    }
-  }
-
   .remove {
     display: none;
   }

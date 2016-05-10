@@ -1,0 +1,21 @@
+.product_owners-dashboard {
+
+  .product-requests {
+
+    a {
+      color: $color-primary;
+    }
+
+    h2 {
+      margin-bottom: 0.5em;
+    }
+
+    li {
+      border-bottom: 1px solid $medium-gray;
+    }
+
+    p {
+      margin: 0 0 0.25em;
+    }
+  }
+}

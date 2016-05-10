@@ -8,10 +8,12 @@ class Ability
       can :manage, :all
     elsif user.type == "GovernmentUser"
       can :create, ProductRequest
+      can :read, Dashboard
     elsif user.type == "ProductOwner"
       can :create, ProductRequest
+      can :read, Dashboard
     else
-      can :read, :all
+      can :read, Product
     end
   end
 end

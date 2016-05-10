@@ -1,0 +1,15 @@
+.product-requests
+  %h2
+    = t(".heading")
+  - if product_requests.any?
+    %table
+      %thead
+        %tr
+          %th
+            = t(".product_name")
+      %tbody
+        = render partial: "product_request", collection: product_requests
+  - else
+    %p
+      = t(".no_requests")
+    = link_to t(".request_product"), root_path, class: "usa-button"

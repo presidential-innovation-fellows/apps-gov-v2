@@ -6,6 +6,9 @@
         = link_to t("titles.application"), root_path
       %ul.app-auth-links
         - if signed_in?
+          - if product_owner_signed_in?
+            %li.primary
+              = link_to t(".dashboard"), product_owner_dashboard_path
           %li
             = link_to t(".sign_out"),
               destroy_user_session_path,
