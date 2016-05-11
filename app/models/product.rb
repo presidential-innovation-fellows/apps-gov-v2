@@ -14,6 +14,7 @@ class Product < ActiveRecord::Base
   has_many :keywords, through: :product_keywords
   has_many :product_keywords
 
+  has_many :users, through: :product_requests
   has_many :product_requests
 
   friendly_id :name, use: [:slugged, :finders]
@@ -49,7 +50,9 @@ class Product < ActiveRecord::Base
   end
 
   def self.most_popular
-    order("product_requests_count DESC").limit(3)
+    includes(:users).
+      where("users.type" => "GovernmentUser").
+      order("product_requests_count DESC").limit(3)
   end
 
   def logo_url

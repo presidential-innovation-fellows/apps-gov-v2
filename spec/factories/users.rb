@@ -1,9 +1,9 @@
 FactoryGirl.define do
   factory :user do
     first_name "John"
-    email "email@apps.com"
     last_name "Doe"
     password "12345sixSevenEight"
+    sequence(:email) { |n| "email#{n}@apps.com" }
 
     trait :as_gov_user do
       type "GovernmentUser"

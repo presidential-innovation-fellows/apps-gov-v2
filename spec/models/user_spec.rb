@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe User do
   it { should belong_to :agency }
+  it { should have_many(:products).through(:product_requests) }
   it { should have_many :product_requests }
   it { should validate_presence_of :first_name }
   it { should validate_presence_of :last_name }
