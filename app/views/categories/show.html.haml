@@ -1,0 +1,16 @@
+.usa-grid
+  .breadcrumbs
+    = link_to t(".products"), root_path
+    %i.fa.fa-caret-right
+    = @category.name
+
+  %aside.categories
+    = render "sidebar"
+  %section.products
+    %header
+      %h1
+        = @category.name
+    - if @category.products.any?
+      %ul
+        = render partial: "products/product_card",
+          collection: @category.products

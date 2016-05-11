@@ -1,0 +1,28 @@
+.categories-show {
+
+  .categories {
+    @include span-columns(4);
+
+    a {
+      color: $color-primary;
+    }
+
+    h2 {
+      margin-bottom: 1em;
+    }
+  }
+
+  .products {
+    @include span-columns(8);
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    ul {
+      @include clearfix;
+      display: block;
+      margin-top: 1em;
+    }
+  }
+}

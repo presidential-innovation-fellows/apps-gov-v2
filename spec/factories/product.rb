@@ -6,6 +6,13 @@ FactoryGirl.define do
     url "https://pif.gov/pizza-tracker"
     logo { fixture_file_upload(Rails.root.join('spec', 'fixtures', 'sample-logo.png'), 'image/png') }
 
+    trait :with_category do
+      after(:create) do |product|
+        category = create(:category)
+        create(:product_category, category: category, product: product)
+      end
+    end
+
     trait :with_gov_user do
       after(:create) do |product|
         user = create(:user, :as_gov_user)

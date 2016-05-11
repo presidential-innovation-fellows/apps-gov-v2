@@ -50,6 +50,73 @@
   }
 }
 
+.product-card {
+  @include span-columns(4);
+  @include transition(all 0.2s ease);
+  background-color: $white;
+  border: 1px solid $light-gray;
+  border-radius: 0.25em;
+  display: block;
+  margin-bottom: 1.5em;
+
+  &:nth-child(3) {
+    @include omega;
+  }
+
+  &:hover,
+  &.focused {
+    box-shadow: 0 0 5px rgba($color-primary, 0.75);
+  }
+
+  a {
+    @include clearfix;
+    display: block;
+    padding: 0.75em;
+  }
+
+  h3 {
+    color: lighten($dark-gray, 10);
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0 0 0.25em;
+  }
+
+  p {
+    color: lighten($dark-gray, 25);
+    font-size: 0.85em;
+    line-height: 1.3em;
+    margin: 0;
+  }
+
+  .logo {
+    line-height: 0;
+    margin: 0 auto;
+    min-height: 36px;
+    width: 35%;
+
+    @include media($medium-screen) {
+      float: left;
+      margin: 0;
+      width: 18%;
+    }
+  }
+
+  .product-content {
+    @include media($medium-screen) {
+      float: right;
+      width: 75%;
+    }
+  }
+}
+
+.product-buckets {
+  @include span-columns(9);
+
+  ul {
+    @include clearfix;
+  }
+}
+
 .products-index {
   background-color: lighten($light-gray, 10);
 
@@ -126,73 +193,6 @@
     p {
       font-size: 1.2em;
       margin: 0;
-    }
-  }
-
-  .product {
-    @include span-columns(4);
-    @include transition(all 0.2s ease);
-    background-color: $white;
-    border: 1px solid $light-gray;
-    border-radius: 0.25em;
-    display: block;
-    margin-bottom: 1.5em;
-
-    &:nth-child(3) {
-      @include omega;
-    }
-
-    &:hover,
-    &.focused {
-      box-shadow: 0 0 5px rgba($color-primary, 0.75);
-    }
-
-    a {
-      @include clearfix;
-      display: block;
-      padding: 0.75em;
-    }
-
-    h3 {
-      color: lighten($dark-gray, 10);
-      font-size: 1em;
-      line-height: 1em;
-      margin: 0 0 0.25em;
-    }
-
-    p {
-      color: lighten($dark-gray, 25);
-      font-size: 0.85em;
-      line-height: 1.3em;
-      margin: 0;
-    }
-
-    .logo {
-      line-height: 0;
-      margin: 0 auto;
-      min-height: 36px;
-      width: 35%;
-
-      @include media($medium-screen) {
-        float: left;
-        margin: 0;
-        width: 18%;
-      }
-    }
-
-    .product-content {
-      @include media($medium-screen) {
-        float: right;
-        width: 75%;
-      }
-    }
-  }
-
-  .product-buckets {
-    @include span-columns(9);
-
-    ul {
-      @include clearfix;
     }
   }
 

@@ -1,4 +1,4 @@
-= content_tag_for :li, product_card do
+= content_tag_for :li, product_card, class: "product-card" do
   = link_to product_path(product_card) do
     .logo
       - if product_card.logo.present?

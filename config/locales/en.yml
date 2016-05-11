@@ -6,6 +6,13 @@ en:
           success_message: Product created!
         new:
           header: Create a Product
+
+  categories:
+    show:
+      products: Products
+    sidebar:
+      heading: All Categories
+
   date:
     formats:
       default:
