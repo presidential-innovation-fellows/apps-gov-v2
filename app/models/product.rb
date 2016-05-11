@@ -37,22 +37,22 @@ class Product < ActiveRecord::Base
     add_attribute :logo_url
   end
 
-  def self.trigger_delayed_job(record, remove)
-    if remove
-      record.delay.remove_from_index!
-    else
-      record.delay.index!
-    end
+  def self.most_popular
+    includes(:users).
+      where("users.type" => "GovernmentUser").
+      order("product_requests_count DESC").limit(3)
   end
 
   def self.search(query)
     where("name LIKE ?", "%#{query}%")
   end
 
-  def self.most_popular
-    includes(:users).
-      where("users.type" => "GovernmentUser").
-      order("product_requests_count DESC").limit(3)
+  def self.trigger_delayed_job(record, remove)
+    if remove
+      record.delay.remove_from_index!
+    else
+      record.delay.index!
+    end
   end
 
   def logo_url

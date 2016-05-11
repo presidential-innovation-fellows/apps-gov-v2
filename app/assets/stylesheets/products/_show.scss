@@ -30,19 +30,30 @@
     position: absolute;
     right: 0;
 
+    a,
     button {
       @include outline-button($medium-gray);
       margin: 0;
       padding: 0.5em 0.75em;
 
-      &[type="submit"] {
-        background-color: transparent;
-      }
-
       &:hover {
         background-color: $color-primary;
         color: $white;
         text-decoration: none;
+      }
+
+      &[type="submit"] {
+        background-color: transparent;
+      }
+
+      &.requested {
+        @include outline-button($color-primary);
+        margin: 0;
+        padding: 0.5em 0.75em;
+
+        &:hover {
+          color: $white;
+        }
       }
     }
 

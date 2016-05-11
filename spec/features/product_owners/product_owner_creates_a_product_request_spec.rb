@@ -3,15 +3,27 @@ require "rails_helper"
 feature "Product Owner Creates Product Request" do
   before { login_as(product_owner, scope: :product_owner) }
 
-  scenario "by clicking the Edit button" do
-    visit product_path(product)
+  context "when the Product has been requested" do
+    scenario "and does not see the Request to Edit button" do
+      create(:product_request, product: product, user: product_owner)
+      visit product_path(product)
 
-    click_on "Edit"
+      expect(page).to_not have_selector(:link_or_button, "Edit")
+      expect(page).to have_text t("products.product_content.requested")
+    end
+  end
 
-    expect(page).
-      to have_text t("product_owners.product_requests.create.success")
-    expect(page).
-      to have_text t("product_owners.dashboard.index.heading")
+  context "when the Product has not been requested" do
+    scenario "by clicking the Edit button" do
+      visit product_path(product)
+
+      click_on "Edit"
+
+      expect(page).
+        to have_text t("product_owners.product_requests.create.success")
+      expect(page).
+        to have_text t("product_owners.dashboard.index.heading")
+    end
   end
 
   def product

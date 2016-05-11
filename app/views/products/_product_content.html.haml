@@ -10,6 +10,10 @@
         - if no_users_signed_in?
           = button_tag(class: "modal-trigger", data: {modal_id: "product-owner-signup-modal"}, id: "edit-product-button", type: "submit") do
             = t(".edit_product_html")
+        - elsif product_belongs_to_user?(product)
+          = link_to product_owner_dashboard_path, class: "requested" do
+            %i.fa.fa-check
+            = t(".requested")
         - else
           = button_tag(id: "edit-product-button", type: "submit") do
             = t(".edit_product_html")

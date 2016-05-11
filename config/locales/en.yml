@@ -91,6 +91,7 @@ en:
         Find the products you need to build, communicate, and deliver faster.
     product_content:
       edit_product_html: <i class="fa fa-pencil"></i>Request to Edit
+      requested: Product Requested
     product_owner_modal:
       heading: Sign Up to Edit Products on Apps.gov
     product_sidebar:
