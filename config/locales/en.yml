@@ -53,6 +53,7 @@ en:
       heading: Sign up to start procuring the best software out there.
     navigation:
       dashboard: Dashboard
+      edit_account: Edit Account
       sign_in: Sign in
       sign_out: Sign Out
       sign_up: Sign Up

@@ -9,6 +9,10 @@ Rails.application.routes.draw do
     :product_owner,
     controllers: { registrations: "product_owners/registrations", sessions: "sessions" }
 
+  devise_scope :user do
+    get "/signout", to: "sessions#destroy", as: :user_signout
+  end
+
   namespace :admin do
     resources :products, only: [:new, :create]
   end

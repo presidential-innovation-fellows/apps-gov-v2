@@ -16,4 +16,14 @@ class SessionsController < Devise::SessionsController
     sign_out(signed_in_user.type.underscore)
     super
   end
+
+  private
+
+  def user_type
+    if signed_in_user.type.present?
+      signed_in_user.type.underscore
+    else
+      "user"
+    end
+  end
 end

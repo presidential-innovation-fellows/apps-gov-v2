@@ -9,10 +9,18 @@
           - if product_owner_signed_in?
             %li.primary
               = link_to t(".dashboard"), product_owner_dashboard_path
-          %li
-            = link_to t(".sign_out"),
-              destroy_user_session_path,
-              method: :delete
+          %li.dropdown-parent
+            = link_to edit_account_path do
+              = signed_in_user.name
+              %i.fa.fa-caret-down
+            %ul.submenu#nav-submenu
+              %li
+                = link_to t(".edit_account"), edit_account_path
+              %li
+                = link_to t(".sign_out"),
+                  user_signout_path,
+                  id: "sign-out-js",
+                  class: "sign-out-link"
         - else
           %li.secondary
             = modal_link(t(".sign_in"), new_user_session_path, "sign-in-modal")

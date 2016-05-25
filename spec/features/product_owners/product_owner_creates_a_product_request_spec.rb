@@ -8,7 +8,7 @@ feature "Product Owner Creates Product Request" do
       create(:product_request, product: product, user: product_owner)
       visit product_path(product)
 
-      expect(page).to_not have_selector(:link_or_button, "Edit")
+      expect(page).to_not have_selector(:link_or_button, "Request to Edit")
       expect(page).to have_text t("products.product_content.requested")
     end
   end
@@ -17,7 +17,7 @@ feature "Product Owner Creates Product Request" do
     scenario "by clicking the Edit button" do
       visit product_path(product)
 
-      click_on "Edit"
+      click_on "Request to Edit"
 
       expect(page).
         to have_text t("product_owners.product_requests.create.success")

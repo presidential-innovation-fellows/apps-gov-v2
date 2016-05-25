@@ -9,4 +9,8 @@ class User < ActiveRecord::Base
   belongs_to :agency
   has_many :products, through: :product_requests
   has_many :product_requests
+
+  def name
+    first_name + " " + last_name
+  end
 end
