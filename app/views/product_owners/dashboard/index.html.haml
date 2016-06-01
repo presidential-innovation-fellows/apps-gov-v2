@@ -2,4 +2,6 @@
   %header.page-header
     %h1
       = t(".heading")
+  = render "approved_product_requests",
+    approved_product_requests: @approved_product_requests
   = render "product_requests", product_requests: @product_requests

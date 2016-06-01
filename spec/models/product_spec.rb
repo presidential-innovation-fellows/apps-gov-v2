@@ -19,6 +19,10 @@ describe Product do
     end
   end
 
+  context "draftable" do
+    it { should be_draftable }
+  end
+
   context "presence" do
     it { should validate_presence_of :name }
     it { should validate_presence_of :short_description }

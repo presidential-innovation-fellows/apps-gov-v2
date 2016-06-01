@@ -1,0 +1,13 @@
+= simple_form_for [:product_owners, product] do |f|
+  = f.input :name
+  = f.input :url
+  = f.input :logo, as: :file
+  = f.input :founded_year
+  = f.input :location
+  = f.input :short_description
+  = f.input :long_description
+  = f.input :sales_poc
+  = f.input :number_of_employees
+  = f.input :twitter_handle
+  = f.input :linkedin_id
+  = f.submit t(".submit")

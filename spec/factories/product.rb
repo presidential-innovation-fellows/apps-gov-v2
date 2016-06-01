@@ -6,6 +6,12 @@ FactoryGirl.define do
     url "https://pif.gov/pizza-tracker"
     logo { fixture_file_upload(Rails.root.join('spec', 'fixtures', 'sample-logo.png'), 'image/png') }
 
+    trait :published do
+      after(:build) do |product|
+        product.published_at = Time.now
+      end
+    end
+
     trait :with_category do
       after(:create) do |product|
         category = create(:category)

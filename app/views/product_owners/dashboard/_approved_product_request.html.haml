@@ -1,0 +1,9 @@
+= content_tag_for :tr, approved_product_request do
+  %td
+    = link_to approved_product_request.product.name,
+      edit_product_owners_product_path(approved_product_request.product.id)
+  %td
+    - if approved_product_request.product.draft?
+      = t(".in_review")
+    - else
+      = t(".published")

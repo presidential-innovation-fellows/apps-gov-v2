@@ -18,5 +18,17 @@ FactoryGirl.define do
         user.confirm
       end
     end
+
+    trait :with_approved_product do
+      after(:create) do |user|
+        product = create(:product)
+        create(
+          :product_request,
+          published_at: Time.now,
+          product: product,
+          user: user,
+        )
+      end
+    end
   end
 end

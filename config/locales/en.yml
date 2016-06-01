@@ -85,6 +85,15 @@ en:
     dashboard:
       index:
         heading: Dashboard
+      approved_product_request:
+        in_review: In Review
+        published: Published
+      approved_product_requests:
+        drafts: Status
+        heading: Products
+        no_products:
+          No products have been approved for you to edit yet.
+        product_name: Product Name
       product_requests:
         heading: Requested Products
         no_requests: You have no outstanding Product Requests.
@@ -94,6 +103,14 @@ en:
       create:
         failure: Something went wrong. Please try again.
         success: Your request to edit this Product has been created.
+    products:
+      edit:
+        header: Edit Product
+      form:
+        submit: Request Edits
+      update:
+        error: Something went wrong. Please try again.
+        success: Product edits submitted.
     registrations:
       new:
         heading: Sign up to list your product Apps.gov marketplace!

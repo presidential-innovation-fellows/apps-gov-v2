@@ -22,10 +22,25 @@ describe User do
       it { should be_able_to(:create, ProductRequest.new) }
     end
 
+    context "when a ProductOwner" do
+      let(:user) { product_owner }
+      it { should be_able_to(:create, ProductRequest.new) }
+
+      it do
+        product = create(:product)
+        create(:product_request, product: product, user: product_owner)
+        should be_able_to(:manage, product)
+      end
+    end
+
     context "when an admin" do
       let(:user) { create(:user, admin: true) }
 
       it { should be_able_to(:manage, Product.new) }
     end
+  end
+
+  def product_owner
+    @product_owner ||= create(:user, :as_product_owner)
   end
 end

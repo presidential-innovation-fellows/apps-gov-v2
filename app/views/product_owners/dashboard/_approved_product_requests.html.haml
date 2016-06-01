@@ -1,0 +1,17 @@
+.product-requests
+  %h2
+    = t(".heading")
+  - if approved_product_requests.any?
+    %table
+      %thead
+        %tr
+          %th
+            = t(".product_name")
+          %th
+            = t(".drafts")
+      %tbody
+        = render partial: "approved_product_request",
+          collection: approved_product_requests
+  - else
+    %p
+      = t(".no_products")

@@ -20,6 +20,8 @@ class Product < ActiveRecord::Base
   has_many :users, through: :product_requests
   has_many :product_requests
 
+  has_drafts
+
   friendly_id :name, use: [:slugged, :finders]
 
   validates \
