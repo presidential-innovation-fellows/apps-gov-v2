@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
+    resources :product_requests, only: [:edit, :update]
     resources :products, only: [:new, :create]
   end
 
@@ -21,9 +22,17 @@ Rails.application.routes.draw do
     resources :product_requests, only: [:new, :create]
   end
 
-  get "dashboard", to: "product_owners/dashboard#index", as: :product_owner_dashboard
+  constraints(RoleRouteConstraint.new("user")) do
+    get "/dashboard", to: "admin/dashboard#index", as: :admin_dashboard
+  end
 
-  get "products/search", to: "products#search", as: :products_search
+  constraints(RoleRouteConstraint.new("product_owner")) do
+    get "/dashboard", to: "product_owners/dashboard#index", as: :product_owner_dashboard
+  end
+
+  get "/dashboard", to: redirect("/")
+
+  get "/products/search", to: "products#search", as: :products_search
 
   resources :categories, only: [:show]
 

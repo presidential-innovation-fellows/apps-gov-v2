@@ -1,5 +1,28 @@
 en:
   admin:
+    dashboard:
+      index:
+        header: Dashboard
+      product_requests:
+        date: Date
+        heading: Product Requests
+        no_requests: No outstanding product requests.
+        product_name: Product Name
+        requester: Requested By
+    product_requests:
+      edit:
+        approve: Approve Request
+        header: Product Request
+        product: Product Info
+        user: User Info
+      product_info:
+        name: Name
+      update:
+        error: Something went wrong. Please try again.
+        success: Product approved!
+      user_info:
+        email: Email
+        name: Name
     products:
         create:
           error_message: There was an error creating this product. Please try agian.

@@ -1,0 +1,16 @@
+%section.edit-product-request.usa-grid
+  %header
+    %h1
+      = t(".header")
+    = simple_form_for [:admin, @product_request] do |f|
+      .user
+        %h2
+          = t(".user")
+        = render "user_info", user: @product_request.user
+
+      .product
+        %h2
+          = t(".product")
+        = render "product_info", product: @product_request.product
+
+      = f.submit t(".approve")

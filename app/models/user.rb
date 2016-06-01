@@ -13,4 +13,8 @@ class User < ActiveRecord::Base
   def name
     first_name + " " + last_name
   end
+
+  def type_sym
+    type.underscore.to_sym
+  end
 end

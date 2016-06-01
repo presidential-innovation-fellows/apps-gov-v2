@@ -1,0 +1,8 @@
+= content_tag_for :tr, product_request do
+  %td
+    = link_to product_request.name,
+      edit_admin_product_request_path(product_request)
+  %td
+    = product_request.draft.created_at.strftime("%m/%d/%y")
+  %td
+    = product_request.user.name
