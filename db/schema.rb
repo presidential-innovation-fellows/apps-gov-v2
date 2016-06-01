@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160601160948) do
+ActiveRecord::Schema.define(version: 20160601165357) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(version: 20160601160948) do
     t.string "code", null: false
     t.string "name", null: false
   end
+
+  create_table "ato_statuses", force: :cascade do |t|
+    t.boolean "pending",     default: false, null: false
+    t.integer "ato_type_id",                 null: false
+    t.integer "product_id",                  null: false
+    t.string  "url"
+  end
+
+  add_index "ato_statuses", ["ato_type_id"], name: "index_ato_statuses_on_ato_type_id", using: :btree
+  add_index "ato_statuses", ["product_id"], name: "index_ato_statuses_on_product_id", using: :btree
 
   create_table "ato_types", force: :cascade do |t|
     t.string "name",        null: false

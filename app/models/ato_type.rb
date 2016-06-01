@@ -5,4 +5,7 @@ class AtoType < ActiveRecord::Base
 
   validates :name, presence: true
   validates :slug, presence: true, uniqueness: true
+
+  has_many :products, through: :ato_statuses
+  has_many :ato_statuses
 end

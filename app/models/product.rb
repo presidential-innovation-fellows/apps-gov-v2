@@ -5,6 +5,9 @@ class Product < ActiveRecord::Base
   has_many :agencies, through: :customers
   has_many :customers
 
+  has_many :ato_types, through: :ato_statuses
+  has_many :ato_statuses
+
   has_many :categories, through: :product_categories
   has_many :product_categories
 
