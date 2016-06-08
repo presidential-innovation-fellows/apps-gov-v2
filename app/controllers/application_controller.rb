@@ -30,4 +30,10 @@ class ApplicationController < ActionController::Base
   def signed_in_user
     current_user || current_government_user || current_product_owner
   end
+
+  def user_for_draftsman
+    if signed_in_user
+      signed_in_user.id
+    end
+  end
 end

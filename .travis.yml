@@ -13,6 +13,7 @@ before_script:
 addons:
   code_climate:
     repo_token: 493531efac1eebe851d814aae2c5d6df645a5fe522ce2449eedae4d5f7fea9de
+  postgresql: "9.3"
 notifications:
   email: false
 script: bundle exec rspec

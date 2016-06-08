@@ -19,6 +19,15 @@ FactoryGirl.define do
       end
     end
 
+    trait :with_draft do
+      after(:create) do |product|
+        user = create(:user, :as_product_owner)
+        product.name = "New Name"
+        product.draft_creation
+        product.draft.update_attributes(whodunnit: user.id)
+      end
+    end
+
     trait :with_gov_user do
       after(:create) do |product|
         user = create(:user, :as_gov_user)

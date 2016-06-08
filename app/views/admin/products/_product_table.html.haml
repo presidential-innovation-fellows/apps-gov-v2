@@ -1,0 +1,11 @@
+%table
+  %tr
+    %th
+      = t(".field")
+    %th
+      = t(".old_value")
+    %th
+      = t(".new_value")
+  %tbody
+    - product_draft.changeset.each do |change|
+      = render "change", change: change

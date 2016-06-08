@@ -1,0 +1,18 @@
+.products
+  %h2
+    = t(".heading")
+  - if product_drafts.any?
+    %table
+      %thead
+        %tr
+          %th
+            = t(".product_name")
+          %th
+            = t(".date")
+          %th
+            = t(".requester")
+      %tbody
+        = render partial: "product_draft", collection: product_drafts
+  - else
+    %p
+      = t(".no_requests")

@@ -4,6 +4,8 @@ module Admin
       @product_requests =
         ProductRequest.joins(:product, :user).
         where("users.type = 'ProductOwner'").drafted
+      @product_drafts =
+        Draftsman::Draft.includes(:item).where(item_type: "Product")
     end
   end
 end

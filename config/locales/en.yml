@@ -9,6 +9,12 @@ en:
         no_requests: No outstanding product requests.
         product_name: Product Name
         requester: Requested By
+      product_drafts:
+        date: Date
+        heading: Product Drafts
+        no_requests: No outstanding Product drafts were found.
+        product_name: Product Name
+        requester: Requested By
     product_requests:
       edit:
         approve: Approve Request
@@ -24,11 +30,21 @@ en:
         email: Email
         name: Name
     products:
-        create:
-          error_message: There was an error creating this product. Please try agian.
-          success_message: Product created!
-        new:
-          header: Create a Product
+      create:
+        error_message: There was an error creating this product. Please try agian.
+        success_message: Product created!
+      edit:
+        header: Approve Product
+        submit: Approve Changes
+      new:
+        header: Create a Product
+      product_table:
+        field: Field
+        new_value: New Value
+        old_value: Old Value
+      update:
+        error: Something went wrong. Please try again.
+        success: Product Draft approved!
 
   categories:
     show:
