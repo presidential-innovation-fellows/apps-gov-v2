@@ -4,7 +4,7 @@ feature "Product Owner Creates Product Request" do
   before { login_as(product_owner, scope: :product_owner) }
 
   context "when the Product has been requested" do
-    scenario "and does not see the Request to Edit button" do
+    scenario "the Product Owner does not see an Edit button" do
       create(:product_request, product: product, user: product_owner)
       visit product_path(product)
 
@@ -14,7 +14,7 @@ feature "Product Owner Creates Product Request" do
   end
 
   context "when the Product has not been requested" do
-    scenario "by clicking the Edit button" do
+    scenario "a ProductOwner can request the Product" do
       visit product_path(product)
 
       click_on "Request to Edit"

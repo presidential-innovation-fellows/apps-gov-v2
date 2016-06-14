@@ -16,10 +16,15 @@ en:
         product_name: Product Name
         requester: Requested By
     product_requests:
+      destroy:
+        error: Something went wrong. Please try again.
+        success: Product Request rejected!
       edit:
         approve: Approve Request
+        confirm_destroy: Are you sure you want to remove this Request?
         header: Product Request
         product: Product Info
+        reject: Reject Request
         user: User Info
       product_info:
         name: Name

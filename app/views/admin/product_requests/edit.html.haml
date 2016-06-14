@@ -13,4 +13,10 @@
           = t(".product")
         = render "product_info", product: @product_request.product
 
-      = f.submit t(".approve")
+      .form-actions
+        = f.submit t(".approve")
+        = link_to t(".reject"),
+          admin_product_request_path(@product_request),
+          class: "usa-button usa-button-secondary",
+          data: {confirm: t(".confirm_destroy")},
+          method: :delete

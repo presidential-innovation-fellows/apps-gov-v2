@@ -12,9 +12,27 @@ module Admin
         flash[:success] = I18n.t("admin.product_requests.update.success")
         redirect_to admin_dashboard_path
       else
-        flash[:success] = I18n.t("admin.product_requests.update.error")
+        flash[:error] = I18n.t("admin.product_requests.update.error")
         render :edit
       end
+    end
+
+    def destroy
+      @product_request = ProductRequest.find(params[:id])
+
+      if @product_request.destroy!
+        flash[:success] = I18n.t("admin.product_requests.destroy.success")
+        redirect_to admin_dashboard_path
+      else
+        flash[:error] = I18n.t("admin.product_requests.destroy.error")
+        render :edit
+      end
+    end
+
+    private
+
+    def product_request
+      @product_request ||= ProductRequest.find(params[:product_request_id])
     end
   end
 end
