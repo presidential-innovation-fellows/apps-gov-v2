@@ -15,6 +15,17 @@ en:
         no_requests: No outstanding Product drafts were found.
         product_name: Product Name
         requester: Requested By
+    messages:
+      create:
+        error: Something went wrong. Please try again.
+        success: Product edits rejected.
+      new:
+        content: Reason for Rejection
+        description:
+          To reject these Product edits, provide a reason that will be sent to
+          the Product’s Owner.
+        header: Reject Product Edits
+        submit: Reject Edits
     product_requests:
       destroy:
         error: Something went wrong. Please try again.
@@ -40,6 +51,7 @@ en:
         success_message: Product created!
       edit:
         header: Approve Product
+        reject: Reject Edits
         submit: Approve Changes
       new:
         header: Create a Product

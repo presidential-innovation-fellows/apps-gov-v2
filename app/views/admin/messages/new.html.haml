@@ -1,0 +1,10 @@
+.usa-grid
+  %header
+    %h1
+      = t(".header")
+    %p
+      = t(".description")
+
+  = simple_form_for [:admin, @product, @message] do |f|
+    = f.input :content, label: t(".content")
+    = f.submit t(".submit")
