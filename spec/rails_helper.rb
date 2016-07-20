@@ -24,6 +24,7 @@ module Features
 end
 
 RSpec.configure do |config|
+  config.include AuthenticationHelper, type: :controller
   config.include Features, type: :feature
   config.include Devise::TestHelpers, type: :controller
   config.include Paperclip::Shoulda::Matchers, type: :model

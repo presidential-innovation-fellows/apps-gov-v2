@@ -148,6 +148,10 @@ en:
       new:
         heading: Sign up to list your product Apps.gov marketplace!
 
+  product_request_mailer:
+    send_email:
+      subject: Editing Privileges Granted
+
   product_requests:
     create:
       failure: An error occured. Please try again.

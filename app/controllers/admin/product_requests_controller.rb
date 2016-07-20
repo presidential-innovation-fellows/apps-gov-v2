@@ -7,8 +7,10 @@ module Admin
 
     def update
       @product_request = ProductRequest.find(params[:id])
+      @product = @product_request.product
 
       if @product_request.draft.publish!
+        ProductRequestMailer.send_email(@product, @product_request.user)
         flash[:success] = I18n.t("admin.product_requests.update.success")
         redirect_to admin_dashboard_path
       else
