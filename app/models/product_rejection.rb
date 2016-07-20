@@ -7,6 +7,7 @@ class ProductRejection
   def create?
     if @message.save!
       @product.draft.update_attributes(rejected: true)
+      RejectionMailer.send_email(@message, @product, @message.author)
     end
   end
 end

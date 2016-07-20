@@ -182,6 +182,10 @@ en:
       new:
         heading: Tell us a little about yourself
 
+  rejection_mailer:
+    send_email:
+      subject: Your Product Edits Have Been Rejected
+
   time:
     formats:
       default:

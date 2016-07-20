@@ -8,6 +8,7 @@ search:
 ignore_unused:
   - activerecord.*
   - date.*
+  - rejection_mailer.*
   - simple_form.*
   - time.*
   - titles.*
