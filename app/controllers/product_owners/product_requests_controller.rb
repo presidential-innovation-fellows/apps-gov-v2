@@ -13,6 +13,20 @@ module ProductOwners
       redirect_to product_path(@product_request.product)
     end
 
+    def destroy
+      @product_request = ProductRequest.find(params[:id])
+
+      if @product_request.destroy
+        flash[:success] =
+          I18n.t("product_owners.product_requests.destroy.success")
+      else
+        flash[:error] =
+          I18n.t("product_owners.product_requests.destroy.error")
+      end
+
+      redirect_to dashboard_path
+    end
+
     private
 
     def product_request_params

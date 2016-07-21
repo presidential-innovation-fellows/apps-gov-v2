@@ -15,7 +15,7 @@ feature "Product Owner creates an Account" do
       click_on "Sign up"
 
       expect(page).
-        to have_text t("devise.registrations.signed_up")
+        to have_text t("modules.navigation.dashboard")
     end
   end
 
@@ -33,7 +33,7 @@ feature "Product Owner creates an Account" do
       click_on "Sign up"
 
       expect(page).
-        to have_text t("devise.registrations.signed_up")
+        to have_text t("modules.navigation.dashboard")
     end
   end
 

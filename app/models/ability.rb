@@ -10,10 +10,11 @@ class Ability
       can :create, ProductRequest
       can :read, Dashboard
     elsif user.type == "ProductOwner"
-      can :create, ProductRequest
       can :manage, Product do |product|
         product.product_requests.map(&:user_id).include? user.id
       end
+      can :create, ProductRequest
+      can :destroy, ProductRequest, user_id: user.id
       can :read, Dashboard
     else
       can :read, Product

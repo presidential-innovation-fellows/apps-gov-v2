@@ -2,3 +2,8 @@
   %td
     = link_to product_request.product.name,
       product_path(product_request.product)
+  %td
+    = link_to t(".delete"),
+      product_owners_product_request_path(product_request),
+      data: {confirm: t(".confirm_destroy")},
+      method: :delete

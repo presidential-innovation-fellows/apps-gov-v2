@@ -14,7 +14,7 @@ feature "User Sign In" do
 
       click_on t("devise.sessions.form.sign_in")
 
-      expect(page).to have_text "Signed in successfully"
+      expect(page).to have_text t("modules.navigation.dashboard")
     end
   end
 
@@ -31,7 +31,7 @@ feature "User Sign In" do
       within("div#sign-in-modal") do
         click_on t("devise.sessions.form.sign_in")
       end
-      expect(page).to have_text t("devise.sessions.signed_in")
+      expect(page).to have_text t("modules.navigation.dashboard")
     end
   end
 

@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   end
 
   namespace :product_owners do
-    resources :product_requests, only: [:new, :create]
+    resources :product_requests, only: [:new, :create, :destroy]
     resources :products, only: [:edit, :update]
   end
 

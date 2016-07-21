@@ -129,7 +129,11 @@ en:
         no_products:
           No products have been approved for you to edit yet.
         product_name: Product Name
+      product_request:
+        confirm_destroy: Are you sure you want to remove this request?
+        delete: Remove
       product_requests:
+        actions: Actions
         heading: Requested Products
         no_requests: You have no outstanding Product Requests.
         product_name: Product Name
@@ -138,6 +142,9 @@ en:
       create:
         failure: Something went wrong. Please try again.
         success: Your request to edit this Product has been created.
+      destroy:
+        error: Something went wrong. Please try again.
+        success: Your Product Request was deleted.
     products:
       edit:
         header: Edit Product
