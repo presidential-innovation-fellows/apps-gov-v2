@@ -12,6 +12,7 @@ feature "A Government User signs up" do
       fill_in "Email", with: "email@email.gov"
       fill_in "Password", with: "12345sixsevenEight", match: :prefer_exact
       select(agency.name, from: "Agency")
+      fill_in "Team Name (your team within your agency)", with: "Team Name"
 
       click_on "Sign up"
 

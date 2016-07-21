@@ -25,8 +25,14 @@ class GovernmentUsers::RegistrationsController < RegistrationsController
   end
 
   def sign_up_params
-    params.require(:government_user).
-      permit(:agency_id, :first_name, :last_name, :email, :password)
+    params.require(:government_user).permit(
+      :agency_id,
+      :email,
+      :first_name,
+      :last_name,
+      :organization_name,
+      :password
+    )
   end
 
   def user_has_gov_email?(email)

@@ -90,6 +90,8 @@ en:
     failures:
       no_gov_email: You must have a .gov or .mil email address to sign up.
     registrations:
+      form:
+        organization_name_html: Team Name <em>(your team within your agency)</em>
       new:
         heading: Sign up to start using the Apps.gov marketplace!
 

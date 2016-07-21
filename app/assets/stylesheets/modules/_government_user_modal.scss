@@ -1,6 +1,12 @@
 .default-layout {
+
   .gov-user-sign-up {
-    top: 1em;
+    padding: 1.5em 2em;
+    top: 0.5em;
+
+    label {
+      font-size: 0.85em;
+    }
   }
 }
 
@@ -14,6 +20,25 @@
       @include animation-fill-mode(forwards);
       @include animation-delay(0.1s);
     }
+  }
+
+  h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  input {
+
+    &.string {
+      font-size: 0.9em;
+      padding: 0.65em 0.75em;
+    }
+  }
+
+  select {
+    font-size: 0.9em;
+    padding: 0.65em 0.75em;
   }
 
   .loading {
