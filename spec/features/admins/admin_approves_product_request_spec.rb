@@ -4,8 +4,9 @@ feature "Admin Approves Product Request" do
   before { login_as(admin, scope: :user) }
 
   scenario "and no longer sees the Product Request in the Dashboard" do
-    product_request =
+    product_request ||=
       create(:product_request, :with_draft, user: product_owner)
+
     visit admin_dashboard_path
 
     click_on product_request.name
@@ -20,6 +21,6 @@ feature "Admin Approves Product Request" do
   end
 
   def product_owner
-    @product_owner ||= create(:user, type: "ProductOwner")
+    @product_owner ||= create(:user, :verified, type: "ProductOwner")
   end
 end

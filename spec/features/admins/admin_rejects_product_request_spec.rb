@@ -21,7 +21,7 @@ feature "Admin Rejects Product Request" do
   end
 
   def product_owner
-    @product_owner ||= create(:user, type: "ProductOwner")
+    @product_owner ||= create(:user, :verified, type: "ProductOwner")
   end
 
   def product_request
