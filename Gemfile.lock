@@ -367,7 +367,7 @@ DEPENDENCIES
   newrelic_rpm (>= 3.9.8)
   normalize-rails (~> 3.0.0)
   paperclip (~> 5.0.0.beta1)
-  pg
+  pg (>= 0.18.4)
   pry-rails
   puma
   rack-canonical-host

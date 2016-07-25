@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.2.4"
+ruby "2.3.1"
 
 gem "airbrake",'~> 4.3'
 gem "algoliasearch-rails"
@@ -24,7 +24,7 @@ gem "neat", "~> 1.7.0"
 gem "newrelic_rpm", ">= 3.9.8"
 gem "normalize-rails", "~> 3.0.0"
 gem "paperclip", "~> 5.0.0.beta1"
-gem "pg"
+gem "pg", ">= 0.18.4"
 gem "puma"
 gem "rack-canonical-host"
 gem "rails", "~> 4.2.5"
