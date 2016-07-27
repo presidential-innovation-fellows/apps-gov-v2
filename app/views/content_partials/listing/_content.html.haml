@@ -1,0 +1,235 @@
+%h2#started
+  How to List Your Product
+%p
+  The following items are required to be listed on Apps.Gov to maintain the
+  integrity and quality of product offerings:
+%ul
+  %li
+    The product must be hosted or provide hosting in the cloud.
+  %li
+    The product must be a type of service (e.g. SaaS, PaaS, IaaS).
+  %li
+    The product must have a tier that can be purchased. If you are a free
+    service, all you need is a federally-compatible Terms of Service
+    (agency dependent), see
+    = succeed "." do
+      = link_to "here", "#tos"
+%p
+  If you meet these requirements and would like to be listed on Apps.Gov, please
+  follow the steps below:
+%ol.signup-instructions
+  %li
+    Click on the button below which will prompt you to sign up for Apps.gov.
+  %li
+    Once logged in, navigate to your Dashboard where you will be able to
+    create a new product.
+  %li
+    Submit your new product and an admin will review your request. After your
+    request has been reviewed, you will receive an email telling you whether
+    your product has been added or rejected.
+#listing-button
+  = button_tag(class: "modal-trigger usa-button usa-button-big", data: {modal_id: "product-owner-signup-modal"}, id: "edit-product-button", type: "submit") do
+    Sign Up To List Your Product
+%h2#facts
+  Market Size
+%p
+  Based on
+  = link_to "2014 data",
+    "https://www.opm.gov/policy-data-oversight/data-analysis-documentation/federal-employment-reports/historical-tables/total-government-employment-since-1962/",
+    target: "_blank"
+  from the Office of Personnel Management, the federal government consists of
+%h3
+  4.2 million employees
+%p
+  which includes 2.67 million civilians and 1.5 million uniformed military
+  personnel. Additionally, the proposed 2016 IT spend by the federal government
+  is set to
+%h3 $79.8 billion
+%p
+  an 1.8% increase from 2015. This includes big spenders like the Department of Defense ($30.7 billion) and the Department of Health and Human Services ($11.4 billion), followed closely by Homeland Security ($6.2 billion), Treasury ($4.5 billion), and Veterans Affairs ($4.4 billion). Read the full FY2016 IT budget proposal
+  = succeed "." do
+    = link_to "here",
+      "https://www.whitehouse.gov/sites/default/files/omb/budget/fy2016/assets/ap_17_it.pdf",
+      target: "blank"
+%h2#procurement
+  Procurement
+%p
+  Below you'll find a list of the various government-wide procurement options agencies can use to buy your software. There are many types of contract vehicles, but Apps.Gov is focused on listing Governmentwide Acquisition Contracts (GWACs) AND contracts that allow for purchasing across the federal government to maximize market reach for products listed.
+%h4#micro Micro-Purchase Threshold
+%p
+  Have a product that costs under $3,500/year? Agencies and the subsequent purchase card holders can make a purchase using their government procurement card. However, if the total cost of the service/product exceeds the threshold, alternative contract vehicle options will need to be explored. To learn more, please visit
+  = succeed "." do
+    = link_to "https://www.acquisition.gov/far/html/Subpart%2013_2.html", "https://www.acquisition.gov/far/html/Subpart%2013_2.html", target: "_blank"
+%h4#s70
+  Schedule 70
+%p
+  Schedule 70 is an indefinite delivery/indefinite quantity (IDIQ) multiple award schedule, which allows federal, state, local and tribal government entities to procure new and emerging technologies from companies offering IT products and services. Over $15 billion dollars in procurement is available annually to over 5000 customers, with 85% small businesses.
+%p
+  To participate in the IT Schedule 70, please review the information at http://www.gsa.gov/portal/content/104506 and contactfastlane@gsa.gov for more information. If interested in participating, depending on the level of dedicated resources by the company, time to complete can range from 30 to 60 days. Generally, the required documentation overview can be noted below (not limited to):
+%p
+  %strong Administrative
+%ul
+  %li Pathway to Success Training
+  %li
+    Systems for Awards Management (
+    = link_to "SAM", "https://sam.gov", target: "_blank"
+    ) registration
+  %li Duns &amp; Bradstreet Past Performance Survey
+  %li Digital Certificate
+  %li Certified Financial Statements (Income Statement, Balance Sheet, and GSA Form 527)
+  %li Any Potential Local, State, or Federal Business Procurements
+%p
+  %strong Technical
+%ul
+  %li Technical Proposal
+  %li Cloud Proposal
+%p
+  %strong Pricing
+%ul
+  %li Price Proposal Template
+  %li Supporting Pricing Documentation
+  %li Price Narrative
+  %li Commerical Price List or Market Rate Sheet
+%h4#sewp NASA SEWP
+%p
+  The
+  = link_to "NASA Solutions for Enterprise Wide Procurement (SEWP)",
+    "http://www.sewp.nasa.gov/",
+    target: "_blank"
+  is a multi-award GWAC vehicle focused on commercial IT products and product based services. There are 147 pre-competed Contract Holders that serve as vendors of IT technologies.
+%p To be procured using the SEWP contract vehicle, a government contracting officer will submit a Request for Quote (RFQ) to the SEWP team, which is then sent out to the 147 vendors. They will identify the appropriate technology, negotiate terms, and compete the prices, which will then be returned to the government contracting officer for selection. The turn around for this process is estimated to take 4-7 business days.
+%p
+  If you'd like to preemptively list your product with SEWP vendors to expedite the RFQ process, please reach out to
+  = succeed "." do
+    = link_to "help@nasa.gov", "mailto:help@sewp.nasa.gov"
+%h4#nitaac NIH NITAAC
+%p
+  The National Institute of Health (NIH)
+  = link_to "NIH Information Technology Acquisition and Assessment Center",
+    "https://nitaac.nih.gov/nitaac/",
+    target: "_blank"
+  is an Office of Management and Budget (OMB) GWAC for IT procurement, which consists of: CIO-SP3, CIO-SP3 Small Business and CIO-CS. If you have questions, please reach out to the NITAAC team via
+  = succeed "." do
+    = link_to "NITAACsupport@nih.gov",
+      "mailto:NITAACsupport@nih.gov",
+      target: "_blank"
+%h2#reviews Reviews
+%h4#tos Federally-compatible ToS
+%p
+  When selling to the federal government, companies will often be required to negotiate a federal-compatible Terms of Service. A list of approved negotiated ToS can be found at
+  = succeed "," do
+    %a{:href => "http://www.digitalgov.gov/resources/negotiated-terms-of-service-agreements/", :target => "blank"} digitalgov.gov
+  = succeed "." do
+    %a{:href => "http://www.digitalgov.gov/resources/agency-points-of-contact-for-federal-compatible-terms-of-service-agreements/", :target => "blank"} here
+%h4#pta Privacy Threshold Analysis
+%p A Privacy Threshold Analysis (PTA) document is a form used for all information technology systems that are going through the certification and accreditation (C&amp;A) process required under the Federal Information Security Management Act (FISMA), to determine whether they properly maintain personally identifiable information (PII). The PTA includes a description of the system, what PII, if any, is collected or used, and from whom.
+%h4#pia Privacy Impact Assessment
+%p
+  When personal information on individuals is collected and used as a part of a system, the product team is required to conduct a Privacy Impact Assessment (reference:
+  = succeed ")." do
+    %a{:href => "https://www.whitehouse.gov/omb/memoranda_m03-22", :target => "blank"} E-Government Act of 2002
+%ul
+  %li The information collected is used only for the intended purpose;
+  %li The information is timely and accurate;
+  %li The information is protected according to applicable laws and regulations while in GSA’s possession;
+  %li The impact of the information systems on individual privacy is fully addressed; and
+  %li The public is aware of the information GSA collects and how the information is used.
+  %li Further work and approval from the agency’s Chief Privacy Officer may be required.
+%h4#sorn Systems of Record Notice (SORN)
+%p
+  Regulates the collection, maintenance, use, and dissemination of personally identifiable information (PII) about people (referred to as a “system of records”) by the government. A SORN may be required when collecting, storing, and making retrievable people’s personally identifiable information. More information regarding SORNs can be found
+  = succeed "." do
+    %a{:href => "http://www.gsa.gov/portal/content/104265", :target => "blank"} here
+%ul
+  %li A System of Record is created when a group of information is collected and stored in a way that can be retrieved by the name of an individual, or by any number, symbol, or other unique identifier assigned to that individual.
+  %li The Privacy Act requires that any system of record be publicized via a SORN, which is a notice published to the Federal Register for public comment. This process lasts a minimum of 60 days.
+  %li Further work and approval from the agency’s Chief Privacy Officer may be required.
+%h4#ato-overview Authority to Operate
+%p
+  Governed by the
+  = succeed "," do
+    %a{:href => "http://csrc.nist.gov/drivers/documents/FISMA-final.pdf", :target => "blank"} Federal Information Security Management Act of 2002
+%p#ato-agency
+  %strong Agency ATO
+%p Agency ATOs are issued and approved at the agency head or delegated authority level. The process in which agencies follow to appropriately assess an IT system may vary based on the controls and mechanisms for each agency.
+%p#fedramp
+  %strong FedRAMP
+%p
+  The Federal Risk and Authorization Management Program, or
+  = succeed "," do
+    %a{:href => "https://www.fedramp.gov", :target => "blank"} FedRAMP
+%p The cloud systems can take one of three paths to become FedRAMP compliant: JAB Provisional Authorization (P-ATO), Agency Authorization, and Cloud Service Provider (CSP) Supplied Package. No matter which path a CSP has taken — JAB, Agency, or CSP Supplied — all cloud systems listed here have demonstrate FedRAMP compliance and can be leveraged by any agency. Additional details for each path is listed below.
+%ul
+  %li#fedramp-jab
+    %strong JAB Provisional Authorizations:
+    Cloud systems listed under the FedRAMP P-ATO path have undergone a rigorous technical review by the FedRAMP PMO, been assessed by a FedRAMP accredited 3PAO, and received a P-ATO from the DHS, DOD, and GSA CIOs.
+  %li#fedramp-agency
+    %strong Agency FedRAMP Authorizations:
+    Cloud systems listed under the Agency Authorization have worked directly with a customer agency to achieve a FedRAMP compliant ATO that has been verified by the FedRAMP PMO.
+    %br/
+    = succeed "FedRAMP" do
+      %br/
+  %li#fedramp-csp
+    %strong CSP Supplied Packages:
+    Cloud systems listed under the CSP Supplied Package path have submitted to the FedRAMP PMO a completed Security Assessment Package (SAP) that has been assessed by a FedRAMP accredited 3PAO.
+%h4#add-testing Additional Testing
+%p To assist government buyers in making informed descisions when procuring cloud products, below is a list of some additional tests.
+%p#fedramp-ready
+  %strong FedRAMP Ready
+%p
+  FedRAMP Ready is a milestone step that ensures that a CSP’s documentation meets the FedRAMP PMO’s minimum quality and security standards. CSPs must pass an Initial Review of their SSP before being listed as FedRAMP Ready on fedramp.gov. The SSP includes twelve attachments that must also be evaluated during the Initial Review:
+%ul
+  %li FIPS Pub 199
+  %li E-Authentication Template
+  %li Information System Security Policies and Procedures
+  %li Configuration Management (CM) Plan
+  %li Control Implementation Summary (CIS)
+  %li CIS Worksheet
+  %li IT Contingency Plan (CP)
+  %li Incident Response Plan (IRP)
+  %li Privacy Threshold Analysis (PTA) / Privacy Impact Analysis (PIA)
+  %li User Guide
+  %li Rules of Behavior (ROB)
+  %li Signature Page
+A CSP can be listed as FedRAMP Ready on fedramp.gov for maximum of one year.
+%p
+  %a{:href => "https://www.fedramp.gov/marketplace/fedramp-ready-systems/", :target => "blank"} FedRAMP Ready
+  CSPs  have proven they are ready for agency or FedRAMP PMO detailed reviews required to become FedRAMP Compliant and gives agencies the confidence that the SSP documentation meets the FedRAMP PMO’s quality and security standards that are necessary to initiate the assessment and authorization process with the JAB.
+%p#fedramp-infra
+  %strong FedRAMP Infrastructure
+%p This designation is for CSPs who are currently hosted on FedRAMP approved infrastructure. This does not represent FedRAMP approval, only a designation to help further inform a government buyer.
+%p#swamp
+  %strong DHS Software Assurance Marketplace (SWAMP)
+%p
+  The Software Assurance Marketplace (SWAMP) is committed to bringing a transformative change to the national software assurance landscape by providing a national marketplace that provides continuous software assurance capabilities to researchers and developers. By providing Software Assurance (SWA) researchers, tool developers, tool users, and educators who train our workforce a suite of secure and dependable analysis services, SWAMP will reduce the number of vulnerabilities deployed in software. To learn more, please visit
+  = succeed "." do
+    %a{:href => "https://www.dhs.gov/science-and-technology/csd-swamp", :target => "blank"} https://www.dhs.gov/science-and-technology/csd-swamp
+%p#nccoe
+  %strong NCCoE Review
+%p
+  The National Cybersecurity Center of Excellence (NCCoE) at the National Institute of Standards and Technology (NIST) works with experts from industry, government, and academia to address businesses’ most pressing cybersecurity problems with practical, standards-based solutions using commercially available technologies. We seek problems that affect an entire sector, or multiple sectors. We then identify applicable standards and best practices and collaborate with creators of commercial, off-the-shelf products to use them in developing example solutions in our labs. Finally, we publish NIST Cybersecurity Practice Guides (Special Publication series 1800), which include all of the information and instruction businesses need to deploy the use of secure, standards-based solutions. To learn more, please visit
+  = succeed "." do
+    %a{:href => "https://nccoe.nist.gov/", :target => "blank"} https://nccoe.nist.gov/
+%p#icd-503
+  %strong ICD 503
+%p
+  Intelligence Community Directive 503 (ICD 503), “Intelligence Community Information Technology Systems Security Risk Management, Certification and Accreditation,” is the relevant guidance for the risk management and certification of information systems across the IC. This standard specifically requires the IC to use NIST or CNSS standards for security certification assessment and testing.  CNSS Policy No. 22, “Policy on Information Assurance Risk Management for National Security Systems,” specifically points to FISMA for security audit controls. To learn more, please visit
+  = succeed "." do
+    %a{:href => "http://www.dni.gov/files/documents/ICD/ICD_503.pdf", :target => "blank"} http://www.dni.gov/files/documents/ICD/ICD_503.pdf
+%p#hipaa
+  %strong HIPAA
+%p
+  The Health Insurance Portability and Accountability Act of 1996 (HIPAA; Pub.L. 104–191, 110 Stat. 1936, enacted August 21, 1996) was enacted by the United States Congress and signed by President Bill Clinton in 1996. It has been known as the Kennedy–Kassebaum Act or Kassebaum–Kennedy Act after two of its leading sponsors.[1][2] Title I of HIPAA protects health insurance coverage for workers and their families when they change or lose their jobs. Title II of HIPAA, known as the Administrative Simplification (AS) provisions, requires the establishment of national standards for electronic health care transactions and national identifiers for providers, health insurance plans, and employers (source:
+  = succeed ")." do
+    %a{:href => "https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act", :target => "blank"} Wikipedia
+  = succeed "." do
+    %a{:href => "http://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/", :target => "blank"} http://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/
+%p#pci
+  %strong PCI
+%p The Payment Card Industry Data Security Standard (PCI DSS) is a proprietary information security standard for organizations that handle branded credit cards from the major card schemes including Visa, MasterCard, American Express, Discover, and JCB. Private label cards – those which aren't part of a major card scheme – are not included in the scope of the PCI DSS.
+%p
+  The PCI Standard is mandated by the card brands and administered by the Payment Card Industry Security Standards Council. The standard was created to increase controls around cardholder data to reduce credit card fraud. Validation of compliance is performed annually, either by an external Qualified Security Assessor (QSA) that creates a Report on Compliance (ROC) for organizations handling large volumes of transactions, or by Self-Assessment Questionnaire (SAQ) for companies handling smaller volumes (source:
+  = succeed ")." do
+    %a{:href => "https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard", :target => "blank"} Wikipedia
+  = succeed "." do
+    %a{:href => "https://www.pcisecuritystandards.org/", :target => "blank"} https://www.pcisecuritystandards.org/

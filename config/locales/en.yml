@@ -115,6 +115,8 @@ en:
       sign_in: Sign in
       sign_out: Sign Out
       sign_up: Sign Up
+    product_owner_modal:
+      heading: Sign Up to Edit Products on Apps.gov
 
   product_owners:
     dashboard:
@@ -179,8 +181,6 @@ en:
     product_content:
       edit_product_html: <i class="fa fa-pencil"></i>Request to Edit
       requested: Product Requested
-    product_owner_modal:
-      heading: Sign Up to Edit Products on Apps.gov
     product_sidebar:
       get_product: Get this product
     show:
