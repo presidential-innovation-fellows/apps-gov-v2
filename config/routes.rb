@@ -39,7 +39,7 @@ Rails.application.routes.draw do
 
   resources :categories, only: [:show]
 
-  resources :products, only: [:show] do
+  resources :products, only: [:index, :show] do
     resources :product_requests, only: [:create]
   end
 
