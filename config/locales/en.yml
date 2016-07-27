@@ -107,6 +107,22 @@ en:
         US flag signifying that this is a United States Federal Government
         website
       learn_more: Learn More
+    footer:
+      email_heading: Subscribe to our mailing list
+      email_label: Email
+      email_placeholder: your@email.com
+      email_submit: Subscribe
+      gsa: General Services Administration
+      list_product: List Your Product
+      linking_policy: Linking Policy
+      notice:
+        "NOTICE: The federal government doesn’t endorse, sponsor or recommend
+        the products or services on this site or consider them to be superior to
+        any other products or services."
+      pif: Presidential Innovation Fellows
+      privacy_policy: Privacy Policy
+      sitemap: Sitemap
+      source_code: Source Code
     government_user_modal:
       heading: Sign up to start procuring the best software out there.
     navigation:

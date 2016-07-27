@@ -7,12 +7,14 @@ feature "Product Owner creates an Account" do
 
       click_on "Edit"
 
-      fill_in "First name", with: "John"
-      fill_in "Last name", with: "Doe"
-      fill_in "Email", with: "email@email.com"
-      fill_in "Password", with: "12345sixsevenEight", match: :prefer_exact
+      within(".product-owner-modal") do
+        fill_in "First name", with: "John"
+        fill_in "Last name", with: "Doe"
+        fill_in "Email", with: "email@email.com"
+        fill_in "Password", with: "12345sixsevenEight", match: :prefer_exact
 
-      click_on "Sign up"
+        click_on "Sign up"
+      end
 
       expect(page).
         to have_text t("modules.navigation.dashboard")

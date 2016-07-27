@@ -8,13 +8,15 @@ feature "Government User views a Product" do
 
       click_on t("products.product_sidebar.get_product")
 
-      fill_in "First name", with: "John"
-      fill_in "Last name", with: "Doe"
-      fill_in "Email", with: "email@email.gov"
-      fill_in "Password", with: "12345sixsevenEight", match: :prefer_exact
-      select agency.name, from: "Agency"
+      within(".gov-user-sign-up") do
+        fill_in "First name", with: "John"
+        fill_in "Last name", with: "Doe"
+        fill_in "Email", with: "email@email.gov"
+        fill_in "Password", with: "12345sixsevenEight", match: :prefer_exact
+        select agency.name, from: "Agency"
 
-      click_on "Sign up"
+        click_on "Sign up"
+      end
 
       expect(page).to have_text "You’re all set!"
     end

@@ -1,16 +1,19 @@
 .pages-listing {
 
-  .left-col {
-    position: fixed;
-    width: 22%;
+  .page-content {
 
-    li {
-      font-size: 0.9em;
+    .left-col {
+      position: fixed;
+      width: 22%;
+
+      li {
+        font-size: 0.9em;
+      }
     }
-  }
 
-  .right-col {
-    margin-left: 30%;
+    .right-col {
+      margin-left: 30%;
+    }
   }
 
   .signup-instructions {

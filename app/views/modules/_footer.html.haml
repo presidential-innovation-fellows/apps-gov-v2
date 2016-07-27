@@ -1,0 +1,51 @@
+%footer.app-footer
+  .usa-grid
+    .container
+      .left-col
+        .footer-logo
+          %h1.app-logo
+            = link_to t("titles.application"), root_path
+        .links
+          %ul
+            %li
+              = link_to t(".list_product"),
+                page_path("listing")
+            %li
+              = link_to t(".sitemap"),
+                root_path << "sitemap.xml",
+                target: "_blank"
+            %li
+              = link_to t(".privacy_policy"),
+                "http://www.gsa.gov/portal/content/116609",
+                target: "_blank"
+            %li
+              = link_to t(".linking_policy"),
+                "https://18f.gsa.gov/linking-policy/",
+                target: "_blank"
+            %li
+              = link_to t(".source_code"),
+                "https://github.com/presidential-innovation-fellows/apps-gov-v2",
+                target: "_blank"
+        .logos
+          %ul
+            %li
+              = link_to "https://presidentialinnovationfellows.gov/" do
+                = image_tag "logos/pif.png", alt: t(".pif")
+            %li
+              = link_to "http://www.gsa.gov/" do
+                = image_tag "logos/GSA.png", alt: t(".gsa")
+      .right-col
+        = simple_form_for :mailchimp, url: mailchimp_newsletter_url do |f|
+          %h2
+            = t(".email_heading")
+          = f.input :email,
+            as: :string,
+            label: t(".email_label"),
+            placeholder: t(".email_placeholder"),
+            input_html: { id: "mce-EMAIL", name: "EMAIL"}
+          .hidden
+            = f.input :key,
+              input_html: { name: "b_8ff93f9a5662324b360f8107e_0ec80d1a39"}
+          = f.submit t(".email_submit")
+    %p.notice
+      = t(".notice")
