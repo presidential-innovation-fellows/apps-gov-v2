@@ -39,7 +39,7 @@ class Product < ActiveRecord::Base
   validates_attachment_content_type :logo, content_type: %r{\Aimage\/.*\Z}
 
   algoliasearch enqueue: :trigger_delayed_job, sanitize: true do
-    add_attribute :logo_url
+    attribute :name, :logo_url, :short_description, :slug
   end
 
   def self.most_popular
