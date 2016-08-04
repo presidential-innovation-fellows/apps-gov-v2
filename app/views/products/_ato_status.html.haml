@@ -1,0 +1,7 @@
+= content_tag_for :li, ato_status do
+  - if ato_status.url
+    = link_to ato_status.url, target: "_blank" do
+      = ato_status.ato_type.name
+      %i.fa.fa-external-link
+  - else
+    = ato_status.ato_type.name

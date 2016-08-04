@@ -1,0 +1,6 @@
+%h3
+  = t(".heading")
+%ul.checked
+  = render partial: "ato_status", collection: product_presenter.product_ato_statuses
+%ul.unchecked
+  = render partial: "ato_type", collection: product_presenter.remaining_ato_types

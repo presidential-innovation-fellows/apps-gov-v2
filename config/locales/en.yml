@@ -185,6 +185,8 @@ en:
       success: Product Requested!
 
   products:
+    ato_types:
+      heading: Authority to Operate (ATO)
     index:
       categories: Categories
       header: Discover Your Team’s Next Favorite App

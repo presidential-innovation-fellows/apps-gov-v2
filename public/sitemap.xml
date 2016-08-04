@@ -1,585 +1,585 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:7000/</loc>
+    <loc>http://localhost:4000/</loc>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://localhost:7000/products/search</loc>
+    <loc>http://localhost:4000/products/search</loc>
   </url>
   <url>
-    <loc>http://localhost:7000/products</loc>
+    <loc>http://localhost:4000/products</loc>
   </url>
   <url>
-    <loc>http://localhost:7000/products/acquia</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/acquia</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/addthis</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/addthis</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/adobe-connect-govcloud</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/adobe-connect-govcloud</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/adobe-connect-us-ew</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/adobe-connect-us-ew</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/adobe-exp-govcloud</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/adobe-exp-govcloud</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/adobe-exp-us-ew</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/adobe-exp-us-ew</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/adobe-live-govcloud</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/adobe-live-govcloud</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/adobe-live-us-ew</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/adobe-live-us-ew</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/ains</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/ains</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/akamai-technologies</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/akamai-technologies</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/amazon-web-services-ew-public</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/amazon-web-services-ew-public</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/amazon-web-services-gov</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/amazon-web-services-gov</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/appian</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/appian</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/arc-p</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/arc-p</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/arcanum-group-inc</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/arcanum-group-inc</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/arcwrx</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/arcwrx</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/asana</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/asana</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/athoc</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/athoc</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/att-cloud</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/att-cloud</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/att-storage</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/att-storage</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/autodesk-bim</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/autodesk-bim</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/autodesk-cloud</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/autodesk-cloud</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/avue-technologies-corporation</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/avue-technologies-corporation</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/bitly</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/bitly</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/blackboard</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/blackboard</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/blackmesh</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/blackmesh</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/bmc-software</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/bmc-software</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/box</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/box</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/cartodb</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/cartodb</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/centrify</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/centrify</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/cgi</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/cgi</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/cisco</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/cisco</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/clear-government-solutions</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/clear-government-solutions</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/cludo</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/cludo</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/collab9</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/collab9</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/complete-discovery-source</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/complete-discovery-source</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/compusearch</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/compusearch</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/concurrent-technologies-corporation</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/concurrent-technologies-corporation</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/connectsolutions</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/connectsolutions</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/cornerstone-ondemand</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/cornerstone-ondemand</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/coupa</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/coupa</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/crowdkeep-expense</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/crowdkeep-expense</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/crowdkeep-time</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/crowdkeep-time</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/csc</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/csc</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/cyfe</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/cyfe</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/datapipe</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/datapipe</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/decision-lens</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/decision-lens</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/dell</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/dell</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/dialogue-app</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/dialogue-app</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/dipity</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/dipity</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/dot-workplace</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/dot-workplace</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/economic-systems-inc</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/economic-systems-inc</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/edge-hosting</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/edge-hosting</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/esri</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/esri</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/eventbrite</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/eventbrite</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/everbridge</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/everbridge</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/fireeye</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/fireeye</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/flickr</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/flickr</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/general-dynamics-information-technology</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/general-dynamics-information-technology</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/github</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/github</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/google</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/google</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/govdelivery</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/govdelivery</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/group-in3sight</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/group-in3sight</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/hackpad</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/hackpad</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/hootsuite</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/hootsuite</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/hpe-fod</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/hpe-fod</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/hpe-helion</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/hpe-helion</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/huddle</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/huddle</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/ibm-cloud-dod</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/ibm-cloud-dod</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/ibm-maas360</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/ibm-maas360</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/ibm-smartcloud</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/ibm-smartcloud</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/ideascale</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/ideascale</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/ifttt</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/ifttt</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/isite</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/isite</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/itcnp</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/itcnp</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/knight-point-systems</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/knight-point-systems</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/lockheed-martin</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/lockheed-martin</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/mandrill</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/mandrill</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/mapbox</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/mapbox</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/max-general</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/max-general</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/max-shared</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/max-shared</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/measured-voice</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/measured-voice</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/meetup</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/meetup</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/micropact</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/micropact</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/microsoft-azure</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/microsoft-azure</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/microsoft-cloud</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/microsoft-cloud</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/microsoft-dynamics</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/microsoft-dynamics</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/microsoft-itar</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/microsoft-itar</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/microsoft-office</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/microsoft-office</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/microsoft-parature</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/microsoft-parature</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/mobileiron</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/mobileiron</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/netcomm-inc</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/netcomm-inc</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/okta</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/okta</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/onwire</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/onwire</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/opencalais</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/opencalais</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/oracle-fed-cloud</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/oracle-fed-cloud</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/oracle-govcloud</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/oracle-govcloud</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/oracle-service-cloud-dod</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/oracle-service-cloud-dod</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/oracle-service-cloud</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/oracle-service-cloud</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/piktochart</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/piktochart</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/plotly</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/plotly</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/popapp</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/popapp</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/powertrain-inc</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/powertrain-inc</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/project-hosts</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/project-hosts</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/proofpoint</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/proofpoint</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/qualys</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/qualys</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/salesforce</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/salesforce</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/sap</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/sap</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/screendoor</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/screendoor</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/scribd</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/scribd</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/seamlessdocs</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/seamlessdocs</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/securekey-technologies</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/securekey-technologies</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/sendwordnow</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/sendwordnow</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/service-now-com</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/service-now-com</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/skillsoft</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/skillsoft</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/slack</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/slack</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/smartprocure</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/smartprocure</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/social-oomph</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/social-oomph</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/socialtwist</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/socialtwist</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/socrata</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/socrata</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/softlayer</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/softlayer</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/storify</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/storify</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/survey-analytics</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/survey-analytics</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/surveymonkey</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/surveymonkey</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/thousandeyes</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/thousandeyes</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/thunderclap</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/thunderclap</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/tibco-software-inc</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/tibco-software-inc</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/tint</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/tint</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/trapwire</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/trapwire</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/trello</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/trello</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/tubemogul</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/tubemogul</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/unisys-edge</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/unisys-edge</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/unisys-spcg</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/unisys-spcg</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/usda-finance</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/usda-finance</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/usda-it-center</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/usda-it-center</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/uservoice</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/uservoice</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/vazata</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/vazata</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/veracode</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/veracode</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/virtustream</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/virtustream</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/vmware</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/vmware</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/wikispaces</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/wikispaces</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/yammer</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/yammer</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
   <url>
-    <loc>http://localhost:7000/products/zeemaps</loc>
-    <lastmod>2016-06-14</lastmod>
+    <loc>http://localhost:4000/products/zeemaps</loc>
+    <lastmod>2016-08-02</lastmod>
   </url>
 </urlset>

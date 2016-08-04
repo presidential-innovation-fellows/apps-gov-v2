@@ -1,16 +1,16 @@
 %header.product-header
   %h1.product-name
-    = link_to "//#{product.url}", target: "_blank" do
-      = product.name
+    = link_to "//#{product_presenter.product.url}", target: "_blank" do
+      = product_presenter.product.name
       %i.fa.fa-external-link
   - if no_users_signed_in? || product_owner_signed_in?
     .product-edit
-      = simple_form_for [:product_owners, product_request] do |f|
-        = f.input :product_id, value: product.id, as: :hidden
+      = simple_form_for [:product_owners, product_presenter.new_product_request] do |f|
+        = f.input :product_id, value: product_presenter.product.id, as: :hidden
         - if no_users_signed_in?
           = button_tag(class: "modal-trigger", data: {modal_id: "product-owner-signup-modal"}, id: "edit-product-button", type: "submit") do
             = t(".edit_product_html")
-        - elsif product_belongs_to_user?(product)
+        - elsif product_belongs_to_user?(product_presenter.product)
           = link_to product_owner_dashboard_path, class: "requested" do
             %i.fa.fa-check
             = t(".requested")
@@ -18,5 +18,7 @@
           = button_tag(id: "edit-product-button", type: "submit") do
             = t(".edit_product_html")
 .product-info
-  = product.long_description
-
+  = product_presenter.product.long_description
+.column-container
+  .product-ato-types
+    = render "ato_types", product_presenter: product_presenter

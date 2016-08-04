@@ -12,5 +12,6 @@ manifest.yml
 /log/*
 /public/system
 /public/assets
+/public/sitemap.xml
 /tags
 /tmp/*

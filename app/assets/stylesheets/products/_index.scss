@@ -1,11 +1,14 @@
 .aa-suggestion {
+
   &:first-child {
+
     .hit-auto-complete {
       border-radius: 0.2em 0.2em 0 0;
     }
   }
 
   &:last-child {
+
     .hit-auto-complete {
       border-radius: 0 0 0.2em 0.2em;
     }

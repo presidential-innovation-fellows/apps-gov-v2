@@ -2,16 +2,15 @@
   .product-nav.breadcrumbs
     = link_to t(".products"), root_path
     %i.fa.fa-caret-right
-    = @product.name
+    = @product_presenter.product.name
 
   %aside.product-sidebar
     = render "product_sidebar",
-      product: @product,
-      product_request: @product_request
+      product: @product_presenter.product,
+      product_request: @product_presenter.new_product_request
   %section.product-content
     = render "product_content",
-      product: @product,
-      product_request: @product_request
+      product_presenter: @product_presenter
 
 
 - unless signed_in?

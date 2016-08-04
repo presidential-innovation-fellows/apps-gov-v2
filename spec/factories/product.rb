@@ -47,5 +47,12 @@ FactoryGirl.define do
         create(:product_request, product: product)
       end
     end
+
+    trait :with_ato_type do
+      after(:create) do |product|
+        ato_type = create(:ato_type)
+        create(:ato_status, ato_type: ato_type, product: product)
+      end
+    end
   end
 end

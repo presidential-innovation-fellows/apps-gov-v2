@@ -1,11 +1,10 @@
 class ProductsController < ApplicationController
   def index
-    @products = ProductPresenter.new
+    @products = ProductsPresenter.new
   end
 
   def show
-    @product = Product.find(params[:id])
-    @product_request = @product.product_requests.new
+    @product_presenter = ProductPresenter.new(params[:id])
   end
 
   def search

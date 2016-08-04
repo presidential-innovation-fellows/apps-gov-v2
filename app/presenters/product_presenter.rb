@@ -1,13 +1,25 @@
 class ProductPresenter
-  def categories
-    Category.all.order(:name)
+  def initialize(product_id)
+    @product_id = product_id
   end
 
-  def most_popular
-    Product.most_popular
+  def new_product_request
+    product.product_requests.new
   end
 
-  def newest
-    Product.all.order("created_at DESC").limit(3)
+  def product
+    @product = Product.find(@product_id)
+  end
+
+  def product_ato_types
+    @product_ato_types ||= product.ato_types
+  end
+
+  def product_ato_statuses
+    @product_ato_statuses ||= product.ato_statuses
+  end
+
+  def remaining_ato_types
+    AtoType.where.not(id: product_ato_types.select(:id))
   end
 end
