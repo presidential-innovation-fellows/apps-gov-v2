@@ -34,6 +34,8 @@ Dir["db/product-seeds/*.json"].each do |product_json_file|
     end
   end
 
+  # Individually Create ATO Statuses
+
   if product_hash["ato_agency"]
     ato_type = AtoType.find_by(slug: "agency-approval")
     AtoStatus.create!(ato_type: ato_type, product: product)
@@ -64,6 +66,41 @@ Dir["db/product-seeds/*.json"].each do |product_json_file|
       ato_type: ato_type,
       product: product,
       url: product_hash["fedramp_jab"]
+    )
+  end
+
+  # Individually Create Product Reviews
+
+  if product_hash["gov_tos"]
+    product_review = Review.find_by(slug: "pta")
+    ProductReview.create!(
+      product: product,
+      review: product_review,
+      url: product_hash["gov_tos"]
+    )
+  end
+
+  if product_hash["pia"]
+    product_review = Review.find_by(slug: "pia")
+    ProductReview.create!(
+      product: product,
+      review: product_review
+    )
+  end
+
+  if product_hash["pta"]
+    product_review = Review.find_by(slug: "pta")
+    ProductReview.create!(
+      product: product,
+      review: product_review
+    )
+  end
+
+  if product_hash["sorn"]
+    product_review = Review.find_by(slug: "sorn")
+    ProductReview.create!(
+      product: product,
+      review: product_review
     )
   end
 end
