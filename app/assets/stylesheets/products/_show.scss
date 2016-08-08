@@ -57,6 +57,7 @@
   }
 
   .column-container {
+    @include clearfix;
     margin-top: 1em;
   }
 
@@ -72,6 +73,12 @@
   .product-content {
     @include span-columns(9);
     @include omega;
+    margin-bottom: 6em;
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
 
     p {
       margin-top: 0;

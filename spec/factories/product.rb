@@ -12,10 +12,24 @@ FactoryGirl.define do
       end
     end
 
+    trait :with_ato_type do
+      after(:create) do |product|
+        ato_type = create(:ato_type)
+        create(:ato_status, ato_type: ato_type, product: product)
+      end
+    end
+
     trait :with_category do
       after(:create) do |product|
         category = create(:category)
         create(:product_category, category: category, product: product)
+      end
+    end
+
+    trait :with_contract do
+      after(:create) do |product|
+        contract = create(:contract)
+        create(:product_contract, contract: contract, product: product)
       end
     end
 
@@ -45,13 +59,6 @@ FactoryGirl.define do
     trait :with_product_request do
       after(:create) do |product|
         create(:product_request, product: product)
-      end
-    end
-
-    trait :with_ato_type do
-      after(:create) do |product|
-        ato_type = create(:ato_type)
-        create(:ato_status, ato_type: ato_type, product: product)
       end
     end
   end

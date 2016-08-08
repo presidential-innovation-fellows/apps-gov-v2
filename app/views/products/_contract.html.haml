@@ -1,0 +1,10 @@
+= content_tag_for :li, contract do
+  %button.usa-button-unstyled{ "aria-controls" => "contract-#{contract_counter}", "aria-expanded" => "false" }
+    = contract.name
+  .usa-accordion-content{ id: "contract-#{contract_counter}", "aria-hidden" => "true" }
+    %p
+      = contract.contact_email
+    %p
+      = contract.description
+    %ul
+      = contract.steps

@@ -1,0 +1,6 @@
+%h2
+  = t(".heading")
+.usa-accordion
+  %ul.usa-unstyled-list
+    = render partial: "contract",
+      collection: product_presenter.product_contracts

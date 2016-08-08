@@ -187,6 +187,8 @@ en:
   products:
     ato_types:
       heading: Authority to Operate (ATO)
+    contracts:
+      heading: Procurement Options
     index:
       categories: Categories
       header: Discover Your Team’s Next Favorite App
