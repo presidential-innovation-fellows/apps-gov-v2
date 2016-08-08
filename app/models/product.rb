@@ -17,6 +17,9 @@ class Product < ActiveRecord::Base
   has_many :keywords, through: :product_keywords
   has_many :product_keywords
 
+  has_many :product_reviews
+  has_many :reviews, through: :product_reviews
+
   has_many :users, through: :product_requests
   has_many :product_requests
 
