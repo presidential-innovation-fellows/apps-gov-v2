@@ -4,5 +4,6 @@
       = t(".heading")
     %p
       = t(".subheading")
-  = render "modules/product_owner_signup_form"
+  = render "modules/product_owner_signup_form",
+    product_id: @product_presenter.product.id || nil
   .close.modal-close
