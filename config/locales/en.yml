@@ -91,7 +91,7 @@ en:
       no_gov_email: You must have a .gov or .mil email address to sign up.
     registrations:
       form:
-        organization_name_html: Team Name <em>(your team within your agency)</em>
+        organization_name: Team/Organization Name
       new:
         heading: Sign up to start using the Apps.gov marketplace!
 
@@ -124,7 +124,8 @@ en:
       sitemap: Sitemap
       source_code: Source Code
     government_user_modal:
-      heading: Sign up to start procuring the best software out there.
+      heading: Government Employees
+      subheading: Sign up to request the best products out there.
     navigation:
       dashboard: Dashboard
       edit_account: Edit Account
@@ -132,7 +133,8 @@ en:
       sign_out: Sign Out
       sign_up: Sign Up
     product_owner_modal:
-      heading: Sign Up to Edit Products on Apps.gov
+      heading: Product Owners
+      subheading: Sign up to manage your products on Apps.gov.
 
   product_owners:
     dashboard:
@@ -202,7 +204,7 @@ en:
       edit_product_html: <i class="fa fa-pencil"></i>Request to Edit
       requested: Product Requested
     product_sidebar:
-      get_product: Get this product
+      get_product: Request product
     reviews:
       heading: Reviews
     show:
