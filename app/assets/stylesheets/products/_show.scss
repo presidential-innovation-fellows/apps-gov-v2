@@ -1,5 +1,5 @@
 .product-sidebar {
-  @include span-columns(3);
+  @include span-columns(1.5 of 6);
 
   .usa-button {
     border-radius: 0.25em;
@@ -59,10 +59,10 @@
   .column-container {
     @include clearfix;
     margin-top: 1em;
-  }
 
-  .product-ato-types {
-    @include span-columns(6);
+    div {
+      @include span-columns(6);
+    }
 
     h3 {
       font-size: 1.1em;
@@ -71,18 +71,22 @@
   }
 
   .product-content {
-    @include span-columns(9);
+    @include span-columns(4.5 of 6);
     @include omega;
     margin-bottom: 6em;
 
     h2 {
       font-size: 1.5em;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.75em;
     }
 
     p {
       margin-top: 0;
     }
+  }
+
+  .product-contracts {
+    margin-top: 1em;
   }
 
   .product-edit {

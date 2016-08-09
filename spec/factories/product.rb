@@ -61,5 +61,12 @@ FactoryGirl.define do
         create(:product_request, product: product)
       end
     end
+
+    trait :with_review do
+      after(:create) do |product|
+        review = create(:review)
+        create(:product_review, product: product, review: review)
+      end
+    end
   end
 end

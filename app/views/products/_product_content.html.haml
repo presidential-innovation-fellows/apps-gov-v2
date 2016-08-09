@@ -20,6 +20,8 @@
 .product-info
   = product_presenter.product.long_description
 .column-container
+  .product-reviews
+    = render "reviews", product_presenter: product_presenter
   .product-ato-types
     = render "ato_types", product_presenter: product_presenter
 .product-contracts

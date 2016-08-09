@@ -23,11 +23,19 @@ class ProductPresenter
     @product_contracts ||= product.contracts
   end
 
+  def product_product_reviews
+    @product_reviews ||= product.product_reviews
+  end
+
+  def product_reviews
+    @product_reviews ||= product.reviews
+  end
+
   def remaining_ato_types
     AtoType.where.not(id: product_ato_types.select(:id))
   end
 
-  def remaining_contracts
-    Contract.where.not(id: product_contracts.select(:id))
+  def remaining_reviews
+    Review.where.not(id: product_reviews.select(:id))
   end
 end

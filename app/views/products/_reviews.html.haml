@@ -1,0 +1,6 @@
+%h3
+  = t(".heading")
+%ul.checked
+  = render partial: "product_review", collection: product_presenter.product_product_reviews
+%ul.unchecked
+  = render partial: "review", collection: product_presenter.remaining_reviews

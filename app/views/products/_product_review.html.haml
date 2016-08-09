@@ -1,0 +1,7 @@
+= content_tag_for :li, product_review do
+  - if product_review.url
+    = link_to product_review.url, target: "_blank" do
+      = product_review.review.name
+      %i.fa.fa-external-link
+  - else
+    = product_review.review.name

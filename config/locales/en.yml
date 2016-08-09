@@ -203,6 +203,8 @@ en:
       requested: Product Requested
     product_sidebar:
       get_product: Get this product
+    reviews:
+      heading: Reviews
     show:
       products: Products
     search:
