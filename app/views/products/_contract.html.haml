@@ -5,6 +5,6 @@
     - if contract.contact_email
       %p
         = t(".poc_html", email: contract.contact_email )
-    = h contract.description
+    = contract.description.html_safe
     - if contract.steps
-      = h contract.steps
+      = contract.steps.html_safe
