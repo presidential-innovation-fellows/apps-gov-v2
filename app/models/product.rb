@@ -43,6 +43,14 @@ class Product < ActiveRecord::Base
 
   algoliasearch enqueue: :trigger_delayed_job, sanitize: true do
     attribute :name, :logo_url, :short_description, :slug
+
+    add_attribute :algolia_keywords
+  end
+
+  def algolia_keywords
+    product_keywords.select { |pk| pk.valid? }.map do |pk|
+      { name: pk.keyword.name }
+    end
   end
 
   def self.most_popular
