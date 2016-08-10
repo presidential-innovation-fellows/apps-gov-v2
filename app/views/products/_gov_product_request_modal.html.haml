@@ -1,0 +1,10 @@
+.modal.gov-user-sign-up#gov-product-request
+  .heading
+    %h1
+      = t(".heading")
+  = render "government_users/product_requests/form",
+    product: product,
+    product_request: product_request
+  .close.modal-close
+  .loading
+    = image_tag("loading-ring.svg")

@@ -89,6 +89,12 @@ en:
   government_users:
     failures:
       no_gov_email: You must have a .gov or .mil email address to sign up.
+    product_requests:
+      create:
+        failure: An error occured. Please try again.
+        success: Product Requested!
+      new:
+        heading: Request Product
     registrations:
       form:
         organization_name: Team/Organization Name
@@ -191,6 +197,8 @@ en:
       heading: Authority to Operate (ATO)
     contracts:
       heading: Procurement Options
+    gov_product_request_modal:
+      heading: New Product Request
     index:
       categories: Categories
       header: Discover Your Team’s Next Favorite App

@@ -3,11 +3,14 @@
 
 - if no_users_signed_in? || government_user_signed_in?
   .new-product-form
-    = simple_form_for [product, product_request] do |f|
-      = f.input :product_id, value: product.id, as: :hidden
-      - if no_users_signed_in?
-        = f.submit t(".get_product"),
-          class: "usa-button modal-trigger",
-          data: {modal_id: "government-user-signup"}
-      - else
-        = f.submit t(".get_product"), class: "usa-button"
+    - if no_users_signed_in?
+      = link_to t(".get_product"),
+        new_government_users_product_product_request_path(product),
+        class: "usa-button modal-trigger",
+        data: {modal_id: "government-user-signup"}
+    - else
+      = link_to t(".get_product"),
+        new_government_users_product_product_request_path(product),
+        class: "usa-button modal-trigger",
+        data: {modal_id: "gov-product-request"}
+

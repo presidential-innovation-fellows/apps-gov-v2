@@ -33,17 +33,15 @@ appsGov.productShow = {
   },
 
   insertSuccessMessage: function() {
-    var form = $(".new-product-form").html();
+    var form = $(".gov-user-sign-up .new_product_request").html();
     $("#government-user-signup .success-message").append(
       "<div class='slide-2'>" +
         "<h1>You’re all set!</h1>" +
         "<p>" +
-          "Lorem ipsum Culpa aute ex enim in dolor ut ex exercitation quis" +
-          "incididunt sint eu." +
+          "Finish your Product Request by adding your Authorizing Official" +
+          " and Contract Officer contact information." +
         "</p>" +
-        "<div class='modal-actions'>"+
-          form +
-        "</div>" +
+        form +
       "</div>"
     );
     $(".modal-actions .modal-trigger").unbind().removeClass("modal-trigger");

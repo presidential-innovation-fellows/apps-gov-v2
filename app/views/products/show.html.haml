@@ -14,4 +14,8 @@
 
 - unless signed_in?
   = render "modules/product_owner_modal"
+- unless product_owner_signed_in?
+  = render "gov_product_request_modal",
+  product: @product_presenter.product,
+    product_request: @product_presenter.new_product_request
 

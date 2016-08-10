@@ -1,0 +1,5 @@
+= simple_form_for [:government_users, product, product_request] do |f|
+  = f.input :authorizing_official_email, required: true
+  = f.input :contract_officer_email, required: true
+  .form-actions
+    = f.submit

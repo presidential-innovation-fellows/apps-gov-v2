@@ -5,6 +5,7 @@ class ProductRequest < ActiveRecord::Base
   has_drafts
 
   validates :product, :user, presence: true
+
   validates_uniqueness_of :user_id, scope: :product_id
 
   def name

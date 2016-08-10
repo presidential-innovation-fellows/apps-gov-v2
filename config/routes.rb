@@ -20,6 +20,12 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :government_users do
+    resources :products, shallow: true do
+      resources :product_requests, only: [:create, :new]
+    end
+  end
+
   namespace :product_owners do
     resources :product_requests, only: [:new, :create, :destroy]
     resources :products, only: [:edit, :update]
@@ -38,10 +44,7 @@ Rails.application.routes.draw do
   get "/products/search", to: "products#search", as: :products_search
 
   resources :categories, only: [:show]
-
-  resources :products, only: [:index, :show] do
-    resources :product_requests, only: [:create]
-  end
+  resources :products, only: [:index, :show]
 
   root to: "products#index"
 end

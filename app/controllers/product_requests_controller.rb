@@ -1,8 +1,5 @@
 class ProductRequestsController < ApplicationController
   load_and_authorize_resource
-  rescue_from CanCan::AccessDenied do
-    redirect_to new_product_owner_registration_path
-  end
 
   def create
     @product_request = ProductRequest.new(product_request_params)

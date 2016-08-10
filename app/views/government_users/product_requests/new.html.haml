@@ -1,0 +1,7 @@
+.usa-grid
+  %h1
+    = t(".heading")
+
+  = render "form",
+    product: @product,
+    product_request: @product.product_requests.new
