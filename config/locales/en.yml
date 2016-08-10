@@ -195,6 +195,8 @@ en:
   products:
     ato_types:
       heading: Authority to Operate (ATO)
+    contract:
+      poc_html: "Point of Contact: <a href='mailto:%{email}'>%{email}</a>"
     contracts:
       heading: Procurement Options
     gov_product_request_modal:
