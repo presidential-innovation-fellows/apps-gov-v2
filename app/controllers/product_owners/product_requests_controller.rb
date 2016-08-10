@@ -2,8 +2,9 @@ module ProductOwners
   class ProductRequestsController < ProductOwnersController
     def create
       @product_request = ProductRequest.new(product_request_params)
+      @admin_product_request_job = AdminProductRequestJob.new(@product_request)
 
-      if @product_request.draft_creation
+      if @product_request.draft_creation && (Delayed::Job.enqueue @admin_product_request_job)
         flash[:success] =
           I18n.t("product_owners.product_requests.create.success")
       else

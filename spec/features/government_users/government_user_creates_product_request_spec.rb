@@ -13,7 +13,7 @@ feature "A Government User creates a Product Request" do
       fill_in "Contract officer email", with: "email@email.com"
       click_on "Create Product request"
 
-      expect(page).to have_text t("product_requests.create.success")
+      expect(page).to have_text t("government_users.product_requests.create.success")
     end
   end
 
@@ -28,7 +28,7 @@ feature "A Government User creates a Product Request" do
       fill_in "Contract officer email", with: "email@email.com"
       click_on "Create Product request"
 
-      expect(page).to have_text t("product_requests.create.failure")
+      expect(page).to have_text t("government_users.product_requests.create.failure")
     end
   end
 

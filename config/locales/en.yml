@@ -63,6 +63,10 @@ en:
         error: Something went wrong. Please try again.
         success: Product Draft approved!
 
+  admin_product_request_mailer:
+    send_email:
+      subject: New Product Request
+
   categories:
     show:
       products: Products
@@ -186,11 +190,6 @@ en:
   product_request_mailer:
     send_email:
       subject: Editing Privileges Granted
-
-  product_requests:
-    create:
-      failure: An error occured. Please try again.
-      success: Product Requested!
 
   products:
     ato_types:
