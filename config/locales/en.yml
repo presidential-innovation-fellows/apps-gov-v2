@@ -63,6 +63,10 @@ en:
         error: Something went wrong. Please try again.
         success: Product Draft approved!
 
+  admin_product_draft_mailer:
+    send_email:
+      subject: New Product Edits
+
   admin_product_request_mailer:
     send_email:
       subject: New Product Request

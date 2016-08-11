@@ -8,6 +8,7 @@ module ProductOwners
       @product.attributes = product_params
 
       if @product.draft_update
+        Delayed::Job.enqueue AdminProductDraftJob.new(@product)
         flash[:success] = I18n.t("product_owners.products.update.success")
         redirect_to dashboard_path
       else
