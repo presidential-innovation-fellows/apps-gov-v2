@@ -4,6 +4,10 @@
     .usa-grid
       %h1.app-logo
         = link_to t("titles.application"), root_path
+      - if !signed_in? || product_owner_signed_in?
+        %ul.app-page-links
+          %li
+            = link_to t(".list_product"), page_path("listing")
       %ul.app-auth-links
         - if signed_in?
           - if product_owner_signed_in? || user_signed_in?

@@ -28,11 +28,6 @@
     }
   }
 
-  ul {
-    float: right;
-    margin: 0;
-  }
-
   .dropdown-parent {
     position: relative;
   }
@@ -70,6 +65,8 @@
 }
 
 .app-auth-links {
+  float: right;
+  margin: 0;
 
   a {
     @include outline-button(darken($light-gray,5));
@@ -101,6 +98,25 @@
       &:hover {
         background-color: darken($color-primary, 7);
       }
+    }
+  }
+}
+
+.app-page-links {
+  float: left;
+  margin: 0 0 0 1.5em;
+
+  a {
+    color: darken($medium-gray, 30);
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  li {
+    margin: 0.5em 0 0 1em;
+
+    &:first-child {
+      margin-left: 0;
     }
   }
 }

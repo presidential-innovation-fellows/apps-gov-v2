@@ -13,7 +13,8 @@
       product_presenter: @product_presenter
 
 - unless signed_in?
-  = render "modules/product_owner_modal"
+  = render "modules/product_owner_modal",
+    product_id: @product_presenter.product.id
 - unless product_owner_signed_in?
   = render "gov_product_request_modal",
   product: @product_presenter.product,

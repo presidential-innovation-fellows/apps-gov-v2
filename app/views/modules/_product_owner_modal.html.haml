@@ -4,6 +4,8 @@
       = t(".heading")
     %p
       = t(".subheading")
-  = render "modules/product_owner_signup_form",
-    product_id: @product_presenter.product.id || nil
+  - if defined? product_id
+    = render "modules/product_owner_signup_form", product_id: product_id
+  - else
+    = render "modules/product_owner_signup_form"
   .close.modal-close

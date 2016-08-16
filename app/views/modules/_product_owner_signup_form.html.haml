@@ -8,6 +8,7 @@
     = f.input :password,
       required: true,
       hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)
-    = f.hidden_field :product_id, value: product_id
+    - if defined? product_id
+      = f.hidden_field :product_id, value: product_id
   .form-actions
     = f.button :submit, "Sign up"
