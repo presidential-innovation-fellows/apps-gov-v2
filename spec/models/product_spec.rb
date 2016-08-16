@@ -5,11 +5,12 @@ describe Product do
     it { should have_many(:agencies).through(:customers) }
     it { should have_many :ato_statuses }
     it { should have_many(:ato_types).through(:ato_statuses) }
-    it { should have_many(:categories).through(:product_categories) }
     it { should have_many(:contracts).through(:product_contracts) }
     it { should have_many :product_requests }
     it { should have_many :product_reviews }
+    it { should have_many(:product_subcategories) }
     it { should have_many(:reviews).through(:product_reviews) }
+    it { should have_many(:subcategories).through(:product_subcategories) }
     it { should have_many(:users).through(:product_requests) }
   end
 

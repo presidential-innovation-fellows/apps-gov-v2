@@ -8,8 +8,8 @@ class Product < ActiveRecord::Base
   has_many :ato_types, through: :ato_statuses
   has_many :ato_statuses
 
-  has_many :categories, through: :product_categories
-  has_many :product_categories
+  has_many :subcategories, through: :product_subcategories
+  has_many :product_subcategories
 
   has_many :contracts, through: :product_contracts
   has_many :product_contracts

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160810133015) do
+ActiveRecord::Schema.define(version: 20160816140100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -107,14 +107,6 @@ ActiveRecord::Schema.define(version: 20160810133015) do
     t.text    "content",   null: false
   end
 
-  create_table "product_categories", force: :cascade do |t|
-    t.integer "category_id", null: false
-    t.integer "product_id",  null: false
-  end
-
-  add_index "product_categories", ["category_id"], name: "index_product_categories_on_category_id", using: :btree
-  add_index "product_categories", ["product_id"], name: "index_product_categories_on_product_id", using: :btree
-
   create_table "product_contracts", force: :cascade do |t|
     t.integer "contract_id", null: false
     t.integer "product_id",  null: false
@@ -147,6 +139,14 @@ ActiveRecord::Schema.define(version: 20160810133015) do
     t.string  "url"
   end
 
+  create_table "product_subcategories", force: :cascade do |t|
+    t.integer "product_id",     null: false
+    t.integer "subcategory_id"
+  end
+
+  add_index "product_subcategories", ["product_id"], name: "index_product_subcategories_on_product_id", using: :btree
+  add_index "product_subcategories", ["subcategory_id"], name: "index_product_subcategories_on_subcategory_id", using: :btree
+
   create_table "products", force: :cascade do |t|
     t.text     "long_description",                     null: false
     t.string   "fedramp_inprocess_agency"
@@ -177,6 +177,12 @@ ActiveRecord::Schema.define(version: 20160810133015) do
     t.text   "description", null: false
     t.string "name",        null: false
     t.string "slug",        null: false
+  end
+
+  create_table "subcategories", force: :cascade do |t|
+    t.string  "name",        null: false
+    t.string  "slug",        null: false
+    t.integer "category_id", null: false
   end
 
   create_table "users", force: :cascade do |t|

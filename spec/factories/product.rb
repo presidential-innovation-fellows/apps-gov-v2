@@ -19,10 +19,10 @@ FactoryGirl.define do
       end
     end
 
-    trait :with_category do
+    trait :with_subcategory do
       after(:create) do |product|
-        category = create(:category)
-        create(:product_category, category: category, product: product)
+        subcategory = create(:subcategory)
+        create(:product_subcategory, subcategory: subcategory, product: product)
       end
     end
 
