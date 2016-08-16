@@ -24,6 +24,7 @@
     = render "product_bucket",
       products: @products.newest,
       heading: t(".newest_heading")
-    = render "product_bucket",
-      products: @products.most_popular,
-      heading: t(".most_popular_heading")
+    - if @products.most_popular.any?
+      = render "product_bucket",
+        products: @products.most_popular,
+        heading: t(".most_popular_heading")
