@@ -37,9 +37,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    airbrake (4.3.1)
-      builder
-      multi_json
     algoliasearch (1.8.1)
       httpclient (~> 2.7.1)
       json (>= 1.5.1)
@@ -183,7 +180,6 @@ GEM
     mimemagic (0.3.1)
     mini_portile2 (2.1.0)
     minitest (5.8.4)
-    multi_json (1.11.2)
     neat (1.7.4)
       bourbon (>= 4.0)
       sass (>= 3.3)
@@ -334,7 +330,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrake (~> 4.3)
   algoliasearch-rails
   autoprefixer-rails
   awesome_print

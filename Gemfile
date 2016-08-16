@@ -2,7 +2,6 @@ source "https://rubygems.org"
 
 ruby "2.3.1"
 
-gem "airbrake",'~> 4.3'
 gem "algoliasearch-rails"
 gem "autoprefixer-rails"
 gem "bourbon", "~> 4.2.0"
