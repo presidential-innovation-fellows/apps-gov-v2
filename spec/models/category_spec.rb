@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Category do
-  it { should have_many :subcategories }
+  it { should have_many(:subcategories).dependent(:destroy) }
   it { should validate_presence_of :name }
 
   context "uniqueness" do

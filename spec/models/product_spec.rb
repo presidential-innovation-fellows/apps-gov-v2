@@ -3,12 +3,12 @@ require "rails_helper"
 describe Product do
   context "associations" do
     it { should have_many(:agencies).through(:customers) }
-    it { should have_many :ato_statuses }
+    it { should have_many(:ato_statuses).dependent(:destroy) }
     it { should have_many(:ato_types).through(:ato_statuses) }
     it { should have_many(:contracts).through(:product_contracts) }
-    it { should have_many :product_requests }
-    it { should have_many :product_reviews }
-    it { should have_many(:product_subcategories) }
+    it { should have_many(:product_requests).dependent(:destroy) }
+    it { should have_many(:product_reviews).dependent(:destroy) }
+    it { should have_many(:product_subcategories).dependent(:destroy) }
     it { should have_many(:reviews).through(:product_reviews) }
     it { should have_many(:subcategories).through(:product_subcategories) }
     it { should have_many(:users).through(:product_requests) }

@@ -7,5 +7,5 @@ class AtoType < ActiveRecord::Base
   validates :slug, presence: true, uniqueness: true
 
   has_many :products, through: :ato_statuses
-  has_many :ato_statuses
+  has_many :ato_statuses, dependent: :destroy
 end

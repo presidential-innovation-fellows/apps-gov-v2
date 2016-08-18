@@ -6,22 +6,22 @@ class Product < ActiveRecord::Base
   has_many :customers
 
   has_many :ato_types, through: :ato_statuses
-  has_many :ato_statuses
+  has_many :ato_statuses, dependent: :destroy
 
   has_many :subcategories, through: :product_subcategories
-  has_many :product_subcategories
+  has_many :product_subcategories, dependent: :destroy
 
   has_many :contracts, through: :product_contracts
-  has_many :product_contracts
+  has_many :product_contracts, dependent: :destroy
 
   has_many :keywords, through: :product_keywords
-  has_many :product_keywords
+  has_many :product_keywords, dependent: :destroy
 
-  has_many :product_reviews
+  has_many :product_reviews, dependent: :destroy
   has_many :reviews, through: :product_reviews
 
   has_many :users, through: :product_requests
-  has_many :product_requests
+  has_many :product_requests, dependent: :destroy
 
   has_drafts
 

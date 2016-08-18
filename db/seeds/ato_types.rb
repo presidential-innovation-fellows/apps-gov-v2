@@ -16,6 +16,6 @@ ato_types = [
 
 ActiveRecord::Base.transaction do
   ato_types.each do |ato_type|
-    AtoType.create!(ato_type)
+    AtoType.find_or_create_by!(ato_type)
   end
 end
