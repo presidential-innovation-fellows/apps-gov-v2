@@ -1,7 +1,23 @@
 module ProductOwners
   class ProductsController < ProductOwnersController
+    def new
+      @product = Product.new
+    end
+
     def edit
       @product = Product.find(params[:id])
+    end
+
+    def create
+      @product = Product.new(product_params)
+
+      if @product.draft_creation
+        flash[:success] = I18n.t("product_owners.products.create.success")
+        redirect_to dashboard_path
+      else
+        flash[:error] = I18n.t("product_owners.products.create.error")
+        render :new
+      end
     end
 
     def update

@@ -28,7 +28,7 @@ Rails.application.routes.draw do
 
   namespace :product_owners do
     resources :product_requests, only: [:new, :create, :destroy]
-    resources :products, only: [:edit, :update]
+    resources :products, only: [:create, :edit, :new, :update]
   end
 
   constraints(RoleRouteConstraint.new("user")) do

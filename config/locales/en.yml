@@ -154,6 +154,7 @@ en:
   product_owners:
     dashboard:
       index:
+        create_product: Create a New Product
         heading: Dashboard
       approved_product_request:
         in_review: In Review
@@ -162,7 +163,7 @@ en:
         drafts: Status
         heading: Products
         no_products:
-          No products have been approved for you to edit yet.
+          No products have been approved for you yet.
         product_name: Product Name
       product_request:
         confirm_destroy: Are you sure you want to remove this request?
@@ -181,10 +182,16 @@ en:
         error: Something went wrong. Please try again.
         success: Your Product Request was deleted.
     products:
+      create:
+        error: Something went wrong. Please try again.
+        success: Your Product has been created and is pending review.
       edit:
         header: Edit Product
-      form:
-        submit: Request Edits
+      new:
+        description:
+          If your Product is not listed on Apps.gov yet, use this form to submit
+          a request to list your Product.
+        header: New Product
       update:
         error: Something went wrong. Please try again.
         success: Product edits submitted.

@@ -10,7 +10,7 @@ feature "Product Owner Edits Product" do
 
     fill_in "Name", with: "New Product Name"
 
-    click_on t("product_owners.products.form.submit")
+    click_on "Update Product"
 
     expect(page).to have_text t("#{translation_path}.in_review")
     expect(product_owner.products.first.draft).to be_truthy

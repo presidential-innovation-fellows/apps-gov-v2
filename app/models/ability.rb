@@ -13,6 +13,7 @@ class Ability
       can :manage, Product do |product|
         product.product_requests.map(&:user_id).include? user.id
       end
+      can :create, Product
       can :create, ProductRequest
       can :destroy, ProductRequest, user_id: user.id
       can :read, Dashboard
