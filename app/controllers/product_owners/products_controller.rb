@@ -12,6 +12,7 @@ module ProductOwners
       @product = Product.new(product_params)
 
       if @product.draft_creation
+        Delayed::Job.enqueue AdminProductDraftJob.new(@product)
         flash[:success] = I18n.t("product_owners.products.create.success")
         redirect_to dashboard_path
       else

@@ -5,5 +5,8 @@
     = simple_form_for [:admin, @product] do |f|
       = render "product_table", product_draft: @product_draft
 
-      = f.submit t(".submit")
-      = link_to t(".reject"), new_admin_product_message_path(@product)
+      .form-actions
+        = f.submit t(".submit")
+        = link_to t(".reject"),
+          new_admin_product_message_path(@product),
+          class: "usa-button usa-button-secondary"
