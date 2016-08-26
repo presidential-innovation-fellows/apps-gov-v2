@@ -18,4 +18,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/everbridge-everbridge-suite-saas/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/everbridge-everbridge-suite-saas/",
+    "sub_subcategories": [
+        "notifications-and-alerting"
+    ]
+}

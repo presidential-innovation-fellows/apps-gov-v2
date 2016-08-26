@@ -18,4 +18,9 @@
         "micro",
         "sewp"
     ],
-    "gov_tos":"https://asana.com/terms/amendment"}
+    "gov_tos":"https://asana.com/terms/amendment",
+    "sub_subcategories": [
+        "project-management",
+        "task-management"
+    ]
+}

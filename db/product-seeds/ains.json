@@ -11,4 +11,11 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency": "http://www.fedramp.gov/marketplace/compliant-systems/ains-inc/"}
+    "fedramp_agency": "http://www.fedramp.gov/marketplace/compliant-systems/ains-inc/",
+    "sub_subcategories": [
+        "workflow-automation",
+        "hrms",
+        "auditing-and-compliance",
+        "governance-risk-and-compliance"
+    ]
+}

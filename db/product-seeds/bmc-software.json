@@ -17,4 +17,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"ace/in-process-systems/bmc-software-bmc-remedy-fed-saas-bmc-remedy-ondemand-for-public-sector/"}
+    "fedramp_inprocess_agency":"ace/in-process-systems/bmc-software-bmc-remedy-fed-saas-bmc-remedy-ondemand-for-public-sector/",
+    "sub_subcategories": [
+        "platform-as-a-service-paas",
+        "infrastructure-as-a-service-iaas"
+    ]
+}

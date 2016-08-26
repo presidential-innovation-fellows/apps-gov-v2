@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/autodesk-autodesk-bim-360-glue/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/autodesk-autodesk-bim-360-glue/",
+    "sub_subcategories": [
+        "cad-software"
+    ]
+}
+

@@ -17,4 +17,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/cisco-cisco-webex-conferencing-service/"}
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/cisco-cisco-webex-conferencing-service/",
+    "sub_subcategories": [
+        "web-and-video-conferencing",
+         "webinars-and-webcasts"
+    ]
+}

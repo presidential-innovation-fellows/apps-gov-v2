@@ -18,4 +18,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/proofpoint-inc-proofpoint-email-archive/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/proofpoint-inc-proofpoint-email-archive/",
+    "sub_subcategories": [
+        "email-security"
+    ]
+}

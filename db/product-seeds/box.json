@@ -22,5 +22,8 @@
         "DOJ"
     ],
     "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/box-inc-box-enterprise-cloud-content-collaboration-platform/",
-    "ato_agency":true
+    "ato_agency":true,
+    "sub_subcategories": [
+        "file-sharing-and-backup"
+    ]
 }

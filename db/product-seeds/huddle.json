@@ -34,4 +34,10 @@
     ],
     "gov_tos": "true",
     "pta": "true",
-    "pia": "true"}
+    "pia": "true",
+    "sub_subcategories": [
+        "collaborative-workspaces",
+        "project-management",
+        "file-sharing-and-backup"
+    ]
+}

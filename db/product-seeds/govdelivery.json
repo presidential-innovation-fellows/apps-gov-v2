@@ -18,4 +18,10 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_jab":"https://www.fedramp.gov/marketplace/in-process-systems/govdelivery-govdelivery-communications-cloud/"}
+    "fedramp_inprocess_jab":"https://www.fedramp.gov/marketplace/in-process-systems/govdelivery-govdelivery-communications-cloud/",
+    "sub_subcategories": [
+        "gov-tech",
+        "other-communications"
+    ]
+}
+

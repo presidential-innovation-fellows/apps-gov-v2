@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/microsoft-cloud-infrastructure/"}
+    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/microsoft-cloud-infrastructure/",
+    "sub_subcategories": [
+        "infrastructure-as-a-service-iaas"
+    ]
+}
+

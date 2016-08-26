@@ -18,4 +18,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/appian-corporation-appian-cloud-2/"}
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/appian-corporation-appian-cloud-2/",
+    "sub_subcategories": [
+        "bpm-platform"
+    ]
+}

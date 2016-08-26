@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/qualys-qualys-cloud-platform/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/qualys-qualys-cloud-platform/",
+    "sub_subcategories": [
+        "endpoint-security"
+    ]
+}
+

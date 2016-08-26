@@ -18,4 +18,10 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency_inprocess":"https://www.fedramp.gov/marketplace/in-process-systems/coupa-software-inc-coupa-cloud-spend-management-services/"}
+    "fedramp_agency_inprocess":"https://www.fedramp.gov/marketplace/in-process-systems/coupa-software-inc-coupa-cloud-spend-management-services/",
+    "sub_subcategories": [
+        "procurement-and-purchasing",
+        "expense-management-and-reporting"
+    ]
+}
+

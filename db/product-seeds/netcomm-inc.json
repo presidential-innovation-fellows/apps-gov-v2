@@ -8,5 +8,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/netcomm-beacon/"
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/netcomm-beacon/",
+    "sub_subcategories": [
+        "analytics-and-bi-platform"
+    ]
 }

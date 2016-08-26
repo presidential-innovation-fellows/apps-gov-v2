@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/send-word-now-swn-emergency-notification-service-ens/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/send-word-now-swn-emergency-notification-service-ens/",
+    "sub_subcategories": [
+        "notifications-and-alerting"
+    ]
+}
+

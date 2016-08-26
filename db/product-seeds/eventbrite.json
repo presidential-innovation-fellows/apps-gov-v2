@@ -18,4 +18,8 @@
         "micro",
         "sewp"
     ],
-    "gov_tos":"https://www.eventbrite.com/l/federal-government/"}
+    "gov_tos":"https://www.eventbrite.com/l/federal-government/",
+    "sub_subcategories": [
+        "event-marketing-and-management"
+    ]
+}

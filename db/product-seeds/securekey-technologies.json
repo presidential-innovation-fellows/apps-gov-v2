@@ -17,4 +17,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/securekey-briidge-net-exchange-for-connect-gov/"}
+    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/securekey-briidge-net-exchange-for-connect-gov/",
+    "sub_subcategories": [
+        "identity-and-access-management"
+    ]
+}
+

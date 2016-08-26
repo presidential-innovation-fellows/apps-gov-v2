@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/microsoft-ms-o365-itar/"}
+    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/microsoft-ms-o365-itar/",
+    "sub_subcategories": [
+        "office-suites"
+    ]
+}
+

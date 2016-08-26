@@ -10,4 +10,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/united-states-department-of-the-treasury-workplace-gov-community-cloud-wc2/"}
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/united-states-department-of-the-treasury-workplace-gov-community-cloud-wc2/",
+    "sub_subcategories": [
+        "platform-as-a-service-paas"
+    ]
+}

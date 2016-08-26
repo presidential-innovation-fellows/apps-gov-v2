@@ -17,4 +17,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_ready":"https://www.fedramp.gov/marketplace/fedramp-ready-systems/unisys-unisys-edge-for-government/"}
+    "fedramp_ready":"https://www.fedramp.gov/marketplace/fedramp-ready-systems/unisys-unisys-edge-for-government/",
+    "sub_subcategories": [
+        "it-service-management"
+    ]
+}

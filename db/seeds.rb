@@ -34,6 +34,16 @@ Dir["db/product-seeds/*.json"].each do |product_json_file|
     end
   end
 
+  if product_hash["sub_subcategories"]
+    product_hash["sub_subcategories"].each do |sub_subcategory|
+      found_sub_subcategory = SubSubcategory.find_by(slug: sub_subcategory)
+      ProductSubSubcategory.create!(
+        sub_subcategory: found_sub_subcategory,
+        product: product
+      )
+    end
+  end
+
   # Individually Create ATO Statuses
 
   if product_hash["ato_agency"]

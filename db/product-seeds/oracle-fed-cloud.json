@@ -17,4 +17,10 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/oracle-corporation-federal-managed-cloud-services/"}
+    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/oracle-corporation-federal-managed-cloud-services/",
+    "sub_subcategories": [
+        "platform-as-a-service-paas",
+        "infrastructure-as-a-service-iaas"
+    ]
+}
+

@@ -18,4 +18,11 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/microsoft-parature-customer-service-application-csa/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/microsoft-parature-customer-service-application-csa/",
+    "sub_subcategories": [
+        "knowledge-management",
+        "help-desk-and-ticketing",
+        "self-service-support"
+    ]
+}
+

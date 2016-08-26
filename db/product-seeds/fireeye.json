@@ -17,4 +17,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/fireye-fireye-email-threat-prevention-etp-service/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/fireye-fireye-email-threat-prevention-etp-service/",
+    "sub_subcategories": [
+        "email-security",
+        "email-spam-protection"
+    ]
+}

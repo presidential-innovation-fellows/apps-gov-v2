@@ -10,4 +10,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/trapwire-threat-detection-and-analysis-system/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/trapwire-threat-detection-and-analysis-system/",
+    "sub_subcategories": [
+        "endpoint-security"
+    ]
+}
+

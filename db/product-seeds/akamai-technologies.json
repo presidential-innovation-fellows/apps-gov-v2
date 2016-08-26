@@ -18,4 +18,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab": "https://www.fedramp.gov/marketplace/compliant-systems/akamai-content-delivery-services/"}
+    "fedramp_jab": "https://www.fedramp.gov/marketplace/compliant-systems/akamai-content-delivery-services/",
+    "sub_subcategories": [
+        "content-delivery-network-cdn"
+    ]
+}

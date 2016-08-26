@@ -14,4 +14,11 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/collab9-secure-voice-and-collaboration/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/collab9-secure-voice-and-collaboration/",
+    "sub_subcategories": [
+        "voip-and-sip",
+        "web-and-video-conferencing",
+        "instant-messaging",
+        "web-and-mobile-application-security"
+    ]
+}

@@ -18,4 +18,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/blackboard-blackboard-learn-collaborate-saas/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/blackboard-blackboard-learn-collaborate-saas/",
+    "sub_subcategories": [
+        "corporate-lms-and-training"
+    ]
+}

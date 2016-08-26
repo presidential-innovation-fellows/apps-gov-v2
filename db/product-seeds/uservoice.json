@@ -17,4 +17,10 @@
     "contracts":[
         "sewp"
     ],
-    "gov_tos":"https://www.uservoice.com/tos/federal/"}
+    "gov_tos":"https://www.uservoice.com/tos/federal/",
+    "sub_subcategories": [
+        "help-desk-and-ticketing",
+        "knowledge-base"
+    ]
+}
+

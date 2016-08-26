@@ -14,4 +14,9 @@
         "micro",
         "sewp"
     ],
-    "gov_tos":"http://mailchimp.com/legal/terms//"}
+    "gov_tos":"http://mailchimp.com/legal/terms//",
+    "sub_subcategories": [
+        "transactional-email"
+    ]
+}
+

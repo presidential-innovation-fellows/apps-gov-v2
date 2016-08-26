@@ -19,5 +19,8 @@
     "contracts": [
         "micro",
         "sewp"
+    ],
+    "sub_subcategories": [
+        "network-security"
     ]
 }

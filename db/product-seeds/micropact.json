@@ -17,4 +17,11 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/micropact-micropact-product-suite/"}
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/micropact-micropact-product-suite/",
+    "sub_subcategories": [
+        "platform-as-a-service-paas",
+        "hrms",
+        "bpm-platform"
+    ]
+}
+

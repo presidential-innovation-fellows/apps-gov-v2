@@ -11,4 +11,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/united-states-department-of-agriculture-usda-national-finance-center/"}
+    "fedramp_agency":"http://www.fedramp.gov/united-states-department-of-agriculture-usda-national-finance-center/",
+    "sub_subcategories": [
+        "platform-as-a-service-paas",
+        "infrastructure-as-a-service-iaas"
+    ]
+}

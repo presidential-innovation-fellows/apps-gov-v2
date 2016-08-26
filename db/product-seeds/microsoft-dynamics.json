@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/microsoft-dymanics-crm-online-for-government/"}
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/microsoft-dymanics-crm-online-for-government/",
+    "sub_subcategories": [
+        "crm-platforms"
+    ]
+}
+

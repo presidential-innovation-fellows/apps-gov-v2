@@ -17,4 +17,9 @@
     "contracts":[
         "sewp"
     ],
-    "gov_tos":"http://www.digitalgov.gov/files/2014/01/scribd-tos-amendment.pdf"}
+    "gov_tos":"http://www.digitalgov.gov/files/2014/01/scribd-tos-amendment.pdf",
+    "sub_subcategories": [
+        "e-books-and-digital-publishing-software"
+    ]
+}
+

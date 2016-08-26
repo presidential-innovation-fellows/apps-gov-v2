@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/ibm-cloud-managed-services-for-government-dod/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/ibm-cloud-managed-services-for-government-dod/",
+    "sub_subcategories": [
+        "infrastructure-as-a-service-iaas"
+    ]
+}
+

@@ -17,4 +17,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/veracode-veracode-application-security-services-system/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/veracode-veracode-application-security-services-system/",
+    "sub_subcategories": [
+        "security-analytics"
+    ]
+}
+

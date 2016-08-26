@@ -10,4 +10,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency": "http://www.fedramp.gov/marketplace/compliant-systems/omb-max-general-support-services/"}
+    "fedramp_agency": "http://www.fedramp.gov/marketplace/compliant-systems/omb-max-general-support-services/",
+    "sub_subcategories": [
+        "infrastructure-as-a-service-iaas"
+    ]
+}
+

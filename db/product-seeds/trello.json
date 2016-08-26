@@ -18,4 +18,10 @@
         "micro",
         "sewp"
     ],
-    "gov_tos":"https://trello.com/amendment-to-trello-terms-of-service-applicable-to-government-users"}
+    "gov_tos":"https://trello.com/amendment-to-trello-terms-of-service-applicable-to-government-users",
+    "sub_subcategories": [
+        "task-management",
+        "kanban-boards"
+    ]
+}
+

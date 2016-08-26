@@ -23,5 +23,8 @@
     "sales_poc": "government@github.com",
     "gov_customers": [
       "DOC", "DOE", "DOI", "DOL", "FDA", "GSA", "HHS", "IRS", "MCC", "NARA", "NASA", "NIH", "NIST", "NOAA", "OSTP", "Smithsonian", "State", "USAID", "USDA", "USCB", "USCIO", "USPTO", "VA"
+    ],
+    "sub_subcategories": [
+        "version-control"
     ]
 }

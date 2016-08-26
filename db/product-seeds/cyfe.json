@@ -18,4 +18,8 @@
         "micro",
         "sewp"
     ],
-    "gov_tos":"http://www.cyfe.com/terms-government"}
+    "gov_tos":"http://www.cyfe.com/terms-government",
+    "sub_subcategories": [
+        "analytics-dashboard"
+    ]
+}

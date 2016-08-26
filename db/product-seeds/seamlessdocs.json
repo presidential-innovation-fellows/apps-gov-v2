@@ -21,5 +21,9 @@
     "contracts": [
         "micro",
         "sewp"
+    ],
+    "sub_subcategories": [
+        "digital-signatures",
+        "pdf-readers-and-editors"
     ]
 }

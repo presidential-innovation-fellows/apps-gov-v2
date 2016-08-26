@@ -18,4 +18,11 @@
         "micro",
         "sewp"
     ],
-    "gov_tos":"http://www.digitalgov.gov/files/2015/02/hootsuite-tos-amendment.pdf"}
+    "gov_tos":"http://www.digitalgov.gov/files/2015/02/hootsuite-tos-amendment.pdf",
+    "sub_subcategories": [
+        "social-media-management",
+        "social-marketing",
+        "social-analytics"
+    ]
+}
+

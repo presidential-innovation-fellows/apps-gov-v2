@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/att-storage-as-a-service-iaas/"}
+    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/att-storage-as-a-service-iaas/",
+    "sub_subcategories": [
+        "data-management-and-storage"
+    ]
+}
+

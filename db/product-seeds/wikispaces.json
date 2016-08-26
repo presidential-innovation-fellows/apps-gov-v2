@@ -18,4 +18,9 @@
         "micro",
         "sewp"
     ],
-    "gov_tos":"http://www.digitalgov.gov/files/2014/01/wikispaces-tos-amendment.pdf"}
+    "gov_tos":"http://www.digitalgov.gov/files/2014/01/wikispaces-tos-amendment.pdf",
+    "sub_subcategories": [
+        "education-tech"
+    ]
+}
+

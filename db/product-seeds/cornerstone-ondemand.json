@@ -18,4 +18,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/cornerstone-ondemand-incompass-talent-management-system/"}
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/cornerstone-ondemand-incompass-talent-management-system/",
+    "sub_subcategories": [
+        "corporate-lms-and-training"
+    ]
+}

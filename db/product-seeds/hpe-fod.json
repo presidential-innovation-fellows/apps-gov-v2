@@ -11,4 +11,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/hewlett-packard-enterprise-hpe-fortify-on-demand-fod/"}
+    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/hewlett-packard-enterprise-hpe-fortify-on-demand-fod/",
+    "sub_subcategories": [
+        "managed-security-services"
+    ]
+}

@@ -16,4 +16,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/powertrain-inc-web-development-and-hosting/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/powertrain-inc-web-development-and-hosting/",
+    "sub_subcategories": [
+        "platform-as-a-service-paas",
+        "infrastructure-as-a-service-iaas"
+    ]
+}

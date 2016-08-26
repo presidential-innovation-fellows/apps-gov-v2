@@ -36,6 +36,10 @@
   "gov_customers": [
     "DOD",
     "NIH"
+  ],
+  "sub_subcategories": [
+      "procurement-and-purchasing",
+      "gov-tech"
   ]
 }
 

@@ -25,4 +25,9 @@
         "NASA",
         "State"
     ],
-    "gov_tos":"https://slack.com/terms-of-service/government"}
+    "gov_tos":"https://slack.com/terms-of-service/government",
+    "sub_subcategories": [
+        "instant-messaging"
+    ]
+}
+

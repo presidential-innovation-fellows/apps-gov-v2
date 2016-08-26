@@ -18,4 +18,10 @@
         "micro",
         "sewp"
     ],
-    "gov_tos":"https://plot.ly/amendment-to-plotly-terms-of-service-applicable-to-government-users/"}
+    "gov_tos":"https://plot.ly/amendment-to-plotly-terms-of-service-applicable-to-government-users/",
+    "sub_subcategories": [
+        "big-data-analytics",
+        "data-visualization"
+    ]
+}
+

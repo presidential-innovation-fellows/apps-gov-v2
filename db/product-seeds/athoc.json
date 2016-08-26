@@ -30,5 +30,8 @@
     "pia":true,
     "sorn":true,
     "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/athoc-athoc-networked-crisis-communication-platform/",
-    "ato_agency":true
+    "ato_agency":true,
+    "sub_subcategories": [
+        "emergency-communications"
+    ]
 }

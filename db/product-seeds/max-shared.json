@@ -10,4 +10,17 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency": "http://www.fedramp.gov/marketplace/compliant-systems/omb-max-gov-shared-services/"}
+    "fedramp_agency": "http://www.fedramp.gov/marketplace/compliant-systems/omb-max-gov-shared-services/",
+    "sub_subcategories": [
+        "document-collaboration",
+        "enterprise-content-management",
+        "knowledge-management",
+        "appointment-scheduling",
+        "collaborative-calendars",
+        "meeting-management",
+        "other-bi-and-analytics",
+        "identity-verification-and-protection",
+        "two-factor-authentication"
+    ]
+}
+

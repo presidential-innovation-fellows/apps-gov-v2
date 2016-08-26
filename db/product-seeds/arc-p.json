@@ -19,5 +19,8 @@
         "sewp",
         "nitaac"
     ],
-    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/autonomic-resources-llc-arc-p-iaas/"
+    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/autonomic-resources-llc-arc-p-iaas/",
+    "sub_subcategories": [
+        "infrastructure-as-a-service-iaas"
+    ]
 }

@@ -18,4 +18,16 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/complete-discovery-source-federal-cloud-discovery-services-fcds/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/complete-discovery-source-federal-cloud-discovery-services-fcds/",
+    "sub_subcategories": [
+        "data-science-and-machine-learning",
+        "data-migration",
+        "data-integration",
+        "data-hygiene",
+        "data-preparation",
+        "big-data-analytics",
+        "data-api",
+        "data-warehousing",
+        "master-data-management"
+    ]
+}

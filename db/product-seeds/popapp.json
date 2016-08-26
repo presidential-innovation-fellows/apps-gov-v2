@@ -18,4 +18,8 @@
         "micro",
         "sewp"
     ],
-    "gov_tos":"https://popapp.in/en/terms/government-users"}
+    "gov_tos":"https://popapp.in/en/terms/government-users",
+    "sub_subcategories": [
+        "mockups-wireframing-and-prototyping"
+    ]
+}

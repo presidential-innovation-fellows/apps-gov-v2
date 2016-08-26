@@ -11,4 +11,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/isite-llc-isite-contract-management-portal/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/isite-llc-isite-contract-management-portal/",
+    "sub_subcategories": [
+        "contract-management"
+    ]
+}
+

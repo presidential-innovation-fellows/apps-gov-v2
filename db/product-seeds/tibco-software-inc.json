@@ -18,4 +18,11 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/tibco-tibbr/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/tibco-tibbr/",
+    "sub_subcategories": [
+        "internal-social-networks",
+        "content-marketing-tools",
+        "instant-messaging"
+    ]
+}
+

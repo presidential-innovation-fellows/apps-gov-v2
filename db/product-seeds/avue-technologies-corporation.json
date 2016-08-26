@@ -15,4 +15,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/avue-technologies-avue-digital-services/"}
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/avue-technologies-avue-digital-services/",
+    "sub_subcategories": [
+        "human-capital-management"
+    ]
+}
+

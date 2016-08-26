@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/vmware-vmware-vcloud-government-service-provided-by-carpathia-vcgs/"}
+    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/vmware-vmware-vcloud-government-service-provided-by-carpathia-vcgs/",
+    "sub_subcategories": [
+        "virtualization-platform"
+    ]
+}
+

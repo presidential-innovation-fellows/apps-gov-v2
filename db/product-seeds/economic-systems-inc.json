@@ -15,4 +15,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/economic-systems-federal-human-resources-navigator/"}
+    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/economic-systems-federal-human-resources-navigator/",
+    "sub_subcategories": [
+        "human-capital-management"
+    ]
+}

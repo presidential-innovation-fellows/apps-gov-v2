@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/project-hosts-federal-private-cloud-for-windows-and-linux-applications/"}
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/project-hosts-federal-private-cloud-for-windows-and-linux-applications/",
+    "sub_subcategories": [
+        "platform-as-a-service-paas",
+        "infrastructure-as-a-service-iaas"
+    ]
+}

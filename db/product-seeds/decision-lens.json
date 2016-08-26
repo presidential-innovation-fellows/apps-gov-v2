@@ -18,4 +18,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/decision-lens-inc-decision-lens-software/"}
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/decision-lens-inc-decision-lens-software/",
+    "sub_subcategories": [
+        "resource-scheduling"
+    ]
+}

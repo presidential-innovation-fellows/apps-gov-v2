@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/lockheed-martin-solutions-as-a-service-solas-community-cloud/"}
+    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/lockheed-martin-solutions-as-a-service-solas-community-cloud/",
+    "sub_subcategories": [
+        "infrastructure-as-a-service-iaas"
+    ]
+}
+

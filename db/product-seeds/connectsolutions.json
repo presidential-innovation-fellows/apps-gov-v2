@@ -18,4 +18,10 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/compliant-systems/connectsolutions-connectsolutions-fedramp-meetingcloud/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/compliant-systems/connectsolutions-connectsolutions-fedramp-meetingcloud/",
+    "sub_subcategories": [
+        "hosted-email",
+        "virtual-private-network-vpn",
+        "other-communications"
+    ]
+}

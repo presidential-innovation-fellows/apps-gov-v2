@@ -18,4 +18,11 @@
         "micro",
         "sewp"
     ],
-    "gov_tos":"http://www.digitalgov.gov/files/2014/07/delib-dialog-tos-amendment.pdf"}
+    "gov_tos":"http://www.digitalgov.gov/files/2014/07/delib-dialog-tos-amendment.pdf",
+    "sub_subcategories": [
+        "internal-social-networks",
+        "content-marketing-tools",
+        "file-sharing-and-backup"
+    ]
+}
+

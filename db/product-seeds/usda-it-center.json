@@ -10,4 +10,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/united-states-department-of-agriculture-usda-national-information-technology-center/"}
+    "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/united-states-department-of-agriculture-usda-national-information-technology-center/",
+    "sub_subcategories": [
+        "infrastructure-as-a-service-iaas"
+    ]
+}

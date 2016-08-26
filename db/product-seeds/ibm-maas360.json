@@ -17,4 +17,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/ibm-maas360-enterprise-mobility-management-saas/"}
+    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/ibm-maas360-enterprise-mobility-management-saas/",
+    "sub_subcategories": [
+        "identity-and-access-management"
+    ]
+}
+

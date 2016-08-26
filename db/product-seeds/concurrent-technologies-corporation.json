@@ -18,4 +18,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/concurrent-technologies-corporation/"}
+    "fedramp_jab": "http://www.fedramp.gov/marketplace/compliant-systems/concurrent-technologies-corporation/",
+    "sub_subcategories": [
+        "virtual-private-network-vpn"
+    ]
+}

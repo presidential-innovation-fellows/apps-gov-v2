@@ -19,4 +19,9 @@
         "sewp"
     ],
     "fedramp_agency":"http://www.fedramp.gov/marketplace/compliant-systems/microsoft-office-365-multi-tenant-supporting-services-including-azure-active-directory-leveraging-microsoft-azure-and-cloud-infrastructure/",
-    "fedramp_inprocess_jab":"https://www.fedramp.gov/marketplace/in-process-systems/microsoft-office-365-mt/"}
+    "fedramp_inprocess_jab":"https://www.fedramp.gov/marketplace/in-process-systems/microsoft-office-365-mt/",
+    "sub_subcategories": [
+        "office-suites"
+    ]
+}
+

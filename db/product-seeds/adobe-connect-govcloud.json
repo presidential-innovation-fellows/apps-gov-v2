@@ -17,4 +17,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_agency": "http://www.fedramp.gov/marketplace/compliant-systems/adobe-adobe-connect-managed-services-acms/"}
+    "fedramp_agency": "http://www.fedramp.gov/marketplace/compliant-systems/adobe-adobe-connect-managed-services-acms/",
+    "sub_subcategories": [
+        "platform-as-a-service-paas",
+        "infrastructure-as-a-service-iaas"
+    ]
+}

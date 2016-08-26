@@ -18,4 +18,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/oracle-corporation-service-cloud/"}
+    "fedramp_jab":"http://www.fedramp.gov/marketplace/compliant-systems/oracle-corporation-service-cloud/",
+    "sub_subcategories": [
+        "customer-support"
+    ]
+}

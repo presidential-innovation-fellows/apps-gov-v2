@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab":"https://www.fedramp.gov/marketplace/compliant-systems/servicenow-inc-servicenow-service-automation-government-cloud-suite/"}
+    "fedramp_jab":"https://www.fedramp.gov/marketplace/compliant-systems/servicenow-inc-servicenow-service-automation-government-cloud-suite/",
+    "sub_subcategories": [
+        "it-service-management"
+    ]
+}
+

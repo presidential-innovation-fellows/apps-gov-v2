@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_jab": "https://www.fedramp.gov/marketplace/compliant-systems/cgi-federal/"}
+    "fedramp_jab": "https://www.fedramp.gov/marketplace/compliant-systems/cgi-federal/",
+    "sub_subcategories": [
+        "platform-as-a-service-paas",
+        "infrastructure-as-a-service-iaas"
+    ]
+}

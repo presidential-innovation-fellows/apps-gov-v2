@@ -16,4 +16,8 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/compusearch-compusearch-fedconnect/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/compusearch-compusearch-fedconnect/",
+    "sub_subcategories": [
+        "talent-marketplace"
+    ]
+}

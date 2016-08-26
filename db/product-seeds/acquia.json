@@ -18,4 +18,9 @@
     "contracts":[
         "sewp"
     ],
-    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/acquia-acquia-cloud/"}
+    "fedramp_inprocess_agency":"https://www.fedramp.gov/marketplace/in-process-systems/acquia-acquia-cloud/",
+    "sub_subcategories": [
+        "enterprise-content-management",
+        "personalization"
+    ]
+}
