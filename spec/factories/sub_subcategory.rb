@@ -1,12 +1,11 @@
 FactoryGirl.define do
-  factory :category do
-    sequence(:name) { |n| "Subcategory-#{n}" }
+  factory :sub_subcategory do
+    sequence(:name) { |n| "SubSubcategory-#{n}" }
+    subcategory
 
     trait :with_products do
-      after(:create) do |category|
+      after(:create) do |sub_subcategory|
         products = create_list(:product, 3)
-        subcategory = create(:subcategory, category: category)
-        sub_subcategory = create(:sub_subcategory, subcategory: subcategory)
         products.each do |product|
           create(
             :product_sub_subcategory,

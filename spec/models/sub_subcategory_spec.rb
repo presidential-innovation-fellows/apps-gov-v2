@@ -1,7 +1,9 @@
 require "rails_helper"
 
-describe Subcategory do
-  it { should belong_to :category }
+describe SubSubcategory do
+  it { should belong_to :subcategory }
+  it { should have_many :product_sub_subcategories }
+  it { should have_many(:products).through(:product_sub_subcategories) }
   it { should validate_presence_of :name }
   it { should validate_presence_of :slug }
 

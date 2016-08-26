@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160816140100) do
+ActiveRecord::Schema.define(version: 20160826145624) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,10 +25,9 @@ ActiveRecord::Schema.define(version: 20160816140100) do
     t.integer "ato_type_id",                 null: false
     t.integer "product_id",                  null: false
     t.string  "url"
+    t.index ["ato_type_id"], name: "index_ato_statuses_on_ato_type_id", using: :btree
+    t.index ["product_id"], name: "index_ato_statuses_on_product_id", using: :btree
   end
-
-  add_index "ato_statuses", ["ato_type_id"], name: "index_ato_statuses_on_ato_type_id", using: :btree
-  add_index "ato_statuses", ["product_id"], name: "index_ato_statuses_on_product_id", using: :btree
 
   create_table "ato_types", force: :cascade do |t|
     t.string "name",        null: false
@@ -55,10 +53,9 @@ ActiveRecord::Schema.define(version: 20160816140100) do
   create_table "customers", force: :cascade do |t|
     t.integer "agency_id",  null: false
     t.integer "product_id", null: false
+    t.index ["agency_id"], name: "index_customers_on_agency_id", using: :btree
+    t.index ["product_id"], name: "index_customers_on_product_id", using: :btree
   end
-
-  add_index "customers", ["agency_id"], name: "index_customers_on_agency_id", using: :btree
-  add_index "customers", ["product_id"], name: "index_customers_on_product_id", using: :btree
 
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer  "priority",   default: 0, null: false
@@ -72,9 +69,8 @@ ActiveRecord::Schema.define(version: 20160816140100) do
     t.string   "queue"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
   end
-
-  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
   create_table "drafts", force: :cascade do |t|
     t.string   "item_type",                      null: false
@@ -87,14 +83,13 @@ ActiveRecord::Schema.define(version: 20160816140100) do
     t.datetime "updated_at",                     null: false
     t.json     "object_changes"
     t.boolean  "rejected",       default: false, null: false
+    t.index ["created_at"], name: "index_drafts_on_created_at", using: :btree
+    t.index ["event"], name: "index_drafts_on_event", using: :btree
+    t.index ["item_id"], name: "index_drafts_on_item_id", using: :btree
+    t.index ["item_type"], name: "index_drafts_on_item_type", using: :btree
+    t.index ["updated_at"], name: "index_drafts_on_updated_at", using: :btree
+    t.index ["whodunnit"], name: "index_drafts_on_whodunnit", using: :btree
   end
-
-  add_index "drafts", ["created_at"], name: "index_drafts_on_created_at", using: :btree
-  add_index "drafts", ["event"], name: "index_drafts_on_event", using: :btree
-  add_index "drafts", ["item_id"], name: "index_drafts_on_item_id", using: :btree
-  add_index "drafts", ["item_type"], name: "index_drafts_on_item_type", using: :btree
-  add_index "drafts", ["updated_at"], name: "index_drafts_on_updated_at", using: :btree
-  add_index "drafts", ["whodunnit"], name: "index_drafts_on_whodunnit", using: :btree
 
   create_table "keywords", force: :cascade do |t|
     t.string   "name",       null: false
@@ -110,10 +105,9 @@ ActiveRecord::Schema.define(version: 20160816140100) do
   create_table "product_contracts", force: :cascade do |t|
     t.integer "contract_id", null: false
     t.integer "product_id",  null: false
+    t.index ["contract_id"], name: "index_product_contracts_on_contract_id", using: :btree
+    t.index ["product_id"], name: "index_product_contracts_on_product_id", using: :btree
   end
-
-  add_index "product_contracts", ["contract_id"], name: "index_product_contracts_on_contract_id", using: :btree
-  add_index "product_contracts", ["product_id"], name: "index_product_contracts_on_product_id", using: :btree
 
   create_table "product_keywords", force: :cascade do |t|
     t.integer "keyword_id", null: false
@@ -128,10 +122,9 @@ ActiveRecord::Schema.define(version: 20160816140100) do
     t.datetime "trashed_at"
     t.string   "contract_officer_email"
     t.string   "authorizing_official_email"
+    t.index ["product_id"], name: "index_product_requests_on_product_id", using: :btree
+    t.index ["user_id"], name: "index_product_requests_on_user_id", using: :btree
   end
-
-  add_index "product_requests", ["product_id"], name: "index_product_requests_on_product_id", using: :btree
-  add_index "product_requests", ["user_id"], name: "index_product_requests_on_user_id", using: :btree
 
   create_table "product_reviews", force: :cascade do |t|
     t.integer "product_id", null: false
@@ -139,13 +132,12 @@ ActiveRecord::Schema.define(version: 20160816140100) do
     t.string  "url"
   end
 
-  create_table "product_subcategories", force: :cascade do |t|
-    t.integer "product_id",     null: false
-    t.integer "subcategory_id"
+  create_table "product_sub_subcategories", force: :cascade do |t|
+    t.integer "product_id",         null: false
+    t.integer "sub_subcategory_id"
+    t.index ["product_id"], name: "index_product_sub_subcategories_on_product_id", using: :btree
+    t.index ["sub_subcategory_id"], name: "index_product_sub_subcategories_on_sub_subcategory_id", using: :btree
   end
-
-  add_index "product_subcategories", ["product_id"], name: "index_product_subcategories_on_product_id", using: :btree
-  add_index "product_subcategories", ["subcategory_id"], name: "index_product_subcategories_on_subcategory_id", using: :btree
 
   create_table "products", force: :cascade do |t|
     t.text     "long_description",                     null: false
@@ -179,6 +171,13 @@ ActiveRecord::Schema.define(version: 20160816140100) do
     t.string "slug",        null: false
   end
 
+  create_table "sub_subcategories", force: :cascade do |t|
+    t.string  "name",           null: false
+    t.string  "slug",           null: false
+    t.integer "subcategory_id"
+    t.index ["subcategory_id"], name: "index_sub_subcategories_on_subcategory_id", using: :btree
+  end
+
   create_table "subcategories", force: :cascade do |t|
     t.string  "name",        null: false
     t.string  "slug",        null: false
@@ -207,11 +206,10 @@ ActiveRecord::Schema.define(version: 20160816140100) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "organization_name"
+    t.index ["agency_id"], name: "index_users_on_agency_id", using: :btree
+    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
-
-  add_index "users", ["agency_id"], name: "index_users_on_agency_id", using: :btree
-  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

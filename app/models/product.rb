@@ -8,8 +8,8 @@ class Product < ApplicationRecord
   has_many :ato_types, through: :ato_statuses
   has_many :ato_statuses, dependent: :destroy
 
-  has_many :subcategories, through: :product_subcategories
-  has_many :product_subcategories, dependent: :destroy
+  has_many :sub_subcategories, through: :product_sub_subcategories
+  has_many :product_sub_subcategories, dependent: :destroy
 
   has_many :contracts, through: :product_contracts
   has_many :product_contracts, dependent: :destroy

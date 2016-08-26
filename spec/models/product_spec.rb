@@ -8,10 +8,13 @@ describe Product do
     it { should have_many(:contracts).through(:product_contracts) }
     it { should have_many(:product_requests).dependent(:destroy) }
     it { should have_many(:product_reviews).dependent(:destroy) }
-    it { should have_many(:product_subcategories).dependent(:destroy) }
+    it { should have_many(:product_sub_subcategories).dependent(:destroy) }
     it { should have_many(:reviews).through(:product_reviews) }
-    it { should have_many(:subcategories).through(:product_subcategories) }
     it { should have_many(:users).through(:product_requests) }
+
+    it do
+      should have_many(:sub_subcategories).through(:product_sub_subcategories)
+    end
   end
 
   context "attachments" do

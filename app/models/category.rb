@@ -9,12 +9,17 @@ class Category < ApplicationRecord
   validates :slug, presence: true, uniqueness: true
 
   def products
-    Product.joins(:product_subcategories).merge(product_subcategories).distinct
+    Product.joins(:product_sub_subcategories).
+      merge(product_sub_subcategories).distinct
   end
 
   private
 
-  def product_subcategories
-    ProductSubcategory.where(subcategory: subcategories)
+  def product_sub_subcategories
+    ProductSubSubcategory.where(sub_subcategory: sub_subcategories)
+  end
+
+  def sub_subcategories
+    SubSubcategory.where(subcategory: subcategories)
   end
 end
