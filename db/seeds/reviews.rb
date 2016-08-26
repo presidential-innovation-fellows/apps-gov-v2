@@ -20,6 +20,6 @@ reviews = [
 
 ActiveRecord::Base.transaction do
   reviews.each do |review|
-    Review.create!(review)
+    Review.first_or_create!(review)
   end
 end

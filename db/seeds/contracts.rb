@@ -26,6 +26,6 @@ contracts = [
 
 ActiveRecord::Base.transaction do
   contracts.each do |contract|
-    Contract.create!(contract)
+    Contract.first_or_create!(contract)
   end
 end

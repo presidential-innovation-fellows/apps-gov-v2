@@ -109,6 +109,6 @@ agencies = [
 
 ActiveRecord::Base.transaction do
   agencies.each do |agency|
-    Agency.create!(agency)
+    Agency.first_or_create!(agency)
   end
 end
