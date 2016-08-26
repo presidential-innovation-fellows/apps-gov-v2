@@ -66,7 +66,7 @@ class Product < ApplicationRecord
   def self.trigger_delayed_job(record, remove)
     if remove
       index = Algolia::Index.new("#{self.name}_#{Rails.env}")
-      index.delete_object(record.uuid)
+      index.delete_object(record.id)
     else
       record.delay.index!
     end
