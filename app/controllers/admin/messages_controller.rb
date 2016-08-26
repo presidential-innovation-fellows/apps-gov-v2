@@ -2,12 +2,12 @@ module Admin
   class MessagesController < AdminController
     def new
       @message = Message.new
-      @product = Product.find(params[:product_id])
+      @product = Product.friendly.find(params[:product_id])
     end
 
     def create
       @message = Message.new(message_params)
-      @product = Product.find(params[:product_id])
+      @product = Product.friendly.find(params[:product_id])
       @product_rejection = ProductRejection.new(@message, @product)
 
       if @product_rejection.create?

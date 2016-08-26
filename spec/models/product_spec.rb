@@ -68,7 +68,7 @@ describe Product do
         allow(product).to receive(:remove_from_index!).and_return(true)
         described_class.trigger_delayed_job(product, true)
 
-        expect(Delayed::Job.count).to eq(1)
+        expect(Delayed::Job.count).to eq(2)
       end
     end
 
@@ -77,7 +77,7 @@ describe Product do
         allow(product).to receive(:index!).and_return(true)
         described_class.trigger_delayed_job(product, false)
 
-        expect(Delayed::Job.count).to eq(1)
+        expect(Delayed::Job.count).to eq(2)
       end
     end
   end

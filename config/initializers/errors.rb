@@ -22,8 +22,7 @@ SMTP_SERVER_ERRORS = [
   IOError,
   Net::SMTPAuthenticationError,
   Net::SMTPServerBusy,
-  Net::SMTPUnknownError,
-  TimeoutError
+  Net::SMTPUnknownError
 ]
 
 SMTP_CLIENT_ERRORS = [

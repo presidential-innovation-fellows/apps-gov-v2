@@ -1,4 +1,4 @@
-class AtoStatus < ActiveRecord::Base
+class AtoStatus < ApplicationRecord
   validates :ato_type, :product, presence: true
 
   belongs_to :ato_type

@@ -1,4 +1,4 @@
-class ProductReview < ActiveRecord::Base
+class ProductReview < ApplicationRecord
   belongs_to :product
   belongs_to :review
 

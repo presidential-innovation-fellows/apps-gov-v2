@@ -1,4 +1,4 @@
-class Subcategory < ActiveRecord::Base
+class Subcategory < ApplicationRecord
   extend FriendlyId
 
   belongs_to :category

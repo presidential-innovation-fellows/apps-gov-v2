@@ -9,7 +9,10 @@ describe ProductOwners::ProductsController do
       allow(unsaved_product).to receive(:draft_creation).and_return(true)
       allow(Delayed::Job).to receive(:enqueue).and_return(true)
 
-      post :create, product: { name: "Product" }
+      process \
+        :create,
+        method: :post,
+        params: { product: { name: "Product" } }
 
       expect(Delayed::Job).to have_received(:enqueue)
     end
@@ -23,7 +26,10 @@ describe ProductOwners::ProductsController do
       allow_any_instance_of(Product).to receive(:draft_update).and_return(true)
       allow(Delayed::Job).to receive(:enqueue).and_return(true)
 
-      put :update, id: saved_product.id, product: { name: "New Name" }
+      process \
+        :update,
+        method: :put,
+        params: { id: saved_product.id, product: { name: "New Name" } }
 
       expect(Delayed::Job).to have_received(:enqueue)
     end

@@ -1,4 +1,4 @@
-class Review < ActiveRecord::Base
+class Review < ApplicationRecord
   validates :description, :name, :slug, presence: true
   validates :slug, uniqueness: true
 

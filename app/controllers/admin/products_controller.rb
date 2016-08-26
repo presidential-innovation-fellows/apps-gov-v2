@@ -1,12 +1,12 @@
 module Admin
   class ProductsController < AdminController
     def edit
-      @product = Product.find(params[:id])
+      @product = Product.friendly.find(params[:id])
       @product_draft = @product.draft
     end
 
     def update
-      @product = Product.find(params[:id])
+      @product = Product.friendly.find(params[:id])
 
       if @product.draft.publish!
         flash[:success] = I18n.t("admin.products.update.success")

@@ -20,7 +20,7 @@ module GovernmentUsers
     private
 
     def product
-      Product.find(params[:product_id])
+      Product.friendly.find(params[:product_id])
     end
 
     def product_request_params

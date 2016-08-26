@@ -1,4 +1,4 @@
-class Contract < ActiveRecord::Base
+class Contract < ApplicationRecord
   validates :description, :name, :slug, presence: true
 
   has_many :products, through: :product_contracts

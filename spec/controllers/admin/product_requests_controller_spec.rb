@@ -6,7 +6,7 @@ describe Admin::ProductRequestsController do
       sign_in_user(admin)
       allow(ProductRequestMailer).to receive(:send_email).and_return(true)
 
-      put :update, id: product_request.id
+      put :update, params: { id: product_request.id }
 
       expect(ProductRequestMailer).to have_received(:send_email)
     end

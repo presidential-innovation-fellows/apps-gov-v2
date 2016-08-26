@@ -1,4 +1,4 @@
-class ProductContract < ActiveRecord::Base
+class ProductContract < ApplicationRecord
   belongs_to :contract
   belongs_to :product
 

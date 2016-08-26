@@ -1,4 +1,4 @@
-class Customer < ActiveRecord::Base
+class Customer < ApplicationRecord
   validates :agency, :product, presence: true
 
   belongs_to :agency

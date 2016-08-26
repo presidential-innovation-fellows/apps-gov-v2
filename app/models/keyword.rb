@@ -1,4 +1,4 @@
-class Keyword < ActiveRecord::Base
+class Keyword < ApplicationRecord
   validates :name, presence: true
 
   has_many :products, through: :product_keywords

@@ -1,4 +1,4 @@
-class AtoType < ActiveRecord::Base
+class AtoType < ApplicationRecord
   extend FriendlyId
 
   friendly_id :name, use: [:slugged, :finders]

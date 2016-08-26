@@ -1,4 +1,4 @@
-class Agency < ActiveRecord::Base
+class Agency < ApplicationRecord
   validates :code, :name, presence: true
 
   has_many :products, through: :customers

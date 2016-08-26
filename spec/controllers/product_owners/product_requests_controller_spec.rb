@@ -9,7 +9,7 @@ describe ProductOwners::ProductRequestsController do
       allow(product_request).to receive(:draft_creation).and_return(true)
       allow(Delayed::Job).to receive(:enqueue).and_return(true)
 
-      post :create, product_request: { product_id: product.id }
+      post :create, params: { product_request: { product_id: product.id } }
 
       expect(Delayed::Job).to have_received(:enqueue)
     end

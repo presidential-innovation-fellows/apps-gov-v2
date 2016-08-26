@@ -8,7 +8,7 @@ class ProductPresenter
   end
 
   def product
-    @product = Product.find(@product_id)
+    @product = Product.friendly.find(@product_id)
   end
 
   def product_ato_types
