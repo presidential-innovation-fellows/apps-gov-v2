@@ -53,18 +53,22 @@
   }
 }
 
+.product-buckets {
+  @include span-columns(9);
+
+  ul {
+    @include clearfix;
+  }
+}
+
 .product-card {
+  @include omega(3n);
   @include span-columns(4);
   @include transition(all 0.2s ease);
   background-color: $white;
   border: 1px solid $light-gray;
   border-radius: 0.25em;
-  display: block;
   margin-bottom: 1.5em;
-
-  &:nth-child(3) {
-    @include omega;
-  }
 
   &:hover,
   &.focused {
@@ -112,12 +116,8 @@
   }
 }
 
-.product-buckets {
-  @include span-columns(9);
-
-  ul {
-    @include clearfix;
-  }
+.product-card-container {
+  @include outer-container;
 }
 
 .products-index {

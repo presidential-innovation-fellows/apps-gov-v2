@@ -746,10 +746,6 @@ def destroy_existing_subcategories_for(category)
   category.subcategories.destroy_all
 end
 
-def destroy_existing_sub_subcategories_for(subcategory)
-  subcategory.sub_subcategories.destroy_all
-end
-
 def find_or_create_categories(name)
   Category.find_or_create_by!(name: name)
 end
@@ -770,7 +766,6 @@ ActiveRecord::Base.transaction do
       destroy_existing_subcategories_for(category)
       subcategories.each do |subcategory|
         find_or_create_subcategories(category, subcategory).tap do |subcat|
-          destroy_existing_sub_subcategories_for(subcat)
           find_or_create_sub_subs(subcat, subcategory[:sub_subcategories])
         end
       end

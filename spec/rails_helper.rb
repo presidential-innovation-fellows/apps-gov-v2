@@ -44,4 +44,7 @@ Capybara::Webkit.configure do |config|
   config.allow_url("#{ENV['ALGOLIA_APP_ID'].downcase}-dsn.algolia.net")
   config.allow_url("#{ENV['ALGOLIA_APP_ID'].downcase}-1.algolianet.com")
   config.allow_url("#{ENV['ALGOLIA_APP_ID'].downcase}-2.algolianet.com")
+  config.allow_url("#{ENV['ALGOLIA_APP_ID'].downcase}-2.algolianet.com")
+  config.allow_url("apps-production.apps.cloud.gov")
+  config.allow_url("s3.amazonaws.com/cg-31b540ff-5da1-49be-9673-dccb65932066")
 end

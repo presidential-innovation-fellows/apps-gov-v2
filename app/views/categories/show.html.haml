@@ -11,6 +11,6 @@
       %h1
         = @category.name
     - if @category.products.any?
-      %ul
+      %ul.product-card-container
         = render partial: "products/product_card",
           collection: @category.products
