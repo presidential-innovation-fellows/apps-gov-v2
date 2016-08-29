@@ -66,7 +66,7 @@ describe Product do
   end
 
   describe "#trigger_delayed_job" do
-    context "when a record is removed" do
+    context "when a record is destroyed" do
       it "removes the Product from the index" do
         allow(product).to receive(:remove_from_index!).and_return(true)
         described_class.trigger_delayed_job(product, true)

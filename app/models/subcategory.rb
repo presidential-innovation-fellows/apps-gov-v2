@@ -2,7 +2,7 @@ class Subcategory < ApplicationRecord
   extend FriendlyId
 
   belongs_to :category
-  has_many :sub_subcategories
+  has_many :sub_subcategories, dependent: :destroy
 
   friendly_id :name, use: [:slugged, :finders]
 
