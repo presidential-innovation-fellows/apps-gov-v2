@@ -4,6 +4,7 @@
 *.swp
 /cf-ssh.yml
 manifest.yml
+config/brakeman.yml
 /.bundle
 /.env
 /.foreman
