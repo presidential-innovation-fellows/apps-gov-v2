@@ -5,12 +5,13 @@
     = @category.name
 
   %aside.categories
-    = render "sidebar"
+    = render "sidebar", categories: @categories, current_category: @category, current_sub_subcategory: nil
   %section.products
     %header
       %h1
         = @category.name
     - if @category.products.any?
-      %ul.product-card-container
-        = render partial: "products/product_card",
-          collection: @category.products
+      %ul.results
+        = render partial: "products/product",
+          collection: @category.products,
+          locals: { character_limit: 200 }

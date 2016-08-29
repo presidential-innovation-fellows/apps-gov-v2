@@ -1,0 +1,9 @@
+= content_tag_for :li, sub_subcategory, class: "grandchild-item" do
+  - if current_sub_subcategory != sub_subcategory
+    = link_to "#{sub_subcategory.name} (#{sub_subcategory.product_count})",
+      sub_subcategory_path(sub_subcategory),
+      class: "grandchild-link"
+  - else
+    %span.usa-current.grandchild-link
+      = "#{sub_subcategory.name} (#{sub_subcategory.product_count})"
+

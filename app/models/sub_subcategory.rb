@@ -9,4 +9,12 @@ class SubSubcategory < ApplicationRecord
 
   validates :name, presence: true
   validates :slug, presence: true, uniqueness: true
+
+  def category
+    subcategory.category
+  end
+
+  def product_count
+    products.count
+  end
 end

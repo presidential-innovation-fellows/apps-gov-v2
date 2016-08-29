@@ -1,19 +1,107 @@
-.categories-show {
+.categories-show,
+.sub_subcategories-show {
 
   .categories {
-    @include span-columns(4);
+    @include span-columns(3 of 9);
 
     a {
       color: $color-primary;
     }
 
     h2 {
-      margin-bottom: 1em;
+      font-size: 1.4em;
+      margin-bottom: 0.25em;
+    }
+
+    li {
+      font-size: 0.95em;
+    }
+  }
+
+  .usa-current {
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .usa-sidenav-list {
+
+    i {
+      font-weight: bold;
+      margin-left: 0.5em;
+    }
+
+    li {
+      border-top: 1px solid darken($base-background-color, 10);
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+
+    .grandchild-link {
+      color: #0071bc;
+      display: block;
+      line-height: 1.3;
+      padding: 1rem 1rem 1rem 3.8rem;
+
+      &:hover {
+        background-color: darken($base-background-color, 14);
+      }
+
+      &.usa-current {
+        font-weight: bold;
+      }
+    }
+
+    .parent-link {
+
+      &.usa-current {
+        background-color: $color-primary;
+        color: $white;
+      }
+    }
+
+    .usa-current {
+      font-weight: normal;
+    }
+  }
+
+  .product {
+    margin-bottom: 0.5em;
+
+    a {
+      @include clearfix;
+      background-color: $white;
+      border: 1px solid $light-gray;
+      border-radius: 0.2em;
+      color: $dark-gray;
+      display: block;
+      padding: 0.5em;
+
+      &:hover {
+        background-color: lighten($color-primary, 55);
+      }
+    }
+
+    h3 {
+      font-size: 1.2em;
+      margin-bottom: 0.25em;
+    }
+
+    p {
+      font-size: 0.85em;
+      margin: 0;
+    }
+
+    .product-content {
+      @include span-columns(10);
     }
   }
 
   .products {
-    @include span-columns(8);
+    @include span-columns(6 of 9);
 
     h1 {
       margin-bottom: 0;
@@ -23,6 +111,30 @@
       @include clearfix;
       display: block;
       margin-top: 1em;
+    }
+  }
+
+  .results {
+
+    li {
+      list-style-type: none;
+    }
+
+    .logo {
+      @include span-columns(2);
+      max-width: 5em;
+    }
+  }
+
+  .sublist {
+    background-color: darken($base-background-color, 3);
+  }
+
+  .sub-sublist {
+    background-color: darken($base-background-color, 8);
+
+    li {
+      border-top: 1px solid darken($base-background-color, 15);
     }
   }
 }

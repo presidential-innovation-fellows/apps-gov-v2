@@ -1,0 +1,10 @@
+= content_tag_for :li, subcategory, class: "child-item" do
+  = link_to "#",
+    class: "toggle-menu child-link #{active_subcategory(current_sub_subcategory, subcategory)}",
+    id: "subcategory-#{subcategory.id}-toggle" do
+    = subcategory.shortname
+    = active_subcategory(current_sub_subcategory, subcategory)
+    %i.fa.fa-angle-down
+  - if subcategory.active_sub_subcategories.any?
+    %ul.usa-sidenav-sub_list.sub-sublist{ id: "subcategory-#{subcategory.id}-toggle-list", style: "#{'display:none' unless current_sub_subcategory.present? && current_sub_subcategory.subcategory == subcategory}" }
+      = render partial: "categories/sub_subcategory", collection: subcategory.active_sub_subcategories, locals: { current_sub_subcategory: current_sub_subcategory || nil }

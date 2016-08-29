@@ -45,6 +45,7 @@ Rails.application.routes.draw do
 
   resources :categories, only: [:show]
   resources :products, only: [:index, :show]
+  resources :sub_subcategories, only: [:show]
 
   root to: "products#index"
 end

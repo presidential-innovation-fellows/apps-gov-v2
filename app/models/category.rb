@@ -8,6 +8,10 @@ class Category < ApplicationRecord
   validates :name, presence: true
   validates :slug, presence: true, uniqueness: true
 
+  def active_subcategories
+    subcategories.joins(sub_subcategories: :products).distinct
+  end
+
   def products
     Product.joins(:product_sub_subcategories).
       merge(product_sub_subcategories).distinct

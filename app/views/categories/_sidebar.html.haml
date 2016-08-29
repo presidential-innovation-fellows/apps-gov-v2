@@ -1,4 +1,6 @@
 %h2
   = t(".heading")
-%ul
-  = render partial: "products/category", collection: @categories
+%ul.usa-sidenav-list
+  = render partial: "categories/category",
+    collection: categories,
+    locals: { current_category: current_category, current_sub_subcategory: current_sub_subcategory || nil }

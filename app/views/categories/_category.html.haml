@@ -1,0 +1,9 @@
+= content_tag_for :li, category, class: "parent-item" do
+  = link_to category_path(category), class: "toggle-menu parent-link #{'usa-current' if category == current_category}", id: "category-#{category.id}-toggle" do
+    = category.name
+    %i.fa.fa-angle-down
+  - if category.active_subcategories.any?
+    %ul.usa-sidenav-sub_list.sublist{ id: "category-#{category.id}-toggle-list", style: "#{'display:none' unless category == current_category || (current_sub_subcategory.present? && category == current_sub_subcategory.category)}"}
+      = render partial: "categories/subcategory",
+        collection: category.active_subcategories,
+        locals: { current_sub_subcategory: current_sub_subcategory || nil }

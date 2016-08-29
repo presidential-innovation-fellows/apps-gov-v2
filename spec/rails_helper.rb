@@ -48,3 +48,10 @@ Capybara::Webkit.configure do |config|
   config.allow_url("apps-production.apps.cloud.gov")
   config.allow_url("s3.amazonaws.com/cg-31b540ff-5da1-49be-9673-dccb65932066")
 end
+
+algolia_url = ENV["ALGOLIA_APP_ID"].downcase + ".algolia.net"
+
+WebMock.disable_net_connect!(
+  allow_localhost: true,
+  allow: ["codeclimate.com", "mandrillapp.com", algolia_url]
+)

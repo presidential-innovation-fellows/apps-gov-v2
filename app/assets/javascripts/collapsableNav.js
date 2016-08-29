@@ -24,10 +24,15 @@ function switchFontAwesomeIcon(id, oldClass, newClass) {
 
 var appsGov = appsGov || {};
 
-appsGov.listing = {
+appsGov.collapsableNav = {
 
   bindExpandClick: function(){
-    $('#proc, #revs, #ato, #testing').on('click', function() {
+    $('.toggle-menu').on('click', function(e) {
+
+      if($(this).is('.parent-link, .child-link')) {
+        e.preventDefault();
+      }
+
       if ($('#' + $(this).attr('id') + '-list').css('display') === 'none'){
         submenu_selector(this, 'show')
       } else {
@@ -40,15 +45,17 @@ appsGov.listing = {
     $('.usa-sidenav-list a').on('click', function(){
       $('.usa-sidenav-list a.usa-current').removeClass('usa-current');
       $(this).addClass('usa-current');
+      $(this).closest('.parent-item').find('.parent-link').addClass('usa-current');
+      $(this).closest('.child-item').find('.child-link').addClass('usa-current');
     });
   }
 }
 
-if ($("body").hasClass("pages-listing")) {
+if ($("body").is(".pages-listing, .categories-show, .sub_subcategories-show")) {
   $(document).ready(function(){
 
-    appsGov.listing.bindExpandClick();
-    appsGov.listing.bindSidenavClick();
+    appsGov.collapsableNav.bindExpandClick();
+    appsGov.collapsableNav.bindSidenavClick();
 
     $(window).on("hashchange", function () {
         offsetAnchor();

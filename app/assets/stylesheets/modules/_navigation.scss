@@ -11,6 +11,10 @@
     padding: 0;
     text-indent: -999em;
     width: 130px;
+
+    &:focus {
+      box-shadow: none;
+    }
   }
 }
 
