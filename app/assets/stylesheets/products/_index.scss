@@ -99,7 +99,15 @@
     line-height: 0;
     margin: 0 auto;
     min-height: 36px;
+    position: relative;
     width: 35%;
+
+    img {
+      bottom:0;
+      margin:auto;
+      position:absolute;
+      top:0;
+    }
 
     @include media($medium-screen) {
       float: left;
