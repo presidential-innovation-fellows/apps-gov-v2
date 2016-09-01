@@ -3,8 +3,7 @@
   .page-content {
 
     .left-col {
-      position: fixed;
-      width: 22%;
+      @include span-columns(3 of 9);
 
       li {
         font-size: 0.9em;
@@ -12,7 +11,7 @@
     }
 
     .right-col {
-      margin-left: 30%;
+      @include span-columns(6 of 9);
     }
   }
 
